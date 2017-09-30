@@ -1,0 +1,125 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = it_IT
+% !TeX root = formulario.tex
+\chapter{Funzioni logiche}
+\section{Tavole di verità}
+\begin{center}\index{Funzione!logica}\index{AND}\index{NAND}\index{OR}\index{NOR}\index{XOR}\index{XNOR}\index{NOT}
+		\begin{tabular}{@{}cc@{\hspace{2cm}}cc@{}}
+	\begin{truthtable}{AND}
+	\toprule
+	$A$&$B$&$AB$\\
+	\midrule           
+	0&0&0\\
+	1&0&0\\
+	0&1&0\\
+	1&1&1\\
+	\bottomrule
+	\end{truthtable}
+	& \cport{and} &
+	\begin{truthtable}{NAND}
+	\toprule
+	$A$&$B$&$A\mathbin{\overline{\wedge}}B$\\
+	\midrule
+	0&0&1\\
+	1&0&1\\
+	0&1&1\\
+	1&1&0\\
+	\bottomrule
+	\end{truthtable}
+	& \cport{nand} \\
+	\addlinespace[3ex]
+	\begin{truthtable}{OR}
+	\toprule
+	$A$&$B$&$A+B$\\
+	\midrule         
+	0&0&0\\
+	1&0&1\\
+	0&1&1\\
+	1&1&1\\
+	\bottomrule
+	\end{truthtable}
+	& \cport{or} &
+	\begin{truthtable}{NOR}
+	\toprule
+	$A$&$B$&$A\mathbin{\overline{\vee}}B$\\
+	\midrule
+	0&0&1\\
+	1&0&0\\
+	0&1&0\\
+	1&1&0\\
+	\bottomrule
+	\end{truthtable}
+	& \cport{nor} \\
+	\addlinespace[3ex]
+	\begin{truthtable}{XOR}
+	\toprule
+	$A$&$B$&$A\XOR B$\\
+	\midrule         
+	0&0&0\\
+	1&0&1\\
+	0&1&1\\
+	1&1&0\\
+	\bottomrule
+	\end{truthtable}
+	& \cport{xor} &
+	\begin{truthtable}{XNOR}
+	\toprule
+	$A$&$B$&$A\mathbin{\overline{\XOR}}B$\\
+	\midrule
+	0&0&1\\
+	1&0&0\\
+	0&1&0\\
+	1&1&1\\
+	\bottomrule
+	\end{truthtable}
+	& \cport{xnor} \\
+	\addlinespace[3ex]
+	\multicolumn{4}{c}{%
+		\begin{tabular}{@{}cc@{}}
+		\begin{truthtable}[2]{NOT}
+		\toprule
+		$A$&$\overline{A}$\\
+		\midrule         
+		0&1\\
+		1&0\\
+		\bottomrule
+		\end{truthtable}
+		& \cport{not}
+		\end{tabular}}
+	\end{tabular}
+	\captionof{table}{Porte logiche}
+\end{center}
+\section{Composizione porte}
+\begin{center}
+		\begin{tabular}{ccc}
+	\toprule
+	\begin{circuitikz} \draw
+	(0,0) node[and port] (myand) {}
+	(1,0) node[not port] (mynot) {}
+	(myand.out) -- (mynot.in)
+	;\end{circuitikz}&&\begin{circuitikz} \draw
+	(0,0) node[nor port]  {}
+	;\end{circuitikz} \\
+	AND +  NOT &=&NAND \\
+	\midrule
+	\begin{circuitikz} \draw
+	(0,0) node[or port] (myor) {}
+	(1,0) node[not port] (mynot) {}
+	(myor.out) -- (mynot.in)
+	;\end{circuitikz}&& \begin{circuitikz} \draw
+	(0,0) node[nor port]  {}
+	;\end{circuitikz} \\
+	OR +  NOT &=&NOR  \\ 
+	\midrule
+	\begin{circuitikz} \draw
+	(0,0) node[xor port] (myxor) {}
+	(1,0) node[not port] (mynot) {}
+	(myxor.out) -- (mynot.in)
+	;\end{circuitikz}&& \begin{circuitikz} \draw
+	(0,0) node[xnor port]  {}
+	;\end{circuitikz} \\
+	XOR +  NOT &=&XNOR  \\ 
+	\bottomrule
+	\end{tabular} 
+	\captionof{table}{Composizione porte}%
+\end{center}

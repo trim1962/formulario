@@ -1,0 +1,157 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = it_IT
+% !TeX root = formulario.tex
+\chapter{Equazioni goniometriche}
+\section{Equazioni goniometriche elementari}
+\begin{align}
+\intertext{$x\in[0,2\pi]$}
+	\sin(x)=&m &0<m<1\\
+	x_1=&\arcsin(m)+2k\pi &k\in\Z\\
+	x_2=&\pi-\arcsin(m)+2k\pi\\
+\sin(x)=&m &-1<m<0\\
+x_1=&\pi+\arcsin(\abs{m})+2k\pi &k\in\Z\\
+x_2=&2\pi-\arcsin(\abs{m})+2k\pi\\
+\sin(x)=&1\\\index{Equazione!goniometrica!seno}
+x_1=&\dfrac{\pi}{2}+2k\pi &k\in\Z\\
+\sin(x)=&-1\\
+x_1=&\dfrac{3}{2}\pi+2k\pi &k\in\Z\\
+\sin(x)=&0\\
+x_1=&k\pi &k\in\Z
+\intertext{$x\in[0,2\pi]$}
+\cos(x)=&m &0<m<1\\\index{Equazione!goniometrica!coseno}
+x_1=&\arccos(m)+2k\pi &k\in\Z\\
+x_2=&2\pi-\arccos(m)+2k\pi\\
+\cos(x)=&m &-1<m<0\\
+x_1=&\pi-\arccos(\abs{m})+2k\pi &k\in\Z\\
+x_2=&\pi+\arccos(\abs{m}))+2k\pi\\
+\cos(x)=&1\\
+x_1=&2k\pi &k\in\Z\\
+\cos(x)=&-1\\
+x_1=&\pi+2k\pi &k\in\Z\\
+\cos(x)=&0\\
+x_1=&k\dfrac{\pi}{2} &k\in\Z
+\intertext{$x\in[0,2\pi]$}
+\tan(x)=&m&m\geq0\\\index{Equazione!goniometrica!tangente}
+x=&\arctan(m)+k\pi&k\in\Z\\
+\tan(x)=&m&m<0\\
+x=&\pi-\arctan(\abs{m})+k\pi&k\in\Z
+\intertext{$x\in[-\pi,\pi]$}
+\sin(x)=&m &0<m<1\\
+x_1=&\arcsin(m)+2k\pi &k\in\Z\\
+x_2=&\pi-\arcsin(m)+2k\pi\\
+\sin(x)=&m &-1<m<0\\
+x_1=&-\arcsin(\abs{m})+2k\pi &k\in\Z\\
+x_2=&-\pi+\arcsin(\abs{m})+2k\pi\\
+\sin(x)=&1\\
+x_1=&\dfrac{\pi}{2}+2k\pi &k\in\Z\\
+\sin(x)=&-1\\
+x_1=&-\dfrac{\pi}{2}+2k\pi &k\in\Z\\
+\sin(x)=&0\\
+x_1=&k\pi &k\in\Z
+\intertext{$x\in[-\pi,\pi]$}
+\cos(x)=&m &0<m<1\\
+x_1=&\arccos(m)+2k\pi &k\in\Z\\
+x_2=&-\arccos(m)+2k\pi\\
+\cos(x)=&m &-1<m<0\\
+x_1=&\pi-\arccos(\abs{m})+2k\pi &k\in\Z\\
+x_2=&-\pi+\arccos(\abs{m})+2k\pi\\
+\cos(x)=&1\\
+x_1=&2k\pi &k\in\Z\\
+\cos(x)=&-1\\
+x_1=&-\pi+2k\pi &k\in\Z\\
+\cos(x)=&0\\
+x_1=&k\dfrac{\pi}{2} &k\in\Z
+\intertext{$x\in[-\pi,\pi]$}
+\tan(x)=&m&m\geq0\\
+x=&\arctan(m)+k\pi&k\in\Z\\
+\end{align}
+\section{Equazioni riconducibili ad equazioni elementari}
+\begin{align}
+\intertext{Tipo uno}
+\sin(\alpha)=&\sin(\beta)\\
+\alpha=&\beta+2k\pi\\
+\alpha=&\pi-\beta+2k\pi\\\index{Equazione!goniometrica!seno}
+\intertext{Tipo due}
+\cos(\alpha)=&\cos(\beta)\\
+\alpha=&\pm\beta+2k\pi\\\index{Equazione!goniometrica!coseno}
+\intertext{Tipo tre}
+\tan(\alpha)=\tan(\beta)\\
+\alpha=&\beta+k\pi\index{Equazione!goniometrica!coseno}
+\end{align}
+\begin{align}
+\intertext{Riconducibili al tipo uno}
+\sin(\alpha)=&-\sin(\beta)&&\sin(\alpha)=\sin(-\beta)\\
+\sin(\alpha)=&\cos(\beta)&&\sin(\alpha)=\sin(\frac{\pi}{2}-\beta)\\
+\sin(\alpha)=&-\cos(\beta)&&\sin(-\alpha)=\sin(\frac{\pi}{2}-\beta)\\
+\sin^2(\alpha)=&\sin^2(\beta)
+&&\begin{cases}
+\sin(\alpha)=\sin(\beta)\\
+\sin(\alpha)=-\sin(\beta)
+\end{cases}\\
+\intertext{Riconducibili al tipo due}
+\cos(\alpha)=&-\cos(\beta)&&\cos(\alpha)=\cos(\pi-\beta)\\
+\cos^2(\alpha)=&\cos^2(\beta)
+&&\begin{cases}
+\cos(\alpha)=\cos(\beta)\\
+\cos(\alpha)=-\cos(\beta)
+\end{cases}\\
+\intertext{Riconducibili al tipo tre}
+\tan(\alpha)=&-\tan(\beta)&&\tan(\alpha)=\tan(-\beta)\\
+\tan^2(\alpha)=&\tan^2(\beta)
+&&\begin{cases}
+\tan(\alpha)=\tan(\beta)\\
+\tan(\alpha)=-\tan(\beta)
+\end{cases}
+\end{align}
+\section{Equazioni risolvibili tramite  equazioni di secondo grado}
+\begin{align}
+a\cos^2\alpha+b\cos\alpha+c=&0\quad a\neq 0\\
+\cos\alpha=&t\\
+at^2+bt+c=&0
+\intertext{$\Delta>0$}
+t_1=&\frac{-b+\sqrt{b^2-4ac}}{2a}\\
+t_2=&\frac{-b-\sqrt{b^2-4ac}}{2a}
+\intertext{se $t_1\in[-1,+1]$}
+\cos\alpha=&t_1\\
+\intertext{se $t_2\in[-1,+1]$}
+\cos\alpha=&t_2
+\intertext{$\Delta=0$}
+t_1=&\frac{-b}{2a}\\
+\intertext{se $t_1\in[-1,+1]$}
+\cos\alpha=&t_1
+\intertext{$\Delta<0$}
+\intertext{Nessuna soluzione}
+\end{align}\index{Equazione!goniometrica!secondo grado}\index{Discriminante}\index{Delta}
+\begin{align}
+a\sin^2\alpha+b\sin\alpha+c=&0\quad a\neq 0\\
+\sin\alpha=&t\\
+at^2+bt+c=&0
+\intertext{$\Delta>0$}
+t_1=&\frac{-b+\sqrt{b^2-4ac}}{2a}\\
+t_2=&\frac{-b-\sqrt{b^2-4ac}}{2a}
+\intertext{se $t_1\in[-1,+1]$}
+\sin\alpha=&t_1\\
+\intertext{se $t_2\in[-1,+1]$}
+\sin\alpha=&t_2
+\intertext{$\Delta=0$}
+t_1=&\frac{-b}{2a}\\
+\intertext{se $t_1\in[-1,+1]$}
+\sin\alpha=&t_1\\
+\intertext{$\Delta<0$}
+\intertext{Nessuna soluzione}
+\end{align}\index{Equazione!goniometrica!secondo grado}\index{Discriminante}\index{Delta}
+\begin{align}
+a\tan^2\alpha+b\tan\alpha+c=&0\quad a\neq 0\\
+\tan\alpha=&t\\
+at^2+bt+c=&0
+\intertext{$\Delta>0$}
+t_1=&\frac{-b+\sqrt{b^2-4ac}}{2a}\\
+t_2=&\frac{-b-\sqrt{b^2-4ac}}{2a}
+\tan\alpha=&t_1\\
+\tan\alpha=&t_2
+\intertext{$\Delta=0$}
+t_1=&\frac{-b}{2a}\\
+\tan\alpha=&t_1\\
+\intertext{$\Delta<0$}
+\intertext{Nessuna soluzione}
+\end{align}\index{Equazione!goniometrica!secondo grado}\index{Discriminante}\index{Delta}

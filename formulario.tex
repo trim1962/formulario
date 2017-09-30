@@ -1,0 +1,272 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = it_IT
+% !TeX root = formulario.tex
+
+% 10/09/2017 :: 10:06:01 :: \documentclass[oneside]{book}%
+\documentclass[openany]{book}%
+\usepackage{cmap}
+\frenchspacing%
+\usepackage{textgreek}
+\input{../Mod_base/base}
+ \geometry{bottom=2cm}
+\input{../Mod_base/grafica}
+\input{../Mod_base/matematica}
+\input{../Mod_base/tabelle}
+\input{../Mod_base/stand_class}
+\input{../Mod_base/rifIndici}
+\input{../Mod_base/pagina}
+\input{../Mod_base/indice}
+\input{../Mod_base/date}
+\input{../Mod_base/loghi}
+\input{../Mod_base/unita_misura}
+\input{../Mod_base/tcolorboxgest}
+\makeindex[options=-s ../Mod_base/oldclaudio.sti]
+
+\newcolumntype{W}{>{\sffamily\Large $}c<{$}}
+\newcolumntype{C}{>{\sffamily $}c<{$}}
+\newcolumntype{L}{>{\sffamily $}l<{$}}
+%\include{simboli_operatori}
+\newcommand{\Co}{\numberset{C}}
+\usepackage{xcolor-material}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+
+
+% 10/09/2017 :: 10:18:49 :: \usepackage{draftwatermark}
+% 10/09/2017 :: 10:19:00 :: \SetWatermarkText{BOZZA}
+
+%\newcommand{\rosso}[1]{{\color{MaterialRed} #1}}
+%\newcommand{\verde}[1]{{\color{MaterialGreen}  #1}}
+%\newcommand{\blu}[1]{{\color{MaterialBlue}  #1}}
+%\newcommand{\arancia}[1]{{\color{MaterialOrange}  #1}}
+%\newcommand{\magenta}[1]{{\color{MaterialPurple}  #1}}
+\newcommand{\rosso}[1]{{\color{MaterialBlack} #1}}
+\newcommand{\verde}[1]{{\color{MaterialBlack}  #1}}
+\newcommand{\blu}[1]{{\color{MaterialBlack}  #1}}
+\newcommand{\arancia}[1]{{\color{MaterialBlack}  #1}}
+\newcommand{\magenta}[1]{{\color{MaterialBlack}  #1}}
+\usepackage{gn-logic14}
+\newenvironment{truthtable}[2][3]
+{\begin{tabular}{*{#1}{c}}
+		\multicolumn{1}{l}{#2}\\}
+	{\end{tabular}}
+\newcommand{\cport}[1]{%
+	\begin{circuitikz}
+		\draw (0,0) node [#1 port] {};
+\end{circuitikz}} 
+\makeatletter
+\renewcommand\frontmatter{%
+	\cleardoublepage
+	\@mainmatterfalse
+	%\pagenumbering{roman}
+}
+\renewcommand\mainmatter{%
+	\cleardoublepage
+	\@mainmattertrue
+	%\pagenumbering{arabic}
+}
+\usepackage{hyperxmp}
+\usepackage{hyperref}
+\title{Formulario}
+\author{Claudio Duchi}
+\date{\datetime}
+\hypersetup{%
+pdfencoding=auto,
+urlcolor={blue},
+pdftitle={Formulario},
+pdfsubject={Formulario matematico},
+pdfstartview={FitH},
+pdfpagemode={UseOutlines},
+pdflicenseurl={http://creativecommons.org/licenses/by-nc-nd/3.0/},
+pdflang={it},
+pdfmetalang={it},
+pdfkeywords={Algebra, geometria, analisi},
+pdfcopyright={Copyright (C) 2017, Claudio Duchi},
+pdfcontacturl={http://breviariomatematico.altervista.org},
+pdfcontactpostcode={},
+pdfcontactphone={},
+pdfcontactemail={},
+pdfcontactcountry={Italy},
+pdfcontactcity={Perugia},
+pdfcontactaddress={},
+pdfcaptionwriter={Claudio Duchi},
+pdfauthortitle={},%
+pdfauthor={Claudio Duchi},
+linkcolor={blue},
+colorlinks=true,
+citecolor={red},
+breaklinks,
+bookmarksopen,
+verbose,
+baseurl={http://breviariomatematico.altervista.org}
+}
+\usepackage{etoolbox}
+ \ifdef{\completo}
+{\includeonly{
+simboli,
+alfabetogreco,
+tabprimi,	
+tabella,
+funzionilogiche,
+Numnaturali,
+Numinteri,
+NumRazionali,
+algebra,	
+monomi,
+prodottiAlgebrici,	
+scomposizionipoli,
+radicali,
+equazioni,
+sistemilineari,
+numericomplessi,
+disequazioniPgrado,
+disequazioni,
+disequazionifraz,
+angoli,	
+gonimetria,
+trigonometria,
+EquazioniGonimetriche,
+goniocomplessi,
+genAnalitica,
+parabola,
+Circonferenza,
+geometria,
+intervalli,
+logaritmi,
+funzioni,
+asintoti,
+Funzione_exp,
+funzione_log,
+funzione_sin,
+funzione_cos,
+funzione_tan, 
+derivate,
+Tabprefissi,
+cinematica,
+statistica,
+Numgen,
+}
+}
+{\includeonly{
+	% 30/09/2017 :: 15:20:41 :: 	simboli,
+	% 30/09/2017 :: 15:20:45 :: 	alfabetogreco,
+	% 30/09/2017 :: 15:20:51 :: 	tabprimi,	
+	% 30/09/2017 :: 15:20:54 :: 	tabella,
+	% 30/09/2017 :: 15:20:58 :: 	funzionilogiche,
+	% 30/09/2017 :: 15:21:02 :: 	Numnaturali,
+	% 30/09/2017 :: 15:21:05 :: 	Numinteri,
+	% 30/09/2017 :: 15:21:09 :: 	NumRazionali,
+		algebra,	
+		monomi,
+		prodottiAlgebrici,	
+		scomposizionipoli,
+		radicali,
+		equazioni,
+		sistemilineari,
+		numericomplessi,
+		disequazioniPgrado,
+		disequazioni,
+		disequazionifraz,
+		angoli,	
+		gonimetria,
+		trigonometria,
+		EquazioniGonimetriche,
+		goniocomplessi,
+		genAnalitica,
+		parabola,
+		Circonferenza,
+		geometria,
+		intervalli,
+		logaritmi,
+		funzioni,
+		asintoti,
+		Funzione_exp,
+		funzione_log,
+		funzione_sin,
+		funzione_cos,
+		funzione_tan, 
+		derivate,
+		Tabprefissi,
+		cinematica,
+		statistica,
+		Numgen,
+	}
+}
+\usepackage{parskip}
+\begin{document}
+%\setcounter{page}{2}
+		\frontmatter
+		\hypersetup{pageanchor=false}
+		\begin{titlepage}
+			\begin{center}
+			\input{../Mod_base/Lgrande}\\[1cm]
+				\textsc{\LARGE Claudio Duchi}\\[1.5cm]
+				\HRule \\[0.4cm]
+				{ \huge \bfseries Formulario}\\[0.4cm]
+				\HRule \\[1.5cm]
+				\vfill
+			\end{center}
+		\end{titlepage}
+	\hypersetup{pageanchor=true}
+		\input{../Mod_base/copyright}
+		\tableofcontents
+	\addcontentsline{toc}{chapter}{\numberline{}\listfigurename}%
+		\listoffigures
+	\addcontentsline{toc}{chapter}{\numberline{}\listtablename}%
+			\listoftables
+			\mainmatter
+\part{Matematica}			
+\include{simboli}
+\include{alfabetogreco}
+\include{tabprimi}	
+\include{tabella}
+\include{funzionilogiche}
+%\twocolumn
+\include{Numgen}
+\include{Numnaturali}
+\include{Numinteri}
+\include{NumRazionali}
+\include{algebra}	
+\include{monomi}
+\include{prodottiAlgebrici}	
+\include{scomposizionipoli}
+\include{radicali}
+\include{equazioni}
+\include{sistemilineari}
+\include{numericomplessi}
+\include{disequazioniPgrado}
+\include{disequazioni}
+\include{disequazionifraz}
+\include{angoli}	
+\include{gonimetria}
+\include{goniocomplessi}
+\include{trigonometria}
+\include{EquazioniGonimetriche}
+\include{genAnalitica}
+\include{parabola}
+\include{Circonferenza}
+%\onecolumn
+\include{geometria}
+%\twocolumn[text]
+\include{intervalli}
+\include{logaritmi}
+\include{funzioni}
+\include{asintoti}
+\include{Funzione_exp}
+\include{funzione_log}
+\include{funzione_sin}
+\include{funzione_cos}
+\include{funzione_tan}
+\include{derivate}
+\part{Statistica}
+\include{statistica}
+\part{Fisica}
+%\onecolumn
+\include{Tabprefissi}
+%\twocolumn
+\include{cinematica}
+%\onecolumn
+\part{Note}
+\input{../Mod_base/MezziUsati}
+\addcontentsline{toc}{chapter}{\indexname}
+\printindex
+\end{document}

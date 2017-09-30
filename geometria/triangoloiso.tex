@@ -1,0 +1,30 @@
+\documentclass[10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-2.5,-0.5) rectangle (2.5,4.3);
+\draw (0.,3.4641016151377544)-- (-2.,0.);
+\draw (-2.,0.)-- (2.,0.);
+\draw (2.,0.)-- (0.,3.4641016151377544);
+\draw [dash pattern=on 4pt off 4pt] (0.,3.4641016151377544)-- (0.,0.);
+\begin{scriptsize}
+\draw [fill=black] (-2.,0.) circle (2.5pt);
+\draw[color=black] (-2.3287512314471788,0.6470645273006679) node {$A$};
+\draw [fill=black] (2.,0.) circle (2.5pt);
+\draw[color=black] (2.2073161817641953,0.5575368809872856) node {$B$};
+\draw [fill=black] (0.,3.4641016151377544) circle (2.5pt);
+\draw[color=black] (0.20786541409865542,4.019272538438071) node {$C$};
+\draw[color=black] (-1.3439471219999726,2.2287196121704236) node {$l$};
+\draw[color=black] (0.08849521901414557,-0.2183693870620284) node {$l$};
+\draw[color=black] (1.5657013831849549,2.303325984098242) node {$l$};
+\draw [fill=black] (0.,0.) circle (1.5pt);
+\draw[color=black] (0.20786541409865542,0.43816668590277574) node {$E$};
+\draw[color=black] (-0.3889855613238938,1.9899792220014039) node {$h$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}

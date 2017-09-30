@@ -1,0 +1,74 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = it_IT
+% !TeX root = formulario.tex
+\chapter{Trigonometria}
+\section{Triangoli rettangolo}
+\begin{center}
+		\includestandalone{geometria/triangolopitagorico1}
+	\captionof{figure}{Triangolo rettangolo}
+\end{center}
+\begin{equation}
+\dfrac{\pi}{2}+\beta+\gamma=\pi
+\end{equation}\index{Triangolo!somma!angoli interni}
+\begin{align}
+b=&a\sin\beta=a\cos\gamma\\
+c=&a\sin\gamma=a\cos\beta
+\end{align}\index{Triangolo!rettangolo!cateto}
+\begin{align}
+\sin\beta=&\dfrac{b}{a}=\dfrac{\text{opposto}}{\text{ipotenusa}}\\
+\cos\beta=&\dfrac{c}{a}=\dfrac{\text{adiacente}}{\text{ipotenusa}}\\
+\sin\gamma=&\dfrac{c}{a}=\dfrac{\text{opposto}}{\text{ipotenusa}}\\
+\cos\gamma=&\dfrac{b}{a}=\dfrac{\text{adiacente}}{\text{ipotenusa}}
+\end{align}\index{Triangolo!rettangolo!adiacente}
+\index{Triangolo!rettangolo!opposto}
+\begin{equation}
+a=\dfrac{b}{\sin\beta}=\dfrac{b}{\cos\gamma}=\dfrac{c}{\sin\gamma}=\dfrac{c}{\cos\beta}
+\end{equation}
+\begin{align}
+b=&c\tan\beta\\
+c=&b\tan\gamma
+\end{align}
+\begin{align}
+\tan\beta=&\dfrac{b}{c}=\dfrac{\text{opposto}}{\text{adiacente}}\\
+\tan\gamma=&\dfrac{c}{b}=\dfrac{\text{opposto}}{\text{adiacente}}
+\end{align}\index{Triangolo!rettangolo!adiacente}
+\index{Triangolo!rettangolo!opposto}
+\section{Triangolo qualunque}
+\begin{center}
+	\includestandalone{geometria/triangoloisc}
+	\captionof{figure}{Triangolo qualunque}
+\end{center}
+\begin{equation}
+\alpha+\beta+\gamma=\pi
+\end{equation}\index{Triangolo!somma!angoli interni}
+\section{Teorema della corda}
+\begin{align}
+a=&2R\sin\alpha\\
+b=&2R\sin\beta\\
+c=&2R\sin\gamma
+\end{align}\index{Corda!teorema}\index{Teorema!corda}
+\section{Teorema dei seni}
+\begin{equation}
+\dfrac{a}{\sin\alpha}=\dfrac{b}{\sin\beta}=\dfrac{c}{\sin\gamma}=2R
+\end{equation}\index{Triangolo!teorema seni}\index{Seno!teorema}\index{Teorema!seno}
+\section{Raggio cerchio circoscritto}
+\begin{equation}
+R=\dfrac{a}{2\sin\alpha}=\dfrac{b}{2\sin\beta}=\dfrac{c}{2\sin\gamma}
+\end{equation}\index{Triangolo!raggio!circoscritto}\index{Circonferenza!triangolo!circoscritto}
+\section{Teorema di Carnot}
+\begin{align}
+a^2=&b^2+c^2-2bc\cos\alpha\\
+b^2=&a^2+c^2-2ac\cos\beta\\
+c^2=&a^2+b^2-2ab\cos\gamma
+\end{align}\index{Triangolo!teorema Carnot}\index{Carnot!teorema}\index{Teorema!Carnot}\index{Triangolo!lato}
+\section{Area triangolo}
+\begin{align}
+S=&\dfrac{1}{2}bc\sin\alpha\\
+S=&\dfrac{1}{2}ba\sin\gamma\\
+S=&\dfrac{1}{2}ac\sin\beta
+\end{align}\index{Triangolo!area}
+\begin{align}
+S=&\dfrac{1}{2}a^2\dfrac{\sin\beta\sin\gamma}{\sin\alpha}\\
+S=&\dfrac{1}{2}b^2\dfrac{\sin\alpha\sin\gamma}{\sin\beta}\\
+S=&\dfrac{1}{2}c^2\dfrac{\sin\alpha\sin\beta}{\sin\gamma}
+\end{align}\index{Triangolo!area}

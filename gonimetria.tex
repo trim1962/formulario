@@ -1,0 +1,213 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = it_IT
+% !TeX root = formulario.tex
+%\onecolumn
+\chapter{Goniometria}
+\label{Cha:goniometria}
+\begin{center}
+	%	\renewcommand{\arraystretch}{2}
+	\begin{tabular}{cccccc}
+		\toprule
+		Gradi & Radianti & Seno & Coseno & Tangente & Cotangente \\ [.25cm]
+		%\midrule
+		$\ang{0}$ & 0 & 0 & 1 & 0 & n.e. \\ [.25cm] 
+%	\midrule%
+	$\ang{15}$ &$\dfrac{1}{12}\pi$ &$\dfrac{1}{4}\left(\sqrt{6}-\sqrt{2}\right)$&$\dfrac{1}{4}\left(\sqrt{6}+\sqrt{2}\right)$&$2-\sqrt{3}$& $2+\sqrt{3}$ \\ [.25cm]
+%		\hline%
+	%
+		$\ang{18}$&$\dfrac{1}{10}\pi$& $\dfrac{1}{4}\left(\sqrt{5}-1\right)$ & $\dfrac{1}{4}\sqrt{10+2\sqrt{5}}$ & $\dfrac{1}{5}\sqrt{25-10\sqrt{5}}$ & $\sqrt{5+2\sqrt{5}}$ \\ [.25cm]
+	%	\hline%
+		$\ang{22;30;}$&$\dfrac{1}{8}\pi$&$\dfrac{1}{2}\sqrt{2-\sqrt{2}}$&$\dfrac{1}{2}\sqrt{2+\sqrt{2}}$&$\sqrt{2}-1$&$\sqrt{2}+1$ \\ [.25cm]
+%		\hline%
+		$\ang{30}$&$\dfrac{1}{6}\pi$&$\dfrac{1}{2}$&$\dfrac{\sqrt{3}}{2}$&$\dfrac{\sqrt{3}}{3}$&$\sqrt{3}$\\ [.25cm]
+%		\hline%
+		$\ang{36}$&$\dfrac{1}{5}\pi$&$\dfrac{1}{4}\sqrt{10-2\sqrt{5}}$&$\dfrac{1}{4}\left(\sqrt{5}+1\right)$&$\sqrt{5-2\sqrt{5}}$&$\dfrac{1}{5}\sqrt{25+10\sqrt{5}}$\\ [.4cm]
+%		\hline%
+		$\ang{45}$&$\dfrac{1}{4}\pi$&$\dfrac{\sqrt{2}}{2}$& $\dfrac{\sqrt{2}}{2}$ & 1 & 1 \\ [.4cm]
+%		\hline%
+		$\ang{54}$&$\dfrac{3}{10}\pi$& $\dfrac{1}{4}\left(\sqrt{5}+1\right)$ & $\dfrac{1}{4}\sqrt{10-2\sqrt{5}}$ & $\dfrac{1}{5}\sqrt{25+10\sqrt{5}}$ & $\sqrt{5-2\sqrt{5}}$ \\ [.25cm]
+%		\hline%
+		$\ang{60}$&$\dfrac{1}{3}\pi$&$\dfrac{\sqrt{3}}{2}$&$\dfrac{1}{2}$&$\sqrt{3}$&$\dfrac{\sqrt{3}}{3}$\\ [.25cm]
+%		\hline%
+$\ang{65;30;}$&$\dfrac{3}{8}\pi$&$\dfrac{1}{2}\sqrt{2+\sqrt{2}}$&$\dfrac{1}{2}\sqrt{2-\sqrt{2}}$&$\sqrt{2}+1$&$\sqrt{2}-1$ \\ [.25cm]
+%		\hline%
+		$\ang{72}$&$\dfrac{2}{5}\pi$&$\dfrac{1}{4}\sqrt{10+2\sqrt{5}}$&$\dfrac{1}{4}\left(\sqrt{5}-1\right)$&$\sqrt{5+2\sqrt{5}}$&$\dfrac{1}{5}\sqrt{25-10\sqrt{5}}$\\ [.4cm]
+%		\hline%
+		$\ang{75}$ &$\dfrac{5}{12}\pi$ &$\dfrac{1}{4}\left(\sqrt{6}+\sqrt{2}\right)$&$\dfrac{1}{4}\left(\sqrt{6}-\sqrt{2}\right)$&$2+\sqrt{3}$& $2-\sqrt{3}$ \\ [.25cm]
+%		\hline%
+		$\ang{90}$&$\dfrac{\pi}{2}$&1&0&n.e.&0\\[.25cm]
+	%	\hline%
+		$\ang{180}$&$\pi$&0&-1& 0 &n.e.\\ [.25cm]
+	%	\hline%
+		$\ang{270}$&$\dfrac{3}{2}\pi$&-1&0&n.e.&0\\ [.25cm]
+%		\hline%
+		$\ang{360}$&$2\pi$&0&1&0&n.e.\\ [.25cm]
+		\bottomrule%
+	\end{tabular}
+	\captionof{table}{Valori particolari di funzioni goniometriche}
+\end{center}
+%\twocolumn
+\section{Circonferenza goniometrica}
+\begin{equation}
+x^2+y^2=1
+\end{equation}\index{Circonferenza!goniometrica}
+\section{Definizione coseno}
+Data una circonferenza goniometrica ed un angolo $\alpha$ chiamo coseno l'ascissa del punto $P$.\index{Coseno!definizione}
+\begin{center}
+	\includestandalone{geometria/cosenodefinizione}
+	\captionof{figure}{Definizione coseno}
+\end{center}\index{Funzione!coseno!definizione}
+La funzione assume i seguenti valori
+\begin{equation}
+-1\leq \cos\alpha \leq 1
+\end{equation}
+\section{Periodo funzione coseno}
+Se l'angolo è in gradi il coseno è periodico di periodo $k\ang{360}$\index{Funzione!periodica!coseno}
+\begin{equation}
+\cos(\alpha+k\ang{360;;})=\cos\alpha
+\end{equation}
+Se l'angolo è in radianti il coseno è periodico di periodo $2k\pi$\index{Funzione!periodica!coseno}
+\begin{equation}
+\cos(\alpha+2k\pi)=\cos\alpha
+\end{equation}
+\section{Definizione seno}
+Data una circonferenza goniometrica ed un angolo $\alpha$ chiamo seno l'ordinata del punto $P$.\index{Seno!definizione} La funzione assume i seguenti valori
+\begin{equation}
+-1\leq \sin\alpha \leq 1
+\end{equation}
+\begin{center}
+	\includestandalone{geometria/senodefinizione}
+	\captionof{figure}{Definizione seno}
+\end{center}\index{Funzione!seno!definizione}
+\section{Periodo funzione seno}
+Se l'angolo è in gradi il seno è periodico di periodo $k\ang{360}$\index{Funzione!periodica!seno}
+\begin{equation}
+\sin(\alpha+k\ang{360;;})=\sin\alpha
+\end{equation}
+Se l'angolo è in radianti il seno è periodico di periodo $2k\pi$\index{Funzione!periodica!seno}
+\begin{equation}
+\sin(\alpha+2k\pi)=\sin\alpha
+\end{equation}
+\section{Definizione tangente}
+Data una circonferenza goniometrica ed un angolo $\alpha$ chiamo tangente l'ordinata del punto $T$.\index{Funzione!tangente!definizione}
+La funzione assume i seguenti valori
+\begin{equation}
+-\infty<\tan\alpha< \infty
+\end{equation}
+\begin{center}
+	\includestandalone{geometria/tangentedefinizione}
+	\captionof{figure}{Definizione tangente}
+\end{center}\index{Funzione!tangente!definizione}
+\section{Periodo funzione tangente}
+Se l'angolo è in gradi la tangente è periodica di periodo $k\ang{180}$\index{Funzione!periodica!tangente}
+\begin{equation}
+\tan(\alpha+k\ang{180;;})=\tan\alpha
+\end{equation}
+Se l'angolo è in radianti la tangente è periodica di periodo $k\pi$\index{Funzione!periodica!tangente}
+\begin{equation}
+\tan(\alpha+k\pi)=\tan\alpha
+\end{equation}
+\section{Relazioni fondamentali}
+\begin{align}	
+	&\cos^{2}\alpha+\sin^{2}\alpha=1\\[.25cm]\index{Goniometria!relazione!fondamentale}
+	&\tan\alpha={}\dfrac{\sin\alpha}{\cos\alpha}&\alpha\neq\dfrac{\pi}{2}+k\pi\\[.25cm]\index{Tangente!definizione}
+	&\cot\alpha={}\dfrac{\cos\alpha}{\sin\alpha}={}\dfrac{1}{\tan\alpha}&\alpha\neq\pi\index{Cotangente!definizione}
+\end{align}\index{Funzione!seno}\index{Funzione!coseno}\index{Funzione!tangente}\index{Funzione!cotangente}
+\section{Relazioni derivate}
+\begin{align}
+\cos^{2}\alpha=&{}1-\sin^{2}\alpha\\\index{Coseno!dato seno}
+\cos\alpha=&{}\pm\sqrt{1-\sin^{2}\alpha}\\
+\sin^{2}\alpha=&{}1-\cos^{2}\alpha \\\index{Seno!dato coseno}
+\sin^{2}\alpha=&{}\pm\sqrt{1-\cos^{2}\alpha}\\
+\cos^{2}\alpha=&{}\dfrac{1}{1+{\tan}^{2}\alpha} &&\alpha\neq\dfrac{\pi}{2}+k\pi\\
+\cos\alpha=&{}\pm\dfrac{1}{\sqrt{1+{\tan}^{2}\alpha}} &&\alpha\neq\dfrac{\pi}{2}+k\pi\\\index{Coseno!dato tangente}
+\sin^{2}\alpha=&{}\dfrac{\tan^{2}\alpha}{1+\tan^{2}\alpha}&&\alpha\neq\dfrac{\pi}{2}+k\pi\\
+\sin\alpha=&{}\pm\dfrac{\tan\alpha}{\sqrt{1+\tan^{2}\alpha}}&&\alpha\neq\dfrac{\pi}{2}+k\pi\\\index{Seno!dato tangente}
+\tan\alpha=&{}\pm\dfrac{\sin(x)}{\sqrt{1-\sin^2(x)}}&&\alpha\neq\dfrac{\pi}{2}+k\pi\\\index{Tangente!dato seno}
+\tan\alpha=&{}\pm\dfrac{\sqrt{1-\cos^2(x)}}{\cos(x)}
+&&\alpha\neq\dfrac{\pi}{2}+k\pi\index{Tangente!dato coseno}
+\end{align}
+\begin{center}\index{Seno!quadrato}\index{Coseno!quadrato}\index{Tangente!quadrato}\index{Cotangente!quadrato}
+	\begin{tabular}{LCCC}
+		\toprule 
+		& \sin(x) & \cos(x) &\tan(x)  \\
+		\midrule
+		\sin(x)	&\sin(x)  & \pm\sqrt{1-\cos^2(x)} & \pm\dfrac{\tan(x)}{\sqrt{1+\tan^2(x)}} \\ 
+		\cos(x)	&\pm\sqrt{1-\sin^2(x)}  & \cos(x) & \pm\dfrac{1}{\sqrt{1+\tan^2(x)}} \\ 
+		\tan(x)	& \pm\dfrac{\sin(x)}{\sqrt{1-\sin^2(x)}} &\pm\dfrac{\sqrt{1-\cos^2(x)}}{\cos(x)}   & \tan(x) \\ 
+		\bottomrule
+	\end{tabular}\captionof{table}{Relazioni derivate}
+\end{center}
+\section{Formule di addizione e sottrazione}
+\begin{align}
+\cos\left(\alpha-\beta\right)=&{}\cos\alpha\cos\beta+\sin\alpha\sin\beta\\\index{Coseno!differenza angoli}
+\cos\left(\alpha+\beta\right)=&{}\cos\alpha\cos\beta-\sin\alpha\sin\beta\\\index{Coseno!somma angoli}
+\sin\left(\alpha-\beta\right)=&{}\sin\alpha\cos\beta-\cos\alpha\sin\beta\\\index{Seno!differenza angoli}
+\sin\left(\alpha+\beta\right)=&{}\sin\alpha\cos\beta+\cos\alpha\sin\beta\\\index{Seno!somma angoli}
+\tan\left(\alpha-\beta\right)=&{}\dfrac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta} &\alpha,\beta,\left(\alpha-\beta\right)\neq\left(2k+1\right)\dfrac{\pi}{2}\\\index{Tangente!differenza angoli}
+\cot\left(\alpha+\beta\right)=&{}\dfrac{\cot\alpha\cot\beta-1}{\cot\beta+\cot\alpha}
+&\alpha,\beta,\left(\alpha+\beta\right)\neq k\pi\index{Cotangente!somma angoli}
+\end{align}
+\section{Angoli supplementari}
+\begin{align}
+\cos(\alpha)=&-\cos(\pi-\alpha)\\
+\sin(\alpha)=&\sin(\pi-\alpha)\\
+\tan(\alpha)=&-\tan(\pi-\alpha)\\
+\cot(\alpha)=&-\cot(\pi-\alpha)
+\end{align}
+\section{Angoli la cui differenza è \texorpdfstring{$\pi$}{\textpi}}
+\begin{align}
+\cos(\alpha)=&-\cos(\pi+\alpha)\\
+\sin(\alpha)=&-\sin(\pi+\alpha)\\
+\tan(\alpha)=&\tan(\pi+\alpha)\\
+\cot(\alpha)=&\cot(\pi+\alpha)
+\end{align}
+\section{Angoli esplementari}
+\begin{align}
+\cos(\alpha)=&\cos(2\pi-\alpha)\\
+\sin(\alpha)=&-\sin(2\pi-\alpha)\\
+\tan(\alpha)=&-\tan(2\pi-\alpha)\\
+\cot(\alpha)=&-\cot(2\pi-\alpha)
+\end{align}
+\section{Angoli opposti}
+\begin{align}
+\cos(\alpha)=&\cos(-\alpha)\\
+\sin(\alpha)=&-\sin(-\alpha)\\
+\tan(\alpha)=&-\tan(-\alpha)\\
+\cot(\alpha)=&-\cot(-\alpha)
+\end{align}
+\section{Angoli complementari}
+\begin{align}
+\cos(\alpha)=&\sin(\dfrac{\pi}{2}-\alpha)\\
+\sin(\alpha)=&\cos(\dfrac{\pi}{2}-\alpha)\\
+\tan(\alpha)=&\cot(\dfrac{\pi}{2}-\alpha)\\
+\cot(\alpha)=&\tan(\dfrac{\pi}{2}-\alpha)\\
+\end{align}
+\section{Angoli la cui differenza è \texorpdfstring{$\dfrac{\pi}{2}$}{\textpi/2} }
+\begin{align}
+\cos(\alpha)=&\sin(\dfrac{\pi}{2}+\alpha)\\
+\sin(\alpha)=&-\cos(\dfrac{\pi}{2}+\alpha)\\
+\tan(\alpha)=&-\cot(\dfrac{\pi}{2}+\alpha)\\
+\cot(\alpha)=&-\tan(\dfrac{\pi}{2}+\alpha)\\
+\end{align}
+\section{Angoli la cui somma è \texorpdfstring{$\pi$}{\textpi}}
+\begin{align}
+\cos(\alpha)=&-\sin(\dfrac{3}{2}\pi-\alpha)\\
+\sin(\alpha)=&-\cos(\dfrac{3}{2}\pi-\alpha)\\
+\tan(\alpha)=&\cot(\dfrac{3}{2}\pi-\alpha)\\
+\cot(\alpha)=&\tan(\dfrac{3}{2}\pi-\alpha)\\
+\end{align}
+\section{Angoli la cui differenza è \texorpdfstring{$\dfrac{3}{2}\pi$}{3/2 \textpi}}
+\begin{align} 
+\cos(\alpha)=&-\sin(\dfrac{3}{2}\pi-\alpha)\\
+\sin(\alpha)=&\cos(\dfrac{3}{2}\pi-\alpha)\\
+\tan(\alpha)=&-\cot(\dfrac{3}{2}\pi-\alpha)\\
+\cot(\alpha)=&-\tan(\dfrac{3}{2}\pi-\alpha)\\
+\end{align}
+\section{Funzioni inverse}
+\begin{align}
+\alpha=&\arcsin(x)\quad\Longleftrightarrow\quad\sin(\alpha)=x&& x\in[-1,1]&\alpha\in[-\dfrac{\pi}{2},\dfrac{\pi}{2}]\\
+\alpha=&\arccos(x)\quad\Longleftrightarrow\quad\cos(\alpha)=x&&x\in[-1,1]&\alpha\in[0,\pi]\\
+\alpha=&\arctan(x)\quad\Longleftrightarrow\quad\tan(\alpha)=x&& x\in\R
+&\alpha\in(-\dfrac{\pi}{2},\dfrac{\pi}{2})
+\end{align}\index{Funzione!inversa!tangente}\index{Funzione!inversa!seno}\index{Funzione!inversa!coseno}		

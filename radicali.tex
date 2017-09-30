@@ -1,0 +1,161 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = it_IT
+% !TeX root = formulario.tex
+\chapter{Radicali}
+\section{Vocabolario}
+\begin{equation}
+\sqrt[n]{a}=b\\
+\end{equation}
+$n$ indice, $a$ radicando, $b$ radice e $\sqrt[n]{a}$ radicale
+\section{Definizione}
+\begin{align}
+\intertext{n pari}
+\sqrt[n]{a}=&b\Longleftrightarrow b^n=a&a\geq0\quad b\geq0\quad n\in\Nz\\
+\intertext{n dispari}
+\sqrt[n]{a}=&b\Longleftrightarrow b^n=a&a,b\in\R\quad n\in\Nz
+\end{align}\index{Radicale!definizione}
+\section{Segno}
+\begin{align}
+\intertext{n pari}
+\sqrt[n]{a}&&\text{sempre positivo}\\
+\intertext{n dispari}
+\sqrt[n]{a}&&\text{segno radicando}
+\end{align}\index{Radicale!segno}
+\section{Proprietà invariantiva}
+\begin{align}
+\sqrt[n\cdot s]{a^{m\cdot s}}=&\sqrt[n]{a^m}&\forall a\geq 0\quad n,m,s\in\Nz\\
+\sqrt[n]{a^m}=&\sqrt[n\cdot s]{a^{m\cdot s}}&\forall a\geq 0\quad n,m,s\in\Nz
+\end{align}\index{Radicale!proprietà invariantiva}\index{Proprietà!invariantiva}
+\section{Proprietà}
+\begin{align}
+\intertext{n pari}
+\sqrt[n]{a^n}=&\abs{a}\\
+\intertext{n dispari}
+\sqrt[n]{a^n}=&a
+\end{align}
+\section{Prodotto con indici uguali}
+\begin{align}
+\sqrt[n]{a}\sqrt[n]{b}=&\sqrt[n]{ab}\\
+\sqrt[n]{ab}=&\sqrt[n]{a}\sqrt[n]{b}
+\end{align}\index{Radicale!prodotto indici uguali}
+\section{Prodotto con indici diversi}
+\begin{enumerate}
+	\item Per eseguire $\sqrt[n]{a^p}\cdot\sqrt[m]{b^q}$
+	\item calcolo il $\mcm(m,n)$ che diventerà l'indice  delle due radici
+	\item divido il  $\mcm$ per $n$ e il risultato lo moltiplico per $p$
+	\item divido il  $\mcm$ per $m$ e il risultato lo moltiplico per $q$
+	\item eseguiamo  il prodotto tra le due radici che ora hanno lo stesso indice.
+\end{enumerate}\index{Radicale!prodotto indici diversi}
+\section{Divisione con indici uguali}
+\begin{align}
+\dfrac{\sqrt[n]{a}}{\sqrt[n]{b}}=&\sqrt[n]{\dfrac{a}{b}}&b\neq 0\\
+\sqrt[n]{\dfrac{a}{b}}=&\dfrac{\sqrt[n]{a}}{\sqrt[n]{b}}&b\neq 0
+\end{align}\index{Radicale!quoziente indici uguali}
+\section{Divisione con indici diversi}
+\begin{enumerate}
+	\item Per eseguire
+	$\dfrac{\sqrt[n]{a^p}}{\sqrt[m]{b^q}}$
+	\item calcolo il $\mcm(m,n)$ che diventerà l'indice  delle due radici
+	\item divido il  $\mcm$ per $n$ e il risultato lo moltiplico per $p$
+	\item divido il  $\mcm$ per $m$ e il risultato lo moltiplico per $q$
+	\item eseguiamo la divisione fra le due radici che ora hanno lo stesso indice.
+\end{enumerate}\index{Radicale!quoziente indici diversi}
+\section{Potenza radicale}
+\begin{align}
+\left(\sqrt[n]{a}\right)^m=&\sqrt[n]{a^m}\\
+\sqrt[n]{a^m}=&\left(\sqrt[n]{a}\right)^m\\
+\end{align}\index{Radicale!potenza}
+\section{Radice di radice}
+\begin{equation}
+\sqrt[n]{\sqrt[m]{a}}=\sqrt[n\cdot m]{a}
+\end{equation}\index{Radicale!radice di radice}
+\section{Trasporto di un termine dentro al segno di radice}
+\begin{equation}
+b\sqrt[n]{a}=\sqrt[n]{b^na}\quad a\geq 0,b\geq 0 
+\end{equation}\index{Radicale!trasporto dentro}
+\section{Trasporto di un termine fuori dal segno di radice}
+\begin{equation}
+\sqrt[n]{a^nb}=\abs{a}\sqrt[n]{b}
+\end{equation}
+\begin{align}
+\sqrt[n]{a^m}&\quad m\geq n\\
+m=&n\cdot q+r\\
+\sqrt[n]{a^m}=&\sqrt[n]{a^{n\cdot q+r}}\\
+=&a^q\sqrt[n]{a^r}
+\end{align}\index{Radicale!trasporto fuori}
+\section{Somma di radicali}
+Due radicali sono simili se hanno stesso indice e radicando.\index{Radicale!radici!simili}
+\begin{align}
+b\sqrt[n]{a^m}+c\sqrt[n]{a^m}=&(b+c)\sqrt[n]{a^m}\\
+b\sqrt[n]{a}+c\sqrt[n]{a^m}=&b\sqrt[n]{a}+c\sqrt[n]{a^m}
+\end{align}
+\chapter{Razionalizzazione di frazioni}
+\section{Radicale quadrato al denominatore}
+\begin{align}
+\dfrac{b}{\sqrt{a}}=&\dfrac{b}{\sqrt{a}}\cdot\dfrac{\sqrt{a}}{\sqrt{a}}\\
+=&\dfrac{b\sqrt{a}}{a}
+\end{align}\index{Radicale!razionalizzazione}
+\section{Radicale di indice qualunque al denominatore}
+\begin{align}\index{Radicale!razionalizzazione}
+\intertext{radici qualunque $n>m$}
+\dfrac{b}{\sqrt[n]{a^m}}=&\\
+=&\dfrac{b}{\sqrt[n]{a^m}}\cdot\dfrac{\sqrt[n]{a^{n-m}}}{\sqrt[n]{a^{n-m}}}\\
+=&\dfrac{b\sqrt[n]{a^{n-m}}}{a}
+\intertext{radici qualunque $m>n$}
+\intertext{Prima trasporto fuori il termine e poi procediamo come prima.}\nonumber
+\end{align}
+\section{Differenza di quadrati}
+\begin{align}
+\dfrac{b}{\sqrt{a}+\sqrt{c}}=&\\
+=&\dfrac{b}{\sqrt{a}+\sqrt{c}}\cdot\dfrac{\sqrt{a}-\sqrt{c}}{\sqrt{a}-\sqrt{c}}\\
+=&\dfrac{b(\sqrt{a}-\sqrt{c})}{a-c}
+\end{align}\index{Radicale!razionalizzazione!differenza quadrati}
+\begin{align}
+\dfrac{b}{\sqrt{a}-\sqrt{c}}=&\\
+=&\dfrac{b}{\sqrt{a}+\sqrt{c}}\cdot\dfrac{\sqrt{a}+\sqrt{c}}{\sqrt{a}+\sqrt{c}}\\
+=&\dfrac{b(\sqrt{a}-\sqrt{c})}{a-c}
+\end{align}
+\section{Somma e differenza di cubi}
+\begin{align}
+\dfrac{b}{\sqrt[3]{a}+\sqrt[3]{c}}=&\\
+=&\dfrac{b}{\sqrt[3]{a}+\sqrt[3]{c}}\cdot\dfrac{\sqrt[3]{a}-\sqrt[3]{ac}+\sqrt[3]{c}}{\sqrt[3]{a}-\sqrt[3]{ac}+\sqrt[3]{c}}\\
+=&\dfrac{b(\sqrt[3]{a}-\sqrt[3]{ac}+\sqrt[3]{c})}{a+c}
+\end{align}\index{Radicale!razionalizzazione!differenza cubi}
+\begin{align}
+\dfrac{b}{\sqrt[3]{a}-\sqrt[3]{c}}=&\\
+=&\dfrac{b}{\sqrt[3]{a}-\sqrt[3]{c}}\cdot\dfrac{\sqrt[3]{a}+\sqrt[3]{ac}+\sqrt[3]{c}}{\sqrt[3]{a}+\sqrt[3]{ac}+\sqrt[3]{c}}\\
+=&\dfrac{b(\sqrt[3]{a}+\sqrt[3]{ac}+\sqrt[3]{c})}{a-c}
+\end{align}\index{Radicale!razionalizzazione!somma cubi}
+\chapter{Esponente frazionario}
+\section{Definizione}
+\begin{align}
+\sqrt[n]{a}=&a^{\frac{1}{n}}&a\geq 0\quad n\in\Ni
+\quad n\neq 0\\
+\sqrt[n]{a^m}=&a^{\frac{m}{n}}&a\geq 0\quad m,n\in\Ni
+\quad n\neq 0
+\end{align}\index{Potenza!esponente frazionario}
+\section{Prodotto tra radicali}
+\begin{equation}
+a^{\frac{p}{n}}\cdot a^{\frac{q}{m}}=a^{\frac{p}{n}+\frac{q}{m}}
+\end{equation}\index{Radicale!prodotto}
+\section{Quoziente tra radicali}
+\begin{equation}
+a^{\frac{p}{n}}\div a^{\frac{q}{m}}=a^{\frac{p}{n}-\frac{q}{m}}
+\end{equation}\index{Radicale!quoziente}
+\section{Radicale di radicale}
+\begin{equation}
+\left(a^{\frac{p}{n}}\right)^{\frac{q}{m}}=a^{\frac{p}{n}\cdot\frac{q}{m}}
+\end{equation}\index{Radicale!radice di radice}
+\section{Prodotto fra radicali che hanno stesso indice}
+\begin{equation}
+a^{\frac{p}{n}}\cdot b^{\frac{p}{n}}=\left(a\cdot b\right)^{\frac{p}{n}}
+\end{equation}
+\section{Quoziente fra radicali che hanno stesso indice}
+\begin{equation}
+a^{\frac{p}{n}}\div b^{\frac{p}{n}}=\left(a\div b\right)^{\frac{p}{n}}
+\end{equation}
+\section{Potenze con esponente negativo}
+\begin{equation}
+a^{-\frac{p}{n}}=\sqrt[b]{\left(\dfrac{1}{a}\right)^p}\quad a>0\quad n\in\Ni
+\quad n\neq 0
+\end{equation}\index{Potenza!esponente frazionario!negativo}

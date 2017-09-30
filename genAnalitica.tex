@@ -1,0 +1,102 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = it_IT
+% !TeX root = formulario.tex
+\chapter{Geometria Analitica}
+\section{Distanza tra due punti}
+\begin{align}
+A\coord{x_1}{y_2}&& B\coord{x_2}{y_2}&&&  d(AB)=\abs{x_2-x_1}\\
+A\coord{x_1}{y_1} && B\coord{x_1}{y_2}&&&  d(AB)=\abs{y_2-y_1}\\
+A\coord{x_1}{y_1} && B\coord{x_2}{y_2}&&&  d(AB)=\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}
+\end{align}\index{Distanza!due punti}
+\section{Punto medio}
+\begin{align}
+A\coord{x_1}{y_1}&& B\coord{x_2}{y_2}&&& M\coord{\dfrac{x_1+x_2}{2}}{\dfrac{y_1+y_2}{2}}
+\end{align}\index{Punto!medio}
+\chapter{Retta}
+\section{Forma esplicita}
+\begin{equation}
+y=mx+q
+\end{equation}\index{Retta!forma esplicita}
+Coefficiente angolare
+\begin{equation}
+m
+\end{equation}\index{Retta!coefficiente angolare}
+Termine noto
+\begin{equation}
+q
+\end{equation}\index{Retta!termine noto}
+\section{Forma implicita}
+\begin{equation}
+ax+by+c=0
+\end{equation}\index{Retta!forma implicita}
+Coefficiente angolare
+\begin{equation}
+m=-\dfrac{a}{b}\quad b\neq 0
+\end{equation}\index{Retta!coefficiente angolare}
+Termine noto
+\begin{equation}
+q=-\dfrac{c}{b}\quad b\neq 0
+\end{equation}\index{Retta!termine noto}
+\section{Parallelismo}
+Forma esplicita
+\begin{equation}
+r_1\parallel r_2\quad\Longleftrightarrow\quad	m_1=m_2
+\end{equation}\index{Retta!parallela}\index{Retta!coefficiente angolare}
+Forma implicita
+\begin{equation}
+r_1\parallel r_2\quad\Longleftrightarrow\quad \dfrac{a_1}{b_1}=\dfrac{a_2}{b_2}
+\end{equation}\index{Retta!parallela}\index{Retta!coefficiente angolare}
+\section{Perpendicolarità}
+Forma esplicita
+\begin{equation}
+r_1\perp r_2\quad\Longleftrightarrow\quad	m_1 \cdot m_2=-1
+\end{equation}\index{Retta!perpendicolare}\index{Retta!coefficiente angolare}
+Forma implicita
+\begin{equation}
+r_1\perp r_2\quad\Longleftrightarrow\quad	\dfrac{a_1}{b_1}\cdot\dfrac{a_2}{b_2}=-1
+\end{equation}\index{Retta!perpendicolare}\index{Retta!coefficiente angolare}
+\section{Fascio proprio di rette}
+\begin{equation}
+y-y_1=m(x-x_1)
+\end{equation}\index{Retta!fascio!proprio}
+\section{Fascio improprio di rette}
+\begin{equation}
+y=mx+k\quad k\in\R
+\end{equation}\index{Retta!fascio!improprio}
+\section{Coefficiente angolare retta per due punti}
+\begin{equation}
+m=\dfrac{y_2-y_1}{x_2-x_1}\quad x_2\neq x_1
+\end{equation}\index{Retta!coefficiente angolare!per due punti}
+\section{Retta per due punti}
+\begin{equation}
+\dfrac{x-x_1}{x_2-x_1}=\dfrac{y-y_1}{y_2-y_1}\quad x_2\neq x_1\quad y_2\neq y_1
+\end{equation}\index{Retta!per due punti}
+\section{Posizioni due rette}
+\begin{equation}
+\begin{cases}
+a_1x+b_1y+c_1=0\\
+a_2x+b_2y+c_2=0
+\end{cases}
+\end{equation}
+\begin{equation}
+\begin{cases}
+\text{Se il sistema ha soluzione Incidenti}\\
+\text{Se il sistema è indeterminato Coincidenti}\\
+\text{Se il sistema non ha soluzione Parallele}\\
+\end{cases}
+\end{equation}\index{Retta!incidente}\index{Retta!coincidente}\index{Retta!parallela}
+\section{Distanza punto retta}
+\begin{align}
+P(x_1;y_1)&\quad ax+by+c=0\\
+d=&\dfrac{\abs{ax_1+by_1+c}}{\sqrt{a^2+b^2}}
+\end{align}
+\section{Traslazioni}
+\begin{gather}
+ P_{xoy}\coord{x}{y}\ P_{XOY}\coord{X}{Y}\ O_{xoy}\coord{a}{b}\notag\\  x=a+X\  y=b+Y
+\end{gather}\index{Traslazioni}
+\chapter{Luoghi geometrici}
+\section{Asse segmento}
+\begin{gather}
+A\coord{x_1}{y_1}\ B\coord{x_2}{y_2}\ P\coord{x}{y}\notag\\
+\sqrt{(x_1-x)^2+(y_1-y)^2}=\sqrt{(x_2-x)^2+(y_2-y)^2}
+\end{gather}\index{Asse!segmento}

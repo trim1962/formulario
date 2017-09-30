@@ -1,0 +1,20 @@
+\documentclass[10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw[->,color=black] (-3.0,0.) -- (7.6,0.);
+
+\draw[->,color=black] (0.,-1.0) -- (0.,6.5);
+
+\clip(-3.0,-1.0) rectangle (7.6,6.5);
+\draw[color=black,smooth,samples=200,domain=-3.7600000000000016:7.600000000000003] plot(\x,{0.5^((\x))});
+\begin{scriptsize}
+\draw [fill=black] (0.,1.) circle (1.5pt);
+\draw[color=black] (0.38,1.29) node {$A(0,1)$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}

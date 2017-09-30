@@ -1,0 +1,133 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = it_IT
+% !TeX root = formulario.tex
+\chapter{Numeri interi}
+\section{Simbolo}
+\begin{equation}
+\Z
+\end{equation}\index{Numero!intero}
+\section{Valore assoluto}
+\begin{equation}
+\abs{a}=\begin{cases}
+	a&a>0\\
+	-a&a<0\\
+	0&a=0
+\end{cases}
+\end{equation}\index{Valore assoluto}\index{Numero!intero!valore assoluto}
+\section{Vocabolario}
+\begin{description}
+	\item[Concordi] Due numeri interi che hanno segno uguale\index{Numero!intero!concordi}
+	\item[Discordi]  Due numeri interi che hanno segno diverso\index{Numero!intero!disconcordi}
+	\item[Opposti] Uguale valore assoluto, segno opposto\index{Numero!intero!opposti}
+\end{description}
+\section{Somma}
+\begin{enumerate}
+	\item I numeri a e b sono concordi. In questo caso la somma è un numero intero con lo stesso segno di a e di b e che ha per valore assoluto la somma dei valori assoluti.
+	\item I numeri a e b sono discordi. In questo caso la somma è un numero intero con il segno del numero di valore assoluto maggiore e che ha per valore assoluto la differenza tra i valori assoluti.
+	\item I due numeri sono opposti. La somma è zero.
+\end{enumerate}\index{Numero!intero!somma}\index{Valore assoluto}
+\section{Somma}
+\begin{equation}
+\overbrace{a}^{addendo}+\overbrace{b}^{addendo}=\overbrace{c}^{somma}
+\end{equation}\index{Addendo}\index{Somma}
+\subsection{Associativa}
+\begin{equation}
+(a+b)+c=a+(b+c)
+\end{equation}\index{Somma!associativa}
+\subsection{Commutativa}
+\begin{equation}
+a+b=b+a
+\end{equation}\index{Somma!commutativa}
+\subsection{Elemento  neutro}
+\begin{equation}
+a+0=0+a=a
+\end{equation}\index{Somma!elemento neutro}
+\subsection{Opposto}
+\begin{equation}
+a+(-a)=(-a)+a=0
+\end{equation}\index{Somma!opposto}
+\section{Prodotto}
+\begin{enumerate}
+	\item I numeri a e b sono concordi. Il prodotto fra i due numeri è un numero di segno positivo e per valore assoluto il prodotto dei valori assoluti.
+	\item I numeri a e b sono discordi. Il prodotto fra i due numeri è un numero di segno negativo e per valore assoluto il prodotto dei valori assoluti.
+\end{enumerate}\index{Prodotto!segno}
+\begin{center}
+	\begin{tabular}{ccc}
+		\toprule
+		$+$ & $+$ & $+$ \\ 
+		$-$ & $-$ & $+$ \\ 
+		$+$ & $-$ & $-$ \\ 
+		$-$ & $+$ & $-$ \\ 
+		\bottomrule
+	\end{tabular}\index{Numero!intero!segno prodotto}
+	\captionof{table}{Segno prodotto} 
+\end{center}
+\begin{equation}
+\overbrace{a}^{fattore}\times\overbrace{b}^{fattore}=\overbrace{c}^{prodotto}
+\end{equation}\index{Fattore}\index{Prodotto}
+\subsection{Associativa}
+\begin{equation}
+(a\times b)\times c=a\times(b\times c) 
+\end{equation}\index{Numero!intero!prodotto associativa}
+\subsection{Commutativa}
+\begin{equation}
+a\times b=b\times \index{Numero!intero!prodotto commutativa}
+\end{equation}\index{Numero!intero!prodotto commutativa}
+\subsection{Elemento neutro}
+\begin{equation}
+a\times 1=1\times a=a
+\end{equation}\index{Numero!intero!prodotto elemento neutro}
+\section{Sottrazione}
+La sottrazione e la somma coincidono
+\begin{equation}
+a-b=a+(-b)
+\end{equation}
+ \section{Divisione}
+  Non è sempre possibile.
+\begin{equation}
+\overbrace{a}^{dividendo}\div\overbrace{b}^{divisore}=\overbrace{c}^{quoziente}\quad b\neq 0
+\end{equation}\index{Dividendo}\index{Divisore}\index{Quoziente}
+\subsection{Segno}
+\begin{enumerate}
+	\item I numeri a e b sono concordi. Il quoziente fra i due numeri è un numero di segno positivo e per valore assoluto il quoziente dei valori assoluti.
+	\item I numeri a e b sono discordi. Il quoziente fra i due numeri, è un numero che ha  segno negativo e per valore assoluto il quoziente dei valori assoluti.
+\end{enumerate}\index{Quoziente!segno}
+\subsection{Invariantiva quoziente}
+\begin{equation}
+a\div b=(a\times c)\div (b\times c)\quad b\neq 0\quad c \neq 0
+\end{equation}\index{Quoziente!invariantiva}
+\begin{equation}
+a\div b=(a\div c)\div (b\div c)\quad b\neq 0\quad c \neq 0
+\end{equation}\index{Numero!intero!quoziente invariantiva}
+\section{Proprietà distributive}
+\subsection{Moltiplicazione addizione}
+\begin{equation}
+(a+b)\times c=a\times c+b\times c
+\end{equation}\index{Distributiva!moltiplicazione addizione}
+\subsection{Moltiplicazione sottrazione}
+\begin{equation}
+(a-b)\times c=a\times c-b\times c\quad a>b\quad c\neq 0
+\end{equation}\index{Distributiva!moltiplicazione sottrazione}
+\subsection{Divisione addizione}
+\begin{equation}
+(a+b)\div c=a\div c+b\div c\quad c\neq 0
+\end{equation}\index{Distributiva!divisione addizione}
+\subsection{Divisione sottrazione}
+\begin{equation}
+(a-b)\div c=a\div c-b\div c\quad a>b\quad c\neq 0
+\end{equation}\index{Distributiva!divisione sottrazione}
+\section{Riepilogo}
+\begin{center}
+	\begin{tabular}{lCC}
+		\toprule
+		Proprietà	& Somma & Prodotto  \\ 
+		associativa	& (a+b)+c=a+(b+c) & (a\times b)\times c=a\times(b\times c) \\ 
+		commutativa	&a+b=b+a  &a\times b=b\times a  \\ 
+		elemento neutro	&a+0=0+a=a  & a\times 1=1\times a =a\\ 
+		inverso&(-a)+a=a+(-a)=0\\
+		distributiva	&(a+b)\times c =a\times c+b\times c &  \\ 
+		assorbimento	&  & a\times 0=0\times a=0 \\ 
+		\bottomrule
+	\end{tabular}
+	\captionof{table}{Proprietà numeri interi}
+\end{center}\index{Proprietà!associativa}\index{Proprietà!commutativa}\index{Elemento!neutro}\index{Proprietà!distributiva}\index{Proprietà!assorbimento}

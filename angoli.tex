@@ -1,0 +1,49 @@
+\chapter{Misura di angoli}
+\section{Gradi sessagesimali}
+\begin{align}
+\ang{1}=&\dfrac{angolo giro}{360}\\
+\ang{;1;}=&\dfrac{\ang{1}}{60}\\
+\ang{;;1}=&\dfrac{\ang{;1;}}{60}=\dfrac{\ang{1}}{3600}
+\end{align}\index{Angoli!gradi!sessagesimali}
+\begin{equation}
+\alpha=x^\circ y'z''
+\end{equation}
+\section{Gradi sessa-decimali}
+\begin{equation}
+\beta=x.y^\circ\quad\text{x parte intera, y parte decimale}
+\end{equation}\index{Angoli!gradi!sessa-decimali}
+\section{Conversione da gradi sessagesimali a gradi sessa-decimali}
+\begin{align}
+\alpha=&x^\circ y'z''\\
+\beta=&x^\circ+\left(\dfrac{y}{60}\right)^\circ+\left(\dfrac{z}{3600}\right)^\circ
+\end{align}\index{Angoli!gradi!conversione}
+\section{Conversione da gradi sessa-decimali  a gradi sessagesimali}
+\begin{enumerate}
+	\item Inizio
+	\item $\beta=x.y^\circ$
+	\item La parte intera di $\beta$ $x^\circ$ sono i gradi
+	\item Per ottenerei i minuti $m'=(x.y^\circ-y^\circ)*60$
+	\item $m'=z.k'$
+	\item $z$ la parte intera di $m$ sono i minuti 
+	\item Per ottenere i secondi
+	$s''=(z.k''-z'')*60$ 
+	\item $s''=p.q''$
+	\item $p$ la parte intera di $s$ sono i secondi
+	\item Stop
+\end{enumerate}
+\section{Radianti}
+\begin{center}
+	\includestandalone{geometria/radianti}
+	\captionof{figure}{Radianti}
+\end{center}\index{Angoli!radianti}
+\begin{align}
+\rho=\dfrac{arco}{raggio}=\dfrac{l}{r}
+\end{align}\index{Angoli!radianti}
+\section{Da radianti a gradi sessa-decimali}
+\begin{equation}\index{Angoli!conversione!radianti gradi}
+\alpha=\dfrac{\ang{180}}{\pi}\rho
+\end{equation}
+\section{Da gradi sessa-decimali a radianti}
+\begin{equation}
+\rho=\dfrac{\pi}{\ang{180}}\alpha
+\end{equation}\index{Angoli!conversione!gradi radianti}

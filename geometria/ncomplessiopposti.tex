@@ -1,0 +1,25 @@
+\documentclass[10pt]{standalone}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+
+	\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+	\draw[->] (-3.,0.) -- (3.,0.);
+
+	\draw[->] (0.,-3.5) -- (0.,3.5);
+
+	\clip(-3.,-3.5) rectangle (3.,3.5);
+	\draw [->] (0.,0.) -- (2.,3.);
+	\draw [->] (0.,0.) -- (-2.,-3.);
+	\begin{scriptsize}
+	\draw [fill=black] (0.,0.) circle (2.0pt);
+	\draw (0.14,-0.17) node {$O$};
+	\draw [fill=black] (2.,3.) circle (2.0pt);
+	\draw (0.7,1.51) node {$+z$};
+	\draw [fill=black] (-2.,-3.) circle (2.0pt);
+	\draw (-0.74,-1.39) node {$-z$};
+	\end{scriptsize}
+	\end{tikzpicture}
+\end{document}

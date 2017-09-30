@@ -1,0 +1,51 @@
+\chapter{Sistemi lineari}
+\[\begin{cases}
+a_{1}x+b_{1}y=c_{1}\\
+a_2x+b_2y=c_2
+\end{cases}\]\index{Sistema!lineare}
+\section{Metodo di sostituzione}
+\begin{enumerate}
+	\item Risolvo una delle due equazioni rispetto ad una variabile.
+	\item Sostituisco la variabile trovata nell'altra equazione.
+	\item Risolvo l'equazione in un'incognita trovata.
+	\item Sostituisco il risultato trovato nell'altra equazione e semplifico.
+\end{enumerate}\index{Sistema!lineare!sostituzione}
+\section{Metodo del confronto}
+\begin{enumerate}
+	\item Risolvo rispetto la stessa incognita entrambi le equazioni.
+	\item Come prima equazione metto a confronto i risultati ottenuti.
+	\item Come seconda equazione scelgo una delle due soluzioni.
+	\item Risolvo la prima equazione in una sola incognita e sostituisco il risultato nella seconda e semplifico.
+\end{enumerate}\index{Sistema!lineare!confronto}
+\section{Metodo di riduzione}
+\begin{enumerate}
+	\item Ordino le due equazioni in modo che in ogni colonna vi sia la stessa incognita
+	\item Modifico un'equazione o entrambe in modo un'incognita abbia lo stesso coefficiente (o il suo opposto)
+	\item Sommo o sottraggo le due equazioni. Scompare un'incognita risolvo rispetto all'altra.
+	\item Procedo in modo analogo con l'altra incognita.
+\end{enumerate}\index{Sistema!lineare!riduzione}
+\section{Metodo di Cramer}
+\begin{equation}
+x=\dfrac{\begin{vmatrix}
+	c_{1}&b_{1}\\
+	c_2&b_2
+	\end{vmatrix}}{\begin{vmatrix}
+	a_{1}&b_{1}\\
+	a_2&b_2
+	\end{vmatrix}}
+\end{equation}
+\begin{equation}
+y=\dfrac{\begin{vmatrix}
+	a_{1}&c_{1}\\
+	a_2&c_2
+	\end{vmatrix}}{\begin{vmatrix}
+	a_{1}&b_{1}\\
+	a_2&b_2
+	\end{vmatrix}}
+\end{equation}\index{Sistema!lineare!Cramer}
+\section{Classificazione delle soluzioni}
+\begin{align}
+\dfrac{a_1}{a_2}\neq&\dfrac{b_1}{b_2}& &a_2\neq 0\quad b_2\neq 0&\text{Determinato}\\
+\dfrac{a_1}{a_2}=&\dfrac{b_1}{b_2}=\dfrac{c_1}{c_2}& &a_2\neq 0\quad b_2\neq 0\quad c_2\neq 0&\text{Indeterminato}\\
+\dfrac{a_1}{a_2}=&\dfrac{b_1}{b_2}\neq\dfrac{c_1}{c_2}& &a_2\neq 0\quad b_2\neq 0\quad c_2\neq 0&\text{Impossibile}\\
+\end{align}\index{Sistema!lineare!determinato}\index{Sistema!lineare!indeterminato}\index{Sistema!lineare!impossibile}

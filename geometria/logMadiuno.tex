@@ -1,0 +1,21 @@
+\documentclass[10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw[->,color=black] (-1.04,0.) -- (9.2,0.);
+\draw[->,color=black] (0.,-4.2) -- (0.,2.7);
+\draw[color=black] (0pt,-10pt) node[right] {\footnotesize $0$};
+\clip(-1.04,-4.2) rectangle (9.2,2.7);
+\draw[color=black,smooth,samples=200,domain=.001:9.2] plot(\x,{ln((\x))});
+\begin{scriptsize}
+
+\draw [fill=black] (1.0000000014901511,1.4901511125042267E-9) circle (1.5pt);
+\draw[color=black] (0.8690909090909097,0.26363636363636384) node {$A$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}

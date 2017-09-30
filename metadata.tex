@@ -1,0 +1,60 @@
+\documentclass{article}
+\input{../Mod_base/base}
+\usepackage{hyperref}
+\usepackage{hyperxmp}
+\newwrite\xmpmetadata
+\makeatletter
+\hyxmp@at@end{%
+  % Create XMP code and write it to macro \hyxmp@xml
+  % (cf. hyperxmp.sty, \hyxmp@construct@packet (ll. 847-868))
+  \gdef\hyxmp@xml{}%
+  \hyxmp@add@to@xml{%
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="3.1-702">^^J%
+___<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns\hyxmp@hash">^^J%
+  }%
+  \hyxmp@pdf@schema
+  \hyxmp@xmpRights@schema
+  \hyxmp@dc@schema
+  \hyxmp@photoshop@schema
+  \hyxmp@photometa@schema
+  \hyxmp@xmp@basic@schema
+  \hyxmp@mm@schema
+  \hyxmp@add@to@xml{%
+___</rdf:RDF>^^J%
+</x:xmpmeta>^^J%
+  }%
+  % Write content of \hyxmp@xml to file metadata.xmp
+  \immediate\openout\xmpmetadata=metadata.xmp%
+  \immediate\write\xmpmetadata{\hyxmp@xml}%
+  \immediate\closeout\xmpmetadata%
+}
+\makeatother
+% Specify the XMP metadata here
+\hypersetup{%
+	pdftitle={Formulario},
+	pdfsubject={Formulario matematico},
+	pdfstartview={FitH},
+	pdfpagemode={UseOutlines},
+	pdflicenseurl={http://creativecommons.org/licenses/by-nc-nd/3.0/},
+	pdflang={it},
+	pdfmetalang={it},
+	pdfkeywords={Algebra, geometria, analisi},
+	pdfcopyright={Copyright (C) 2017, Claudio Duchi},
+	pdfcontacturl={http://breviariomatematico.altervista.org},
+	pdftype={}
+	pdfcontactpostcode={},
+	pdfcontactphone={},
+	pdfcontactemail={},
+	pdfcontactcountry={Italy},
+	pdfcontactcity={Perugia},
+	pdfcontactaddress={},
+	pdfcaptionwriter={Claudio Duchi},
+	pdfauthortitle={},%
+	pdfauthor={Claudio Duchi},
+	baseurl={http://breviariomatematico.altervista.org}
+}
+
+\begin{document}
+The purpose of this document is to generate a file \texttt{metadata.xmp} containing XMP metadata.
+\end{document}

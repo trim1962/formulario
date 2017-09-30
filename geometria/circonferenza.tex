@@ -1,0 +1,19 @@
+\documentclass[10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-2.5,-2.5) rectangle (2.5,2.5);
+\draw(0.,0.) circle (2.cm);
+\draw (0.,0.)-- (1.716724496302083,1.0260882046863027);
+\begin{scriptsize}
+\draw [fill=black] (0.,0.) circle (1.5pt);
+\draw[color=black] (-0.3,0.17) node {$O$};
+\draw[color=black] (-0.94,1.47) node {$c$};
+\draw[color=black] (1.08,0.41) node {$r$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}
