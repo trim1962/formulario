@@ -67,3 +67,57 @@ x_{1,2}=&\dfrac{-\verde{b}\pm\sqrt{\verde{b}^2-4\rosso{a}\blu{c}}}{2\rosso{a}}\\
 	\end{tikzpicture}
 	\captionof{figure}{Regola  Solo a}
 \end{center}\index{Delta}\index{Discriminante}
+\section{Equazione e disequazione di secondo grado}
+\begin{center}
+	\begin{tabular}{CCCC}
+\toprule
+	& \text{Equazione} & \text{Disequazione} & \text{Disequazione} \\[.5cm]
+a>0&ax^2+bx+c=0  & ax^2+bx+c>0 & ax^2+bx+c<0 \\[.5cm] 
+\Delta>0	& \begin{aligned}
+x_{1,2}=-\dfrac{b\pm\sqrt{b^2-4ac}}{2a}\\ x_1<x_2
+\end{aligned} & x<x_1 \vee x>x_2& x_1<x<x_2 \\[.5cm]
+\Delta=0	&
+	x_{1,2}=-\dfrac{b}{2a} & x\neq-\dfrac{b}{2a}& \nexists\text{ soluzione} \\[.5cm] 
+\Delta<0	& \nexists\text{ soluzione} & \forall\quad x &\nexists\text{ soluzione} \\[.5cm] 
+\midrule
+a<0	&ax^2+bx+c=0  & ax^2+bx+c>0 & ax^2+bx+c<0 \\[.5cm] 
+\Delta>0	& \begin{aligned}
+	x_{1,2}=-\dfrac{b\pm\sqrt{b^2-4ac}}{2a}\\x_1<x_2
+\end{aligned} &  x_1<x<x_2& x<x_1 \vee x>x_2\\[.5cm] 
+\Delta=0	&
+x_{1,2}=-\dfrac{b}{2a} &\nexists\text{ soluzione}& x\neq-\dfrac{b}{2a}  \\[.5cm]
+\Delta<0	& \nexists\text{ soluzione} & \nexists\text{ soluzione}& \forall\quad x \\
+\bottomrule
+ \end{tabular}
+	\captionof{figure}{Equazione e disequazione di secondo grado}
+\end{center}\index{Delta}\index{Discriminante}
+\begin{figure}[ht]
+	\centering
+	\begin{subfigure}[b]{0.4\textwidth}\captionsetup{skip=10pt}\caption{$\Delta>0\; a>0$ }
+	\centering\includestandalone{geometria/parabolaApDMz}
+	\end{subfigure}\qquad
+	\begin{subfigure}[b]{0.4\textwidth}\captionsetup{skip=10pt}	\caption{$\Delta>0\; a<0$ }
+	\centering\includestandalone{geometria/parabolaAmDMz}
+		\end{subfigure}\qquad\qquad
+	\begin{subfigure}[b]{0.4\textwidth}\captionsetup{skip=10pt}\caption{$\Delta=0\; a>0$ }
+	\centering\includestandalone{geometria/parabolaApDUz}
+\end{subfigure}\qquad
+\begin{subfigure}[b]{0.4\textwidth}\captionsetup{skip=10pt}\caption{$\Delta=0\; a<0$ }
+	\centering\includestandalone{geometria/parabolaAmDUz}
+\end{subfigure}\qquad\qquad
+	\begin{subfigure}[b]{0.4\textwidth}\captionsetup{skip=10pt}	\caption{$\Delta<0\; a>0$ }
+	\centering\includestandalone{geometria/parabolaApDmiz}
+\end{subfigure}\qquad
+\begin{subfigure}[b]{0.4\textwidth}	\captionsetup{skip=10pt}\caption{$\Delta<0\; a<0$ }
+	\centering\includestandalone{geometria/parabolaAmDmiz}
+\end{subfigure}
+	\caption{Disequazioni secondo grado}
+\end{figure}
+
+
+%\begin{tabular}{ccc}
+%	& $a>0$ &$a<0$  \\ 
+%$\Delta>0$	& \includestandalone{geometria/parabolaApDMz} & \includestandalone{geometria/parabolaAmDMz} \\[0.5cm]
+%$\Delta=0$	& \includestandalone{geometria/parabolaApDUz} & \includestandalone{geometria/parabolaAmDUz} \\[0.5cm]
+%$\Delta<0$	& \includestandalone{geometria/parabolaApDmiz} & \includestandalone{geometria/parabolaAmDmiz} \\[0.5cm]
+%\end{tabular} 

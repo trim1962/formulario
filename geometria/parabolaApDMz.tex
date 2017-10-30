@@ -1,0 +1,18 @@
+\documentclass[10pt]{standalone}
+
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw[->,color=black] (-2.5,0.) -- (2.5,0.);
+\draw(-1.5,0.5) node {$+$};
+\draw(1.5,0.5) node {$+$};
+\draw(0,0.5) node {$-$};
+\foreach \x in {-2.,-1.,1.,2.}
+\draw[shift={(\x,0)},color=black] (0pt,-2pt);
+\clip(-2.5,-1.5) rectangle (2.5,3.5);
+\draw [samples=50,rotate around={0.:(0.,-1.)},xshift=0.cm,yshift=-1.cm,domain=-2.702702702702702:2.702702702702702)] plot (\x,{(\x)^2/2/0.27027027027027023});
+\end{tikzpicture}
+\end{document}
