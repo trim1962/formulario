@@ -1,0 +1,31 @@
+\documentclass[10pt]{standalone}
+
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows,calc}
+\pagestyle{empty}
+\begin{document}
+	\begin{tikzpicture}
+	\node(scope1){
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw[->,color=black] (-2.5,0.) -- (2.5,0.);
+\draw(-1.5,0.5) node {$-$};
+\draw(1.5,0.5) node {$-$};
+\draw(0,0.5) node {$-$};
+\clip(-2.5,-4.5) rectangle (2.5,0.5);
+\draw [samples=50,rotate around={-180.:(0.,0.)},xshift=0.cm,yshift=0.cm,domain=-2.162162162162162:2.162162162162162)] plot (\x,{(\x)^2/2/0.27027027027027023});
+\end{tikzpicture}
+};
+\node[at={(scope1.south)}] (scope2){
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw[->,color=black] (-2.5,0) -- (2.5,0);
+\clip(-2.5,-0.5) rectangle (2.5,1.5);
+\draw (0,0.5)-- (0,0);
+\draw [dash pattern=on 5pt off 5pt] (-2.5,0.5)-- (2.5,0.5);
+\draw (-0.28,0.02) node[anchor=north west] {$x_1$};
+\end{tikzpicture}
+};
+\end{tikzpicture}
+
+
+\end{document}
