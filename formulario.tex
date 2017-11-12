@@ -119,6 +119,8 @@ baseurl={http://breviariomatematico.altervista.org}
 \input{compilaTexStudio}
 
 \usepackage{parskip}
+% 11/11/2017 :: 23:56:03 :: \usepackage[usenames,dvipsnames,pdftex]{xcolor}
+\usepackage{tkz-berge}
 \listfiles
 \begin{document}
 %\setcounter{page}{2}
@@ -133,6 +135,13 @@ baseurl={http://breviariomatematico.altervista.org}
 				\HRule \\[1.5cm]
 				\vfill
 			\end{center}
+		\begin{center}
+			\begin{tikzpicture}
+			\renewcommand*{\VertexBallColor}{green!50!black}
+			\GraphInit[vstyle=Art]
+			\grComplete[RA=6]{20}
+			\end{tikzpicture}
+		\end{center}
 		\end{titlepage}
 	\hypersetup{pageanchor=true}
 		\input{../Mod_base/copyright}
