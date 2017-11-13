@@ -1,7 +1,7 @@
 \chapter{Geometria}
 \section{Triangolo}
 \begin{tcolorbox}[sidebyside,righthand width=7cm,colback=white,colframe=white,fonttitle=\bfseries	]
-\includestandalone[width=8.5cm]{geometria/triangoloSca}
+\includestandalone[width=5.5cm]{geometria/triangoloSca}
 \tcblower
 	\begin{align}
 		A=&\dfrac{b\cdot h}{2}\\
@@ -11,7 +11,7 @@
 \end{tcolorbox}\index{Triangolo!area}\index{Triangolo!perimetro}\index{Triangolo!altezza}
 \section{Triangolo rettangolo}
 \begin{tcolorbox}[sidebyside,righthand width=9cm,colback=white,colframe=white,fonttitle=\bfseries	]
-	\includestandalone[width=8.5cm]{geometria/triangoloRet}
+	\includestandalone[width=5.5cm]{geometria/triangoloRet}
 	\tcblower
 	\begin{align}
 	A=&\dfrac{b\cdot c}{2}&h=&\dfrac{b\cdot c}{a}\\
@@ -28,6 +28,15 @@
 	A=&\dfrac{\sqrt{3}}{4}h&l=&\dfrac{2\sqrt{3}}{3}h\\
 	2P=&3l
 	\end{align}\index{Triangolo!equilatero!area}\index{Triangolo!equilatero!altezza}\index{Triangolo!equilatero!lato}\index{Triangolo!equilatero!perimetro}
+\end{tcolorbox}
+\section{Triangolo isoscele}
+\begin{tcolorbox}[sidebyside,righthand width=9cm,colback=white,colframe=white,fonttitle=\bfseries	]
+	\includestandalone[width=4.5cm]{geometria/triangoloequi}
+	\tcblower
+	\begin{align}
+	A=&\dfrac{h\cdot b}{2}&h=&\dfrac{2A}{b}\\
+	b=&\dfrac{2A}{h}&2P=&b+2l\\
+	\end{align}\index{Triangolo!isoscele!area}\index{Triangolo!isoscele!altezza}\index{Triangolo!isoscele!lato}\index{Triangolo!isoscele!perimetro}
 \end{tcolorbox}
 \section{Trapezio}
 \begin{tcolorbox}[sidebyside,righthand width=9cm,colback=white,colframe=white,fonttitle=\bfseries	]
@@ -54,7 +63,7 @@
 	\begin{align}
 	A=&l^2&d=&l\sqrt{2}\\
 	l=&\sqrt{A}&l=&\dfrac{\sqrt{2}}{2}d\\
-	2P=&4l
+	2P=&4l&l=\dfrac{2P}{4}
 	\end{align}
 \end{tcolorbox}
 \section{Rettangolo}
@@ -64,7 +73,7 @@
 	\begin{align}
 	A=&b\cdot h&d=&\sqrt{b^2+h^2}\\
 	b=&\sqrt{d^2-h^2}&h=&\sqrt{d^2-b^2}\\
-	2P=&2b+2h
+	2P=&2(b+h)
 	\end{align}
 \end{tcolorbox}
 \section{Rombo}\index{Rettangolo!area}\index{Rettangolo!perimetro}\index{Rettangolo!diagonale}
@@ -85,29 +94,3 @@
 	r=&\sqrt{\dfrac{A}{\pi}}
 	\end{align}
 \end{tcolorbox}\index{Circonferenza!perimetro}\index{Cerchio!area}\index{Circonferenza!raggio}
-\section{Cono}
-\begin{tcolorbox}[sidebyside,righthand width=9cm,colback=white,colframe=white,fonttitle=\bfseries	]
-	\includestandalone[width=2.2cm]{geometria/cono}
-	\tcblower
-	\begin{align}
-V=&\dfrac{\pi r^2h}{3}&r=&\sqrt{\dfrac{3V}{\pi h}}&h=&\dfrac{3V}{\pi r^2}\\
-a=&\sqrt{r^2+h^2}&S_{lat}=&\pi r a&S_{tot}=&S_{lat}+S_{ba}
-	\end{align}
-\end{tcolorbox}\index{Cono!volume}\index{Cono!raggio}
-\section{Cilindro}
-\begin{tcolorbox}[sidebyside,righthand width=9cm,colback=white,colframe=white,fonttitle=\bfseries	]
-	\includestandalone[width=2.2cm]{geometria/cilindro}
-	\tcblower
-	\begin{align}
-	V=&\pi r^2h&r=&\sqrt{\dfrac{V}{\pi h}}&h=&\dfrac{V}{\pi r^2}\\
-	S_{lat}=&\pi r h&S_{tot}=&S_{lat}+S_{ba}
-	\end{align}
-\end{tcolorbox}
-\section{Parallelepipedo rettangolo}
-\begin{tcolorbox}[sidebyside,righthand width=9cm,colback=white,colframe=white,fonttitle=\bfseries	]
-	\includestandalone[width=4cm]{geometria/parallepipedoret}
-	\tcblower
-	\begin{align}
-	V=&abh&V=&S_{ba}h
-	\end{align}
-\end{tcolorbox}

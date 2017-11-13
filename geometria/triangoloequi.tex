@@ -1,0 +1,30 @@
+\documentclass[10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-2.0,-0.5) rectangle (2.0,4.3);
+\draw (0.,4.0)-- (-1.8,0.);
+\draw (-1.8,0.)-- (1.8,0.);
+\draw (1.8,0.)-- (0.,4.0);
+\draw [dash pattern=on 4pt off 4pt] (0.,4.0)-- (0.,0.);
+\begin{scriptsize}
+\draw [fill=black] (-1.8,0.) circle (1.5pt);
+\draw[color=black] (-1.8,0.3) node {$A$};
+\draw [fill=black] (1.8,0.) circle (1.5pt);
+\draw[color=black] (1.8,0.3) node {$B$};
+\draw [fill=black] (0.,4.0) circle (1.5pt);
+\draw[color=black] (0.2,4.0) node {$C$};
+\draw[color=black] (-1.2,2.3) node {$l$};
+\draw[color=black] (0.08,-0.2) node {$b$};
+\draw[color=black] (1.2,2.3) node {$l$};
+\draw [fill=black] (0.,0.) circle (1.5pt);
+\draw[color=black] (0.2,0.3) node {$E$};
+\draw[color=black] (-0.3,1.9) node {$h$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}
