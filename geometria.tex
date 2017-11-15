@@ -4,11 +4,11 @@
 \includestandalone[width=5.5cm]{geometria/triangoloSca}
 \tcblower
 	\begin{align}
-		A=&\dfrac{b\cdot h}{2}\\
-		h=&\dfrac{2A}{b}&
-		b=&\dfrac{2A}{h}&2P=a+b+c
+		A=&\dfrac{b\cdot h}{2}&h=&\dfrac{2A}{b}\\
+		b=&\dfrac{2A}{h}&2P=&a+b+c\\
+		A=&\sqrt{p(p-a)(p-b)(p-c)}&
 	\end{align}
-\end{tcolorbox}\index{Triangolo!area}\index{Triangolo!perimetro}\index{Triangolo!altezza}
+\end{tcolorbox}\index{Triangolo!area}\index{Triangolo!perimetro}\index{Triangolo!altezza}\index{Erone!formula}
 \section{Triangolo rettangolo}
 \begin{tcolorbox}[sidebyside,righthand width=9cm,colback=white,colframe=white,fonttitle=\bfseries	]
 	\includestandalone[width=5.5cm]{geometria/triangoloRet}
@@ -16,9 +16,11 @@
 	\begin{align}
 	A=&\dfrac{b\cdot c}{2}&h=&\dfrac{b\cdot c}{a}\\
 	a^2=&b^2+c^2&a=&\sqrt{b^2+c^2}\\
-	b=&\sqrt{a^2-c^2}&c=&\sqrt{a^2-b^2}
+	b=&\sqrt{a^2-c^2}&c=&\sqrt{a^2-b^2}\\
+	b^2=&p_1a&c^2=&p_2a\\
+	h^2=&p_1p_2&h=&\sqrt{p_1p_2}
 	\end{align}
-\end{tcolorbox}\index{Triangolo!rettangolo!area}\index{Triangolo!rettangolo!altezza}\index{Triangolo!rettangolo!cateto}\index{Triangolo!rettangolo!ipotenusa}
+\end{tcolorbox}\index{Triangolo!rettangolo!area}\index{Triangolo!rettangolo!altezza}\index{Triangolo!rettangolo!cateto}\index{Triangolo!rettangolo!ipotenusa}\index{Pitagora!teorema}\index{Euclide!primo teorema}\index{Euclide!secondo teorema}
 \section{Triangolo equilatero}
 \begin{tcolorbox}[sidebyside,righthand width=9cm,colback=white,colframe=white,fonttitle=\bfseries	]
 	\includestandalone[width=4.5cm]{geometria/triangoloiso}
@@ -36,6 +38,7 @@
 	\begin{align}
 	A=&\dfrac{h\cdot b}{2}&h=&\dfrac{2A}{b}\\
 	b=&\dfrac{2A}{h}&2P=&b+2l\\
+	l=&\sqrt{h^2+\frac{b^2}{4}}	
 	\end{align}\index{Triangolo!isoscele!area}\index{Triangolo!isoscele!altezza}\index{Triangolo!isoscele!lato}\index{Triangolo!isoscele!perimetro}
 \end{tcolorbox}
 \section{Trapezio}
@@ -94,3 +97,28 @@
 	r=&\sqrt{\dfrac{A}{\pi}}
 	\end{align}
 \end{tcolorbox}\index{Circonferenza!perimetro}\index{Cerchio!area}\index{Circonferenza!raggio}
+\section{Poligoni regolari}
+\begin{tcolorbox}[sidebyside,righthand width=9cm,colback=white,colframe=white,fonttitle=\bfseries	]
+	\includestandalone[width=4.5cm]{geometria/poligoniregolari}
+	\tcblower
+	\begin{align}
+	A=&\dfrac{2P\cdot a}{2} & 2P=&nl	\\
+	a=&l\cdot f & l=&\dfrac{a}{f}	\\
+	\end{align}
+\end{tcolorbox}
+\begin{center}
+	\begin{tabular}{lcl}
+		\toprule
+Poligono	&  Lati&  fisso\\ 
+Triangolo equilatero	& 3 & 0.289 \\ 
+Quadrato	& 4 & 0.5 \\ 
+Pentagono	& 5 &0.688  \\ 
+Esagono	& 6 &0.866  \\ 
+Ettagono	& 7 &1.038 \\ 
+Ottagono	& 8 &1.207  \\ 
+Ennagono	& 9&  1.374\\ 
+Decagono	& 10 & 1.539 \\ 
+Dodecagono	&  12&  1.866\\ 
+\bottomrule
+\end{tabular}\captionof{table}{Poligoni regolari}\index{Poligono!regolare}
+\end{center}
