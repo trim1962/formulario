@@ -18,7 +18,8 @@
 	a^2=&b^2+c^2&a=&\sqrt{b^2+c^2}\\
 	b=&\sqrt{a^2-c^2}&c=&\sqrt{a^2-b^2}\\
 	b^2=&p_1a&c^2=&p_2a\\
-	h^2=&p_1p_2&h=&\sqrt{p_1p_2}
+	h^2=&p_1p_2&h=&\sqrt{p_1p_2}\\
+	a=&p_1+p_2
 	\end{align}
 \end{tcolorbox}\index{Triangolo!rettangolo!area}\index{Triangolo!rettangolo!altezza}\index{Triangolo!rettangolo!cateto}\index{Triangolo!rettangolo!ipotenusa}\index{Pitagora!teorema}\index{Euclide!primo teorema}\index{Euclide!secondo teorema}
 \section{Triangolo equilatero}
@@ -46,11 +47,36 @@
 	\includestandalone[width=5.5cm]{geometria/trapezio}
 	\tcblower
 	\begin{align}
-	A=&\dfrac{a+b}{2}h\\
-	2P=&a+b+c+d
+	A=&\dfrac{B+b}{2}h\\
+	2P=&B+b+l_1+l_2
 	\end{align}
-\end{tcolorbox}
-\section{Parallelogramma}\index{Trapezio!area}\index{Trapezio!perimetro}
+\end{tcolorbox}\index{Trapezio}\index{Trapezio!area}\index{Trapezio!perimetro}
+
+\section{Trapezio isoscele}
+\begin{tcolorbox}[sidebyside,righthand width=9cm,colback=white,colframe=white,fonttitle=\bfseries	]
+	\includestandalone[width=5.5cm]{geometria/trapezioiso}
+	\tcblower
+	\begin{align}
+	2P=&B+b+2l\\
+	l=&\sqrt{h^2+\left(\frac{B-b}{2}\right)^2}\\
+	h=&\sqrt{l^2-\left(\frac{B-b}{2}\right)^2}\\
+	\frac{B-b}{2}=&\sqrt{l^2-h^2}
+	\end{align}
+\end{tcolorbox}\index{Trapezio!isoscele}\index{Trapezio!isoscele!perimetro}\index{Trapezio!isoscele!lato obliquo}\index{Trapezio!isoscele!altezza}
+\section{Trapezio rettangolo}
+\begin{tcolorbox}[sidebyside,righthand width=9cm,colback=white,colframe=white,fonttitle=\bfseries	]
+	\includestandalone[width=5.5cm]{geometria/trapezioret}
+	\tcblower
+	\begin{align}
+	l=&\sqrt{(B-b)^2+h^2}&\\
+	h=&\sqrt{l^2-(B-b)^2}&\\
+	B-b=&\sqrt{l^2-h^2}&\\
+	D=&\sqrt{h^2+B^2}&d=&\sqrt{h^2+b^2}\\
+	B=&\sqrt{D^2-h^2}&b=&\sqrt{d^2-h^2}\\
+	h=&\sqrt{D^2-B^2}&h=&\sqrt{d^2-b^2}\\	
+	\end{align}
+\end{tcolorbox}\index{Trapezio!rettangolo}\index{Trapezio!rettangolo!lato obliquo}\index{Trapezio!rettangolo!altezza}\index{Trapezio!rettangolo!base}\index{Trapezio!rettangolo!diagonali}
+\section{Parallelogramma}
 \begin{tcolorbox}[sidebyside,righthand width=9cm,colback=white,colframe=white,fonttitle=\bfseries	]
 	\includestandalone[width=5cm]{geometria/parallelogramma}
 	\tcblower
@@ -58,7 +84,7 @@
 	A=&b\cdot h&h=&\dfrac{A}{c}&b=&\dfrac{A}{h}\\
 	2P=&2a+2b
 	\end{align}
-\end{tcolorbox}
+\end{tcolorbox}\index{Parallelogramma}
 \section{Quadrato}\index{Quadrato!area}\index{Quadrato!lato}\index{Quadrato!diagonale}\index{Quadrato!periodo}
 \begin{tcolorbox}[sidebyside,righthand width=9cm,colback=white,colframe=white,fonttitle=\bfseries	]
 	\includestandalone[width=4.5cm]{geometria/quadrato}
@@ -78,8 +104,8 @@
 	b=&\sqrt{d^2-h^2}&h=&\sqrt{d^2-b^2}\\
 	2P=&2(b+h)
 	\end{align}
-\end{tcolorbox}
-\section{Rombo}\index{Rettangolo!area}\index{Rettangolo!perimetro}\index{Rettangolo!diagonale}
+\end{tcolorbox}\index{Rettangolo!area}\index{Rettangolo!perimetro}\index{Rettangolo!diagonale}
+\section{Rombo}
 \begin{tcolorbox}[sidebyside,righthand width=9cm,colback=white,colframe=white,fonttitle=\bfseries	]
 	\includestandalone[width=4.5cm]{geometria/rombo}
 	\tcblower
