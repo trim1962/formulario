@@ -20,6 +20,20 @@
 \input{../Mod_base/loghi}
 \input{../Mod_base/unita_misura}
 \input{../Mod_base/tcolorboxgest}
+\input{../Mod_base/glossario}
+%\newglossary[slg]{symbolslist}{sym}{sbl}{Elenco di simboli}
+\makeglossaries
+\renewcommand*{\glsxtrpostdescgeneral}{%
+	\ifglshasfield{see}{\glscurrententrylabel}
+	{, \glsxtrusesee{\glscurrententrylabel}}%
+	{}%
+}
+\setglossarystyle{altlistgroup}
+\loadglsentries{glossario/glossari1}
+%\loadglsentries{glossario/glossari2}
+%\loadglsentries{glossario/glossari3}
+%\loadglsentries{glossario/glossari4}
+
 \makeindex[options=-s ../Mod_base/oldclaudio.sti]
 \titlecontents{figure}
 [0em]{}
@@ -156,6 +170,10 @@ baseurl={http://breviariomatematico.altervista.org}
 \input{compilaTexStudioDue}			
 % 1/10/2017 :: 8:09:30 :: \input{compilaLineaComando}
 % 2/11/2017 :: 22:39:26 :: \part{Note}
+\glsaddall
+\twocolumn
+\printglossaries
+\onecolumn
 \input{../Mod_base/MezziUsati}
 \addcontentsline{toc}{chapter}{\indexname}
 \printindex

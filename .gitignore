@@ -21,3 +21,10 @@
 *.toc
 *.jpg
 *.out
+*.acr
+*.alg
+*.glg
+*.gls
+*.slg
+*.sls
+*.sym
