@@ -43,6 +43,9 @@
 \newglossaryentry{gradog}{name={Grado sessagesimale},description={è la trecentosessantesima parte di un angolo giro}}
 \newglossaryentry{gradositemag}{name={Grado sistema},description={il grado di un sistema, di più equazioni in tante incognite,  è il prodotto dei gradi delle equazioni del sistema ridotte in forma normale.}}
 \newglossaryentry{insdisg}{name={Insieme discreto},description={un insieme è discreto nel senso che fra un numero e il suo successivo non vi è nessun altro elemento dell'insieme}}
+\newglossaryentry{intervallog}{name={Intervallo},description={Insieme ordinato di punti compresi tra un punto $a$ che precede tutti gli elementi e un elemento $b$ che segue tutti gli elementi. Un intervallo è chiuso se comprende gli estremi. Un intorno è aperto se non comprende gli estremi. Un intervallo è chiuso a destra ma non a sinistra se comprende l'estremo destro ma non il sinistro. Un intervallo è chiuso a sinistra ma non a destra se comprende l'estremo sinistro ma non il destro.}}
+\newglossaryentry{intervallononlimg}{name={Intervallo non limitato},description={un intorno illimitato a destra è l'insieme dei valori che seguono un elemento fissato $a$. Un intorno illimitato a sinistra è l'insieme dei valori che precedono un valore prefissato $b$}}
+\newglossaryentry{intornopuntog}{name={Intorno circolare di un punto},description={Un intorno circolare di un punto è un intervallo aperto del tipo $I(x_0)=\left(x_0-\delta,x_0+\delta\right)$ $\quad\delta>0$},see={intervallog}}
 \newglossaryentry{minuendog}{name={Minuendo},description={primo termine sottrazione}}
 \newglossaryentry{minutog}{name={Minuto},description={è la sessantesima parte di un grado sessagesimale}}
 \newglossaryentry{multiplog}{name={Multiplo},description={un numero $a$ è multiplo di un altro numero $b$ se esiste un numero $c$ tale che $a=b\cdot c$ }}
@@ -95,7 +98,8 @@
 \newglossaryentry{triangoloscag}{name={Triangolo scaleno},description={triangolo con tre lati disuguali}}
 \newglossaryentry{uniimgg}{name={Unità immaginaria},description=simbolo che ha la proprietà che se è elevato al quadrato vale meno uno}
 \newglossaryentry{variabileg}{name={Variabile},description={una variabile è un carattere che rappresenta una quantità numerica non nota}}
-\newglossaryentry{intornopuntog}{name={Intorno circolare di un punto},description={Un intorno circolare di un punto è un intervallo aperto del tipo $I_{x_0}=\left(x_0-\delta,x_0+\delta
-		\right)\quad\delta>0$},see={intervallog}}
-\newglossaryentry{intervallog}{name={Intervallo},description={Insieme ordinato di punti compresi tra un punto $a$ che precede tutti gli elementi e un elemento $b$ che segue tutti gli elementi. Un intervallo è chiuso se comprende gli estremi. Un intorno è aperto se non comprende gli estremi. Un intervallo è chiuso a destra ma non a sinistra se comprende l'estremo destro ma non il sinistro. Un intervallo è chiuso a sinistra ma non a destra se comprende l'estremo sinistro ma non il destro.}}
-\newglossaryentry{intervallononlimg}{name={Intervallo non limitato},description={un intorno illimitato a destra è l'insieme dei valori che seguono un elemento fissato $a$. Un intorno illimitato a sinistra è l'insieme dei valori che precedono un valore prefissato $b$}}
+ \newglossaryentry{intornosinpuntog}{name={Intorno sinistro di un punto},description={Un intorno sinistro di un punto è un intervallo aperto del tipo $I^{-}(x_0)=\left(x_0-\delta,x_0\right)$    $\delta>0$}, see={intervallog,intornopuntog}}
+ \newglossaryentry{intornodespuntog}{name={Intorno destro di un punto},description={Un intorno destro di un punto è un intervallo aperto del tipo $I^{+}(x_0)=\left(x_0,x_0+\delta\right)$ $\delta>0$},see=[vedi anche]{intervallog,intornopuntog}}
+ \newglossaryentry{intornopiuinfg}{name={Intorno di più infinto},description={Un intorno di un più infinto è intervallo aperto del tipo $I(+\infty)=\left(M,+\infty\right)$ $M\in\R$},see={intervallog,intornopuntog}}
+ \newglossaryentry{intornomenoinfg}{name={Intorno di meno infinto},description={Un intorno di un meno infinto è intervallo aperto del tipo $I(-\infty)=\left(-\infty,M\right)$ $M\in\R$},see={intervallog,intornopuntog}}
+ 
