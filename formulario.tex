@@ -85,7 +85,9 @@
 	%\pagenumbering{arabic}
 }
 \usepackage[grumpy,mark,markifdirty,raisemark=0.95\paperheight]{gitinfo2}
+\usepackage{parskip}
 
+\usepackage{tkz-berge}
 \usepackage{hyperxmp}
 \usepackage{hyperref}
 \title{Formulario}
@@ -124,9 +126,7 @@ baseurl={http://breviariomatematico.altervista.org}
 
 \input{compilaTexStudio}
 
-\usepackage{parskip}
 
-\usepackage{tkz-berge}
 \listfiles
 
 \begin{document}
@@ -163,8 +163,9 @@ baseurl={http://breviariomatematico.altervista.org}
 \twocolumn
 \printglossaries
 \onecolumn
+\addcontentsline{toc}{chapter}{\indexname}
 \printindex
 \appendix
 \input{../Mod_base/MezziUsati}
-\addcontentsline{toc}{chapter}{\indexname}
+
 \end{document}
