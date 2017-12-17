@@ -21,6 +21,7 @@
 \input{../Mod_base/unita_misura}
 \input{../Mod_base/tcolorboxgest}
 \input{../Mod_base/glossario}
+\newcommand{\Co}{\numberset{C}}
 %\newglossary[slg]{symbolslist}{sym}{sbl}{Elenco di simboli}
 \makeglossaries
 \renewcommand*{\glsxtrpostdescgeneral}{%
@@ -50,9 +51,9 @@
 \newcolumntype{L}{>{\sffamily $}l<{$}}
 \newcolumntype{T}{>{\centering\arraybackslash}p{1em}} 
 \newcolumntype{O}{>{\centering\arraybackslash}p{1.5em}} 
-
+\usepackage{diagbox}
 %\include{simboli_operatori}
-\newcommand{\Co}{\numberset{C}}
+
 
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 \newlength{\gnat}
@@ -162,7 +163,8 @@ baseurl={http://breviariomatematico.altervista.org}
 \twocolumn
 \printglossaries
 \onecolumn
+\printindex
+\appendix
 \input{../Mod_base/MezziUsati}
 \addcontentsline{toc}{chapter}{\indexname}
-\printindex
 \end{document}

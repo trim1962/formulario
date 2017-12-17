@@ -40,28 +40,60 @@ Data la funzione$\funzione{f}{D}{\R}$,definita nel suo dominio $D$ a valore in $
 \forall\; I(\infty)\; \exists\; I(\infty) : \forall x\in I(\infty) \longrightarrow f(x)\in I(\infty)
 \end{equation}\index{Limite!infinito!infinito}
 \section{Operazioni}
+%\begin{center}
+% \begin{tabular}{FFFFFF}
+%\toprule
+%\lim_{x\to a}f(x) & \lim_{x\to a}g(x) & \lim_{x\to a}f(x)+g(x) &\lim_{x\to a}f(x)\cdot g(x) &\lim_{x\to a}\dfrac{1}{g(x)} &\lim_{x\to a}\dfrac{f(x)}{g(x)} \\[0.8cm] 
+%
+%m & \pm\infty& \pm\infty & \pm\infty &0 & 0 \\[0.8cm] 
+%
+%\pm\infty & m & \pm\infty & \pm\infty & \dfrac{1}{m} &\pm\infty \\[0.8cm]
+% 
+%0 &\pm\infty &\pm\infty & \text{Ind} & 0 & 0 \\[0.8cm] 
+%
+%\pm\infty & 0 & \pm\infty & \text{Ind} & \pm\infty & \pm\infty \\[0.8cm]
+% 
+%+\infty & +\infty & +\infty&+\infty &0 & \text{Ind} \\[0.8cm]
+% 
+%-\infty & -\infty & -\infty & +\infty & 0 & \text{Ind} \\[0.8cm] 
+%
+%+\infty & -\infty & \text{Ind} & -\infty & 0 & \text{Ind} \\[0.8cm]
+%\bottomrule
+%\end{tabular}\index{Limite!operazioni}
+%\captionof{table}{Simboli matematici}
+%\end{center}
+\section{Limite della somma}
+Date due funzioni $\funzione{f}{A}{\R}$ $\funzione{g}{A}{\R}$ se $\lim_{h \to x_0}f(x)=l$ e  $\lim_{h \to x_0}g(x)=m$ allora\[\lim_{h \to x_0}(f(x)+g(x)=\lim_{h \to x_0}f(x)+\lim_{h \to x_0}g(x)=l+m \]
+
 \begin{center}
- \begin{tabular}{FFFFFF}
-\toprule
-\lim_{x\to a}f(x) & \lim_{x\to a}g(x) & \lim_{x\to a}f(x)+g(x) &\lim_{x\to a}f(x)\cdot g(x) &\lim_{x\to a}\dfrac{1}{g(x)} &\lim_{x\to a}\dfrac{f(x)}{g(x)} \\[0.8cm] 
-
-m & \pm\infty& \pm\infty & \pm\infty &0 & 0 \\[0.8cm] 
-
-\pm\infty & m & \pm\infty & \pm\infty & \dfrac{1}{m} &\pm\infty \\[0.8cm]
- 
-0 &\pm\infty &\pm\infty & \text{Ind} & 0 & 0 \\[0.8cm] 
-
-\pm\infty & 0 & \pm\infty & \text{Ind} & \pm\infty & \pm\infty \\[0.8cm]
- 
-+\infty & +\infty & +\infty&+\infty &0 & \text{Ind} \\[0.8cm]
- 
--\infty & -\infty & -\infty & +\infty & 0 & \text{Ind} \\[0.8cm] 
-
-+\infty & -\infty & \text{Ind} & -\infty & 0 & \text{Ind} \\[0.8cm]
-\bottomrule
-\end{tabular}\index{Limite!operazioni}
-\captionof{table}{Simboli matematici}
+	\begin{tabular}{c*{4}{C}}
+\diagbox{$g(x)$}{$f(x)$}&0&l&+\infty&-\infty \\ 
+\cmidrule{2-5}
+0&0&l&+\infty&-\infty\\
+\cmidrule{2-5}
+m&m&l+m&+\infty&-\infty\\
+\cmidrule{2-5}
+$+\infty$&+\infty&+\infty&+\infty&?\\
+\cmidrule{2-5}
+$-\infty$&-\infty&-\infty&?&-\infty\\
+\cmidrule{2-5}
+\end{tabular}\captionof{table}{Limite della somma}\index{Limite!somma}
 \end{center}
+\section{Limite della differenza}
+Date due funzioni $\funzione{f}{A}{\R}$ $\funzione{g}{A}{\R}$ se $\lim_{h \to x_0}f(x)=l$ e  $\lim_{h \to x_0}g(x)=m$ allora\[\lim_{h \to x_0}(f(x)-g(x)=\lim_{h \to x_0}f(x)-\lim_{h \to x_0}g(x)=l-m \]
+
+\begin{center}
+	\begin{tabular}{c*{4}{C}}
+		\diagbox{$g(x)$}{$f(x)$}&0&l&+\infty&-\infty \\ 
+		\cmidrule{2-5}
+		0&0&l&+\infty&-\infty\\	\cmidrule{2-5}
+		m&-m&l-m&+\infty&-\infty\\\cmidrule{2-5}
+		$+\infty$&-\infty&-\infty&?&-\infty\\cmidrule{2-5}
+		$-\infty$&+\infty&+\infty&+\infty&?\\
+		\cmidrule{2-5}
+	\end{tabular}\captionof{table}{Limite della differenza}\index{Limite!differenza}
+\end{center}
+
 \chapter{Funzioni continue}
 \section{Definizione}
 Una funzione $\funzione{f}{D}{\R}$ è continua se
