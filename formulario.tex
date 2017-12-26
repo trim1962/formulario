@@ -31,9 +31,7 @@
 }
 \setglossarystyle{altlistgroup}
 \loadglsentries{glossario/glossari1}
-%\loadglsentries{glossario/glossari2}
-%\loadglsentries{glossario/glossari3}
-%\loadglsentries{glossario/glossari4}
+
 
 \makeindex[options=-s ../Mod_base/oldclaudio.sti]
 
@@ -81,6 +79,9 @@
 \usepackage{parskip}
 
 \usepackage{tkz-berge}
+\usepackage[autostyle,italian=guillemets]{csquotes}
+\usepackage[bibstyle=numeric,backend=biber]{biblatex}
+\addbibresource{formulario.bib}
 \usepackage{hyperxmp}
 \usepackage{hyperref}
 \title{Formulario}
@@ -154,14 +155,17 @@ baseurl={http://breviariomatematico.altervista.org}
 \input{compilaTexStudioDue}			
 \addcontentsline{toc}{chapter}{\indexname}
 \printindex
-
+\backmatter
 \begin{appendices}
-\input{../Mod_base/MezziUsati}
+	\input{../Mod_base/MezziUsati}
 \end{appendices}
 \glsaddall
 \twocolumn
 \printglossaries
 \onecolumn
-
+\addcontentsline{toc}{chapter}{\indexname}
+\nocite{*}
+\printbibliography[heading=bibintoc]
+\printindex
 
 \end{document}

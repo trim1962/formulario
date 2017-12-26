@@ -28,3 +28,8 @@
 *.slg
 *.sls
 *.sym
+*.bbl
+*.bcf
+*.bak
+*.blg
+*.xml
