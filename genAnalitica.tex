@@ -12,6 +12,10 @@ A\coord{x_1}{y_1} && B\coord{x_2}{y_2}&&&  d(AB)=\sqrt{(x_1-x_2)^2+(y_1-y_2)^2}
 \begin{align}
 A\coord{x_1}{y_1}&& B\coord{x_2}{y_2}&&& M\coord{\dfrac{x_1+x_2}{2}}{\dfrac{y_1+y_2}{2}}
 \end{align}\index{Punto!medio}
+\section{Baricentro}
+\begin{align}
+A\coord{x_1}{y_1}& &B\coord{x_2}{y_2}&&C\coord{x_3}{y_3}&& G\coord{\dfrac{x_1+x_2+x_3}{3}}{\dfrac{y_1+y_2+y_3}{3}}
+\end{align}\index{Barricentro}
 \chapter{Retta}
 \section{Forma esplicita}
 \begin{equation}
@@ -49,11 +53,11 @@ r_1\parallel r_2\quad\Longleftrightarrow\quad \dfrac{a_1}{b_1}=\dfrac{a_2}{b_2}
 \section{Perpendicolarità}
 Forma esplicita
 \begin{equation}
-r_1\perp r_2\quad\Longleftrightarrow\quad	m_1 \cdot m_2=-1
+r_1\perp r_2\quad\Longleftrightarrow\quad	m_1 \cdot m_2=-1\quad\Longleftrightarrow\quad	m_1=-\dfrac{1}{m_2}
 \end{equation}\index{Retta!perpendicolare}\index{Retta!coefficiente angolare}
 Forma implicita
 \begin{equation}
-r_1\perp r_2\quad\Longleftrightarrow\quad	\dfrac{a_1}{b_1}\cdot\dfrac{a_2}{b_2}=-1
+r_1\perp r_2\quad\Longleftrightarrow\quad	\dfrac{a_1}{b_1}\cdot\dfrac{a_2}{b_2}=-1\quad\Longleftrightarrow\quad a_1\cdot a_2+b_1\cdot b_2=0
 \end{equation}\index{Retta!perpendicolare}\index{Retta!coefficiente angolare}
 \section{Fascio proprio di rette}
 \begin{equation}
@@ -67,10 +71,40 @@ y=mx+k\quad k\in\R
 \begin{equation}
 m=\dfrac{y_2-y_1}{x_2-x_1}\quad x_2\neq x_1
 \end{equation}\index{Retta!coefficiente angolare!per due punti}
+\section{Retta per un punto parallela a retta data}
+Forma esplicita
+\begin{align}
+P\coord{x_1}{y_1}&\nonumber\\
+y=&mx+q\nonumber\\
+y-y_1=&m(x-y_1)
+\end{align}\index{Retta!per punto parallela}
+Forma implicita
+\begin{align}
+P\coord{x_1}{y_1}&\nonumber\\
+ax+by+c=&0\nonumber\\
+a(x-x_1)+b(y-y_1)=&0
+\end{align}\index{Retta!per punto parallela}
+\section{Retta per un punto perpendicolare a retta data}
+Forma esplicita
+\begin{align}
+P\coord{x_1}{y_1}&\nonumber\\
+y=&mx+q\nonumber\\
+y-y_1=&-\dfrac{1}{m}(x-y_1)
+\end{align}\index{Retta!per punto perpendicolare}
+Forma implicita
+\begin{align}
+P\coord{x_1}{y_1}&\nonumber\\
+ax+by+c=&0\nonumber\\
+b(x-x_1)-a(y-y_1)=&0
+\end{align}\index{Retta!per punto perpendicolare}
 \section{Retta per due punti}
 \begin{equation}
 \dfrac{x-x_1}{x_2-x_1}=\dfrac{y-y_1}{y_2-y_1}\quad x_2\neq x_1\quad y_2\neq y_1
 \end{equation}\index{Retta!per due punti}
+\section{Condizione allineamento tre  punti}
+\begin{equation}
+\dfrac{x_3-x_1}{x_2-x_1}=\dfrac{y_3-y_1}{y_2-y_1}\quad x_2\neq x_1\quad y_2\neq y_1
+\end{equation}\index{Retta!tre punti allineati}
 \section{Posizioni due rette}
 \begin{equation}
 \begin{cases}
