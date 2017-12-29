@@ -1,3 +1,4 @@
+% !BIB TS-program = biber
 % !TeX encoding = UTF-8
 % !TeX spellcheck = it_IT
 % !TeX root = formulario.tex
@@ -20,7 +21,23 @@
 \input{../Mod_base/loghi}
 \input{../Mod_base/unita_misura}
 \input{../Mod_base/tcolorboxgest}
-\input{../Mod_base/glossario}
+% 28/12/2017 :: 18:57:00 :: \input{../Mod_base/glossario}
+
+\usepackage[symbols,acronyms,translate=false,nonumberlist,toc,numberedsection,counter=chapter]{glossaries-extra}
+
+\usepackage{glossary-mcols}
+\usepackage{glossary-longragged}
+\usepackage{glossaries-babel}
+%\addto\captionsitalian{%
+%	\renewcommand*{\glossaryname}{Glossario}%
+%	\renewcommand*{\acronymname}{Acronimi}%
+%	\renewcommand*{\entryname}{Nomenclatura}%
+%	\renewcommand*{\descriptionname}{Descrizione}%
+%	\renewcommand*{\symbolname}{Simbolo}%
+%	\renewcommand*{\pagelistname}{Elenco delle pagine}%
+%	\renewcommand*{\glssymbolsgroupname}{Simboli}%
+%	\renewcommand*{\glsnumbersgroupname}{Numeri}
+%}
 \newcommand{\Co}{\numberset{C}}
 %\newglossary[slg]{symbolslist}{sym}{sbl}{Elenco di simboli}
 \makeglossaries
