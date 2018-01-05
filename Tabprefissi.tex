@@ -84,7 +84,7 @@ yocto&\si{\yocto}&Quadrilionesimo&\num{e-24}&\num{0,000000000000000000000001}\\
 %\begin{table}
 %	\centering
 \begin{center}
-		\begin{tabular}{llrrrrrrr}
+		\begin{tabular}{ll*{7}{r}}
 		\toprule	
 		&\multicolumn{1}{c}{\textbf{Milli}}  & \multicolumn{1}{c}{\textbf{Centi}} & \multicolumn{1}{c}{\textbf{Deci}} &  & \multicolumn{1}{c}{\textbf{Deca}} & \multicolumn{1}{c}{\textbf{Hecto}} & \multicolumn{1}{c}{\textbf{Kilo}} \\ 
         &&\multicolumn{1}{c}{\textbf{\si{\kilo}}}& \multicolumn{1}{c}{\textbf{\si{\hecto}}}& \multicolumn{1}{c}{\textbf{\si{\deca}}} &  & \multicolumn{1}{c}{\textbf{\si{\deci}}}& \multicolumn{1}{c}{\textbf{\si{\centi}}}& \multicolumn{1}{c}{\textbf{\si{\milli}}} \\
@@ -110,20 +110,18 @@ yocto&\si{\yocto}&Quadrilionesimo&\num{e-24}&\num{0,000000000000000000000001}\\
 \toprule
 Grandezza fisica&Simbolo della Grandezza& Nome dell'unità SI&Simbolo dell'unità SI\\
 \midrule
-lunghezza&l&metro&\si{\metre}\\
-massa&m&chilogrammo&\si{\kilogram}\\
-intervallo di tempo&t&secondo&\si{\second}\\
+lunghezza&L&metro&\si{\metre}\\
+massa&M&chilogrammo&\si{\kilogram}\\
+intervallo di tempo&T&secondo&\si{\second}\\
 intensità di corrente&I,i&ampere&\si{\ampere}\\
 temperatura assoluta&T&kelvin&\si{\kelvin}\\
-quantità di sostanza&n&mole&\si{\mole}\\
-intensità luminosa&Iv&candela&\si{\candela}\\
+quantità di sostanza&N&mole&\si{\mole}\\
+intensità luminosa&J&candela&\si{\candela}\\
 \bottomrule
 \end{tabular}
 \captionof{table}{Unit\'a fondamentali}\index{Sistema internazionale!unità di misura}
 \end{center}
-%\end{table}
-%\begin{table}[H]
-%\centering
+
 \begin{center}
 	\begin{tabular}{lcl}
 		\toprule 
@@ -202,3 +200,37 @@ genere&nome&simbolo&\multicolumn{1}{c}{valore}\\
 \captionof{table}{Multipli unit\'a di misura}\index{Sistema internazionale!multipli}
 \end{center}
 %\end{table}
+\section{Unità di misura derivate SI}
+\begin{center}
+	\begin{tabular}{llclFl}
+		\toprule
+		Grandezza fisica& \multicolumn{1}{c}{Nome SI} & \multicolumn{1}{c}{Simbolo SI} & \multicolumn{1}{c}{Unità SI}& \multicolumn{1}{c}{Dimensioni}& \multicolumn{1}{l}{Equivalenza SI}\\ 
+		\midrule
+		area  &  &  &\si{\meter\squared}&\dif{\si{\Lunghezza\squared}} &\si{\meter\squared} \\ 
+		volume  & &  &\si{\meter\cubed}& \dif{\si{\Lunghezza\cubed}} &\si{\meter\cubed} \\ 
+		\midrule
+		velocità &  &  &\si{\meter\per\second}  &\dif{\si{\Lunghezza\per\Tempo}} &  \si{\meter\per\second} \\
+		accelerazione &  & &\si{\meter\per\square\second} &\dif{\si{\Lunghezza\per\Tempo\squared}} & \si{\meter\per\square\second} \\ 
+		\midrule 
+		angolo piano & radiante   & \si{\radian}& \si{\meter\per\meter}&\dif{\si{\Lunghezza\per\Lunghezza}}  &1\\
+		velocità angolare &  &  &\si{\radian\per\second}& \dif{\si{\per\Tempo}}  & \si{\per\second} \\
+		accelerazione angolare &  &  &\si{\radian\per\second\squared}& \dif{\si{\per\Tempo\squared}}  & \si{\per\second\squared} \\ 
+		frequenza &  hertz & \si{\hertz} &\si{\per\second}&\dif{\si{\per\Tempo}} &\si{\per\second} \\ 
+		\midrule 
+		forza &   newton& \si{\newton} &\si{\kilogram\meter\per\square\second} & \dif{\si{\per\Tempo\squared}}&\si{\kilogram\meter\per\square\second} \\ 
+		pressione  & pascal& \si{\pascal}&\si{\newton\per\square\meter}&\dif{\si{\Massa\per\Lunghezza\per\Tempo\squared}} & \si{\kilogram\per\meter\per\square\second} \\ 
+		lavoro energia  & joule& \si{\joule}&\si{\newton\meter}&\dif{\si{\Massa\Lunghezza\squared\per\Tempo\squared}} & \si{\kilogram\meter\squared\per\square\second} \\ 
+		potenza  & watt& \si{\watt}&\si{\joule\per\second}&\dif{\si{\Massa\per\Lunghezza\squared\per\Tempo\cubed}} & \si{\kilogram\meter\squared\per\second\cubed} \\ 
+		\midrule
+		carica elettrica & coulomb& \si{\coulomb}&\si{\ampere\second}&\dif{\si{\Corrente\Tempo}} & \si{\ampere\second} \\ 
+		potenziale elettrico & volt& \si{\volt}&\si{\joule\per\coulomb}&\dif{\si{\Massa\Lunghezza\squared\per\Tempo\cubed\per\Corrente}} &\si{\kilogram\meter\squared\per\second\cubed\per\ampere}  \\ 
+		resistenza elettrica & ohm& \si{\ohm}&\si{\volt\per\ampere}&\dif{\si{\per\Massa\per\Lunghezza\Tempo\cubed\per\Corrente\squared}} &\si{\kilogram\meter\squared\per\second\cubed\per\square\ampere}  \\ 
+		conduttanza elettrica & siemens& \si{\siemens}&\si{\ampere\per\volt}&\dif{\si{\Corrente\squared\Tempo\cubed\per\Massa\per\Lunghezza\squared}} &\si{\ampere\squared\second\cubed\per\kilogram\squared\per\meter\squared}  \\ 
+		capacità elettrica & farad& \si{\farad}&\si{\coulomb\per\volt}&\dif{\si{\Corrente\squared\Tempo\tothe{4}\per\Massa\per\Lunghezza\squared}} &\si{\ampere\squared\second\tothe{4}\per\kilogram\per\meter\squared}  \\ 
+		flusso magnetico & weber& \si{\weber}&\si{\volt\second}&\dif{\si{\Massa\Lunghezza\squared\per\Tempo\squared\per\Corrente}
+		} &\si{\kg\meter\squared\per\second\squared\per\ampere}  \\ 
+		densità flusso magnetico & tesla& \si{\tesla}&\si{\volt\second\per\meter\squared}&\dif{\si{\Massa\per\Tempo\squared\per\Corrente}} &\si{\kg\per\second\squared\per\ampere}  \\ 
+		induttanza & henry& \si{\henry}&\si{\volt\second\per\ampere}&\dif{\si{\Massa\Lunghezza\squared\per\Tempo\squared\per\Corrente\squared}} &\si{\kg\meter\squared\per\second\squared\per\ampere\squared}  \\ 
+		\bottomrule
+	\end{tabular}\captionof{table}{SI unità derivate}\index{Sistema internazionale!unità derivate} 
+\end{center}
