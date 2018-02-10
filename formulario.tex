@@ -13,8 +13,9 @@
 \input{../Mod_base/matematica}
 \input{../Mod_base/tabelle}
 \input{../Mod_base/stand_class}
-\input{../Mod_base/rifIndici}
+%\input{../Mod_base/rifIndici}
 \input{../Mod_base/pagina}
+\setlength{\headheight}{13pt}
 \input{../Mod_base/indice}
 \input{../Mod_base/date}
 \input{../Mod_base/loghi}
@@ -24,10 +25,10 @@
 \DeclareSIUnit\Massa{M}
 \DeclareSIUnit\Tempo{T}
 \DeclareSIUnit\Corrente{I}
-\input{../Mod_base/tcolorboxgest}
+
 % 28/12/2017 :: 18:57:00 :: \input{../Mod_base/glossario}
 
-\usepackage[symbols,acronyms,translate=false,nonumberlist,toc,numberedsection,counter=chapter]{glossaries-extra}
+\usepackage[symbols,acronyms,translate=false,nonumberlist,toc,numberedsection,counter=chapter,automake]{glossaries-extra}
 
 \usepackage{glossary-mcols}
 \usepackage{glossary-longragged}
@@ -45,15 +46,15 @@
 \newcommand{\Co}{\numberset{C}}
 %\newglossary[slg]{symbolslist}{sym}{sbl}{Elenco di simboli}
 \makeglossaries
-\renewcommand*{\glsxtrpostdescgeneral}{%
-	\ifglshasfield{see}{\glscurrententrylabel}
-	{, \glsxtrusesee{\glscurrententrylabel}}%
-	{}%
-}
+%\renewcommand*{\glsxtrpostdescgeneral}{%
+%	\ifglshasfield{see}{\glscurrententrylabel}
+%	{, \glsxtrusesee{\glscurrententrylabel}}%
+%	{}%
+%}
 \setglossarystyle{altlistgroup}
 \loadglsentries{glossario/glossari1}
 
-
+\usepackage{imakeidx}
 \makeindex[options=-s ../Mod_base/oldclaudio.sti]
 
 \newcolumntype{W}{>{\sffamily\Large $}c<{$}}
@@ -98,7 +99,7 @@
  }
  \makeatother
 \usepackage[grumpy,mark,markifdirty,raisemark=0.95\paperheight]{gitinfo2}
-\usepackage{parskip}
+% 10/02/2018 :: 20:05:58 :: \usepackage{parskip}
 \usepackage[toc,page]{appendix}
 
 \renewcommand{\appendixtocname}{Appendici}
@@ -115,9 +116,11 @@ hyperref,
 backend=biber,
 backref]{biblatex}
 \addbibresource{formulario.bib}
-
+\usepackage[italian]{varioref}
 \usepackage{hyperxmp}
-\usepackage{hyperref}
+\usepackage[pdfpagelabels]{hyperref}
+\usepackage[italian]{cleveref}
+\input{../Mod_base/tcolorboxgest}
 \title{Formulario}
 \author{Claudio Duchi}
 \date{\datetime}
@@ -132,9 +135,9 @@ pdflicenseurl={http://creativecommons.org/licenses/by-nc-nd/3.0/},
 pdflang={it},
 pdfmetalang={it},
 pdfkeywords={Algebra, geometria, analisi},
-pdfcopyright={Copyright (C) 2017, Claudio Duchi},
+pdfcopyright={Copyright (C) 2018, Claudio Duchi},
 pdfcontacturl={http://breviariomatematico.altervista.org},
-pdfcontactpostcode={},
+pdfcontactpostcode={06128},
 pdfcontactphone={},
 pdfcontactemail={claduc},
 pdfcontactcountry={Italy},
@@ -183,8 +186,7 @@ baseurl={http://breviariomatematico.altervista.org}
 	\addcontentsline{toc}{chapter}{\listtablename}%
 			\listoftables
 			\mainmatter
-\input{compilaTexStudioDue}	
-\cleardoublepage		
+\input{compilaTexStudioDue}			
 \begin{appendices}
 	\input{../Mod_base/MezziUsati}
 	\glsaddall
@@ -192,13 +194,10 @@ baseurl={http://breviariomatematico.altervista.org}
 	\printglossaries
 	\onecolumn
 \end{appendices}
-\cleardoublepage
 \nocite{*}
  \addcontentsline{toc}{chapter}{\bibname}
 \printbibliography
-\cleardoublepage
  \addcontentsline{toc}{chapter}{\indexname}
- 
  \printindex
 
 \end{document}
