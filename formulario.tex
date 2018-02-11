@@ -46,11 +46,11 @@
 \newcommand{\Co}{\numberset{C}}
 %\newglossary[slg]{symbolslist}{sym}{sbl}{Elenco di simboli}
 \makeglossaries
-%\renewcommand*{\glsxtrpostdescgeneral}{%
-%	\ifglshasfield{see}{\glscurrententrylabel}
-%	{, \glsxtrusesee{\glscurrententrylabel}}%
-%	{}%
-%}
+\renewcommand*{\glsxtrpostdescgeneral}{%
+	\ifglshasfield{see}{\glscurrententrylabel}
+	{, \glsxtrusesee{\glscurrententrylabel}}%
+	{}%
+}
 \setglossarystyle{altlistgroup}
 \loadglsentries{glossario/glossari1}
 
@@ -98,6 +98,7 @@
  	%\pagenumbering{arabic}
  }
  \makeatother
+% 11/02/2018 :: 10:21:26 :: \usepackage[grumpy,mark,markifdirty,raisemark=0.95\paperheight]{gitinfo2}
 \usepackage[grumpy,mark,markifdirty,raisemark=0.95\paperheight]{gitinfo2}
 % 10/02/2018 :: 20:05:58 :: \usepackage{parskip}
 \usepackage[toc,page]{appendix}
@@ -169,14 +170,18 @@ baseurl={http://breviariomatematico.altervista.org}
 				{ \huge \bfseries Formulario}\\[0.4cm]
 				\HRule \\[1.5cm]
 				\vfill
-			\end{center}
-		\begin{center}
+%			\end{center}
+%		\begin{center}
 			\begin{tikzpicture}
 			\renewcommand*{\VertexBallColor}{green!50!black}
 			\GraphInit[vstyle=Art]
 			\grComplete[RA=6]{20}
 			\end{tikzpicture}
 		\end{center}
+	{\centering
+		Release:\gitReln\ (\gitAbbrevHash)\ Autore:\gitAuthorName\ 
+  \gitCommitterDate \\
+	}
 		\end{titlepage}
 	\hypersetup{pageanchor=true}
 		\input{../Mod_base/copyright}
