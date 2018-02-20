@@ -30,9 +30,10 @@ z=a+b\uimm\quad\Im(z)=b\quad a,b\in\R
 z=a+b\uimm\quad r=\abs{z}=\sqrt{a^2+b^2}\quad a,b\in\R
 \end{equation*}\index{Numero!complesso!modulo}
 \section{Complessi coniugati}
-\begin{equation*}
-z=a+b\uimm\quad\conj{z}=a-b\uimm\quad a,b\in\R
-\end{equation*}\index{Numero!complesso!coniugato}
+\begin{align*}
+z=a+b\uimm\quad\conj{z}=a-b\uimm\quad a,b\in\R\\
+\conj{\conj{z}}=&z\\
+\end{align*}\index{Numero!complesso!coniugato}
 \section{Complessi opposti}
 \begin{equation*}
 z=a+b\uimm\quad\-z=-a-b\uimm\quad a,b\in\R
@@ -47,7 +48,8 @@ z_1+z_2=&a+c+(b+d)\uimm
 \begin{align*}
 z=&a+b\uimm\\
 \conj{z}=&a-b\uimm\\
-z+\conj{z}=&a+a=2a
+z+\conj{z}=&a+a=2a\\
+\conj{z\pm w}=&\conj{z}\pm\conj{w}\\
 \end{align*}\index{Numero!complesso!coniugato}
 \section{Differenza di numeri complessi}
 \begin{align*}
@@ -71,8 +73,16 @@ z_1\cdot z_2=&(ac-bd)+(ad+bc)\uimm
 \begin{align*}
 z=&a+b\uimm\\
 \conj{z}=&a-b\uimm\\
-z\cdot\conj{z}=&a^2+b^2
+z\cdot\conj{z}=&a^2+b^2\\
+\conj{zw}=&\conj{z}\conj{w}
 \end{align*}
+\section{Reciproco numero complesso }
+\begin{align*}
+z_1=&a+b\uimm\\
+z_2=&c+d\uimm\\
+z_1\cdot z_2=&1\\
+z_2=&\dfrac{\conj{z_1}}{\abs{z_1}^2}\\
+\end{align*}\index{Numero!complesso!reciproco}
 \section{Quoziente di due numeri complessi}
 \begin{align*}
 z_1=&a+b\uimm\\
