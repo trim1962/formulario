@@ -8,7 +8,7 @@
 \frenchspacing%
 \usepackage{textgreek}
 \input{../Mod_base/base}
-\geometry{top=1.5cm,bottom=1.5cm}
+ \geometry{top=1.5cm,bottom=1.5cm}
 \input{../Mod_base/grafica}
 \input{../Mod_base/matematica}
 \input{../Mod_base/tabelle}
@@ -43,7 +43,7 @@
 %	\renewcommand*{\glssymbolsgroupname}{Simboli}%
 %	\renewcommand*{\glsnumbersgroupname}{Numeri}
 %}
-\newcommand{\Co}{\numberset{C}}
+%\newcommand{\Co}{\numberset{C}}
 %\newglossary[slg]{symbolslist}{sym}{sbl}{Elenco di simboli}
 \makeglossaries
 \renewcommand*{\glsxtrpostdescgeneral}{%
@@ -158,6 +158,7 @@ baseurl={http://breviariomatematico.altervista.org}
 
 \input{compilaTexStudio}
 \listfiles
+
 \begin{document}
 %\setcounter{page}{2}
 		\frontmatter
@@ -173,9 +174,11 @@ baseurl={http://breviariomatematico.altervista.org}
 %			\end{center}
 %		\begin{center}
 			\begin{tikzpicture}
+			
 			\renewcommand*{\VertexBallColor}{green!50!black}
 			\GraphInit[vstyle=Art]
-			\grComplete[RA=6]{20}
+\grCirculant[RA=6]{21}{1,3,10}%
+%			\grComplete[RA=6]{20}
 			\end{tikzpicture}
 		\end{center}
 	{\centering
