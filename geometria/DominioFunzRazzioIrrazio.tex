@@ -1,0 +1,40 @@
+\documentclass[10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{forest}
+\pagestyle{empty}
+\begin{document}
+ \begin{forest}
+	for tree={grow=0,draw},
+ % 28/03/2018 :: 12:20:24 :: 	forked edges,
+ 	[Funzione
+ 	[Razionale
+ 	[Intera
+ 	[Tutto R]
+ 	]
+ 	[Fratta
+ 	[Denominatore diverso da zero]
+ 	]
+ 	]
+ 	[Irrazionale
+ 	[Pari
+ 	[Intera
+ 	[Radicando maggiore di zero]
+ 	]
+ 	[Fratta
+ 	[Radicando maggiore di zero
+ 	[Denominatore diverso da zero]
+ 	]
+ 	]
+ 	]
+ 	[Dispari
+ 	[Intera
+ 		[Tutto R]
+ 	]
+ 	[Fratta
+ 	[Denominatore diverso da zero]
+ 	]
+ 	]
+ 	]
+ 	]
+ \end{forest}
+\end{document}
