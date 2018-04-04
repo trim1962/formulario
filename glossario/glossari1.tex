@@ -1,8 +1,10 @@
-\newacronym{DICE}{DICE}{Discordi Interni Concordi Esterni}
+
 \newacronym{ASCII}{ASCII}{American Standard Code for Information Interchange}
+\newacronym{DICE}{DICE}{Discordi Interni Concordi Esterni}
 \newacronym{Lim}{Lim}{Limite}
 \newacronym{Log}{Log}{Logaritmo in base $10$}
 \newacronym{MCD}{MCD}{Massimo comune divisore}
+\newacronym{Re(z)}{Re(z)}{Parte reale}
 \newacronym{acos}{acos}{arco coseno}
 \newacronym{asin}{asin}{arco seno}
 \newacronym{atan}{atan}{arco tangente}
@@ -24,10 +26,13 @@
 \newacronym{sin}{sin}{seno}
 \newacronym{tan}{tan}{tangente}
 \newglossaryentry{Ag}{type=symbols,name={A},description={il numero dieci in base 16}}
+\newglossaryentry{Campoesistenzag}{name={Campo di esistenza},description={Sinonimo per insieme di definizione},see={dominiog,InsiemeDefinzioneg}}
 \newglossaryentry{Gg}{type=symbols,name={G},description={simbolo di giga}}
+\newglossaryentry{InsiemeDefinzioneg}{name={Insieme di definizione},description={per una funzione, è il sottoinsieme del dominio in cui la funzione è effettivamente definita},see={dominiog}}
 \newglossaryentry{Mg}{type=symbols,name={M},description={simbolo di mega}}
 \newglossaryentry{Petag}{name={Peta},description={prefisso moltiplicativo che indica $10^{15}$}}
 \newglossaryentry{Pg}{type=symbols,name={P},description={Peta}}
+\newglossaryentry{Razionalizzazioneg}{name={Razionalizzazione},description={procedura che cerca di trasformazre una frazione che ha un radicale al denominatore in una frazione che ha un radicale solo al numeratore}}
 \newglossaryentry{acosg}{name={acos},description={abbreviazione di arco coseno, funzione inversa del coseno}}
 \newglossaryentry{addendog}{name={Addendo},description={termine dell'addizione}}
 \newglossaryentry{addizioneg}{name={Addizione},description={operazione binaria}}
@@ -93,6 +98,7 @@
 \newglossaryentry{deltag}{name={Delta},description={ha molti significati in matematica},see={discriminanteg}}
 \newglossaryentry{deltasg}{type=symbols,name={\ensuremath{\Delta}},description={discriminante equazione di secondo grado $\Delta=b^2-4ac$}}
 \newglossaryentry{denominatoreg}{name={Denominatore},description={termine divisore in una frazione}}
+\newglossaryentry{derivatag}{name={Derivata},description={limite, se esiste ed è finito,  per $h\to 0$ del rapporto incrementale},see={rapportoincrementaleg}}
 \newglossaryentry{dfg}{type=symbols,name={d},description={simbolo di deci}}
 \newglossaryentry{dg}{type=symbols,name={D},description={numero tredici in base 16}}
 \newglossaryentry{diagonaleg}{name={Diagonale},description={in un poligono regolare, segmento che unisce due vertici non adiacenti}}
@@ -107,8 +113,6 @@
 \newglossaryentry{divisioneg}{name={Divisione},description={operazione binaria inversa della moltiplicazione}}
 \newglossaryentry{divisoreg}{name={Divisore},description={secondo termine della divisione}}
 \newglossaryentry{dominiog}{name={Dominio},description={per una funzione, è l'insieme dei valori per cui essa è  definita}}
-\newglossaryentry{InsiemeDefinzioneg}{name={Insieme di definizione},description={per una funzione, è il sottoinsieme del dominio in cui la funzione è effettivamente definita},see={dominiog}}
-\newglossaryentry{Campoesistenzag}{name={Campo di esistenza},description={Sinonimo per insieme di definizione},see={dominiog,InsiemeDefinzioneg}}
 \newglossaryentry{drg}{type=symbols,name={D},description={numero 500 nel sistema di numerazione romano}}
 \newglossaryentry{eg}{type=symbols,name={E},description={il numero quattordici in base 16}}
 \newglossaryentry{elevamentoapotenzag}{name={Elevamento a potenza},description={operazione che associa ad un numero detto base ad un numero naturale detto esponente, il risultato detto potenza è uguale al prodotto della base per tante volte quanto è l'esponente},see={potenzag}}
@@ -154,6 +158,11 @@
 \newglossaryentry{frazpropg}{name={Frazione propria},description={nella frazione propria il numeratore è minore del denominatore}}
 \newglossaryentry{frequenzaassog}{name={Frequenza assoluta},description={numero di individui di una classe}}
 \newglossaryentry{frequenzarelag}{name={Frequenza relativa},description={numero di individui di una classe diviso l'intera popolazione}}
+\newglossaryentry{funzionediparig}{name={Funzione dispari},description={una funzione $\funzione{f}{\R}{\R}$ è dispari se per ogni $x$ $f(-x)=-f(x)$}}
+\newglossaryentry{funzioneparig}{name={Funzione pari},description={una funzione $\funzione{f}{\R}{\R}$ è pari se per ogni $x$ $f(x)=f(-x)$}}
+\newglossaryentry{funzionerazionalefratg}{name={Funzione razionale fratta},description={funzione che può essere espressa come un quoziente fra polinomi}}
+\newglossaryentry{funzionerazionaleintg}{name={Funzione razionale intera},description={funzione che può essere espressa come un polinomio}}
+\newglossaryentry{funzionezerog}{name={Funzione, zero di},description={valore per cui una funzione è nulla}}
 \newglossaryentry{gg}{type=symbols,name={g},description={simbolo di grammo}}
 \newglossaryentry{gigag}{name={giga},description={prefisso moltiplicativo che indica $10^{9}$}}
 \newglossaryentry{gradog}{name={Grado sessagesimale},description={è la trecento-sessantesima parte di un angolo giro}}
@@ -264,14 +273,19 @@
 \newglossaryentry{orsg}{type=symbols,name={\ensuremath{\lor}},description={or}}
 \newglossaryentry{ortocentrog}{name={Ortocentro},description={in un triangolo punto in comune tra le altezze o le rette a cui appartengono},see={altezzag}}
 \newglossaryentry{ortogonaleg}{name={Ortogonale},description={Peperpendicolare,normale},see={normaleg,perpendicolareg}}
+\newglossaryentry{parallelismog}{name={Parallelismo},description={relazione che può verificarsi fra due rette, due piani, fra una retta e un piano, tra due curve.}}
 \newglossaryentry{parallelogrammag}{name={Parallelogramma},description={quadrilatero con quattro lati paralleli}}
+\newglossaryentry{parig}{name={Pari},description={numero divisibile per due}}
 \newglossaryentry{periodofun}{name={Periodo funzione},description=rappresenta il più piccolo valore $T$ per cui ${f(x)=f(x+T)}$ per ogni x}
 \newglossaryentry{periodonum}{name={Periodo numero},description={in un numero decimale indica una sequenza di cifre che si ripete ciclicamente nella sua rappresentazione},see={numerodecimaleg}}
 \newglossaryentry{perpendicolareg}{name={Perpendicolare},description={che forma un angolo retto}}
+\newglossaryentry{pesospecificog}{name={Peso specifico},description={rapporto tra il peso di un corpo e il suo volume}}
+\newglossaryentry{pgg}{type=symbols,name={\ensuremath{\pi}},description={rapporto tra la circonferenza e il suo diametro}}
 \newglossaryentry{pgrecog}{type=symbols,name={\ensuremath{\pi}},description={numero decimale infinito non periodico}}
 \newglossaryentry{pg}{type=symbols,name={p},description={pico}}
 \newglossaryentry{pianoArgandGaussg}{name={Piano di Argand Gauss},description={rappresentazione geometrica dell'insieme dei numeri complessi $\Co$}}
 \newglossaryentry{picog}{name={pico},description={prefisso moltiplicativo che indica $10^{-12}$}}
+\newglossaryentry{pigrecog}{name={Pi greco},description={numero irrazionale uguale al rapporto tra la circonferenza e il suo diametro}}
 \newglossaryentry{polinomiocoefficienteg}{name={Polinomio coefficiente},description={parti numeriche dei monomi che lo compongono}}
 \newglossaryentry{polinomioformanormaleg}{name={Polinomio forma normale},description={un polinomio è in forma normale quando è somma algebrica di monomi non simili},see={monomiosimileg}}
 \newglossaryentry{polinomiogradog}{name={Polinomio grado},description={il grado di un polinomio non nullo e in forma normale è il massimo dei gradi dei monomi che lo compongono},see={polinomionullog,monomiogradog}}
@@ -292,11 +306,12 @@
 \newglossaryentry{quadratog}{name={Quadrato},description={figura geometrica che ha quattro lati uguali e quattro angoli retti}}
 \newglossaryentry{quozienteg}{name={Quoziente},description={risultato della divisione}}
 \newglossaryentry{radianteg}{name={radiante},description={un angolo al centro ha l'ampiezza di un radiante quando sottende sulla circonferenza un arco uguale al raggio della circonferenza}}
-\newglossaryentry{raggiog}{name={Raggio},description={segmento che unisce il centro di un cerchio con un punto sulla circonferenza}}
+\newglossaryentry{raggiog}{name={Raggio},description={segmento che unisce il centro di un cerchio con un punto sulla circonferenza, il raggio è la metà del diametro},see={diametrog}}
+\newglossaryentry{rapportoincrementaleg}{name={Rapporto incrementale},description={data una funzione $\funzione{f}{\R}{\R}$, a valori reali, il rapporto incrementale è il quoziente  $\Delta f/\Delta x=\left(f(x+h)-f(x)\right)/h$ }}
 \newglossaryentry{regolacang}{name={Regola cancellazione},description={se lo stesso termine è al primo e al secondo membro di un'equazione, allora può essere cancellato}}
 \newglossaryentry{regolatraspg}{name={Regola trasporto},description={spostando un termine dal primo al secondo membro di un'equazione e viceversa bisogna cambiargli di segno}}
 \newglossaryentry{rettangolog}{name={Rettangolo},description={quadrilatero con i lati uguali due a due e che formano quattro angoli retti}}
-\newglossaryentry{rettasecanteg}{name={Retta secante},description={retta che interseca una retta in più punti}}
+\newglossaryentry{rettasecanteg}{name={Secante},description={retta che interseca una retta in più punti}}
 \newglossaryentry{rettatangenteg}{name={Retta tangente},description={retta che interseca una retta in un punto}}
 \newglossaryentry{rettecoincidentig}{name={Rette coincidenti},description={rette che hanno due punti in comune}}
 \newglossaryentry{retteincidentig}{name={Rette incidenti},description={rette che hanno un punto in comune}}
@@ -309,7 +324,7 @@
 \newglossaryentry{secondog}{name={Secondo},description={unità di misura degli intervalli di tempo che fa parte del SI. Un secondo è la durata di \num{9192631770} oscillazioni della radiazione emessa dall'atomo di cesio~133}}
 \newglossaryentry{secondomembroequazioneg}{name={Secondo membro},description={in una equazione è il termine che si trova a destra del segno di uguaglianza}}
 \newglossaryentry{secondoprincipioequig}{name={Secondo principio equivalenza},description={moltiplicando o dividendo per la stessa quantità diversa da zero il primo e il secondo membro di una equazione si ottiene una equazione equivalente a quella data}}
-\newglossaryentry{secondosessagesimaleg}{name={Secondo sessagesimale},description={è la sessantesima parte di un minuto o la 3600 parte di un grado}}
+\newglossaryentry{secondosessagesimaleg}{name={Secondo sessagesimale},description={è la sessantesima parte di un minuto o la 3600 parte di un grado sessagesimale}}
 \newglossaryentry{segmentoadiacenteg}{name={Segmento adiacente},description={segmenti che hanno un estremo in comune ed appartengono alla stessa retta}}
 \newglossaryentry{segmentoconsecutivog}{name={Segmento consecutivo},description={segmenti che hanno un estremo in comune},see={segmentoadiacenteg}}
 \newglossaryentry{segmentog}{name={Segmento},description={parte di retta compresa fra due suoi punti}}
@@ -337,16 +352,10 @@
 \newglossaryentry{triangoloisog}{name={Triangolo isoscele},description={triangolo con due lati uguali}}
 \newglossaryentry{triangolorettangolog}{name={Triangolo rettangolo},description={triangolo in cui due lati formano un angolo retto},see={angolorettog}}
 \newglossaryentry{triangoloscag}{name={Triangolo scaleno},description={triangolo con tre lati disuguali}}
+\newglossaryentry{unitaimmaginariag}{name={Unità immaginaria},description={particolare numero complesso definito come $\uimm^2=-1$}}
 \newglossaryentry{variabileg}{name={Variabile},description={una variabile è un carattere che rappresenta una quantità numerica non nota}}
 \newglossaryentry{vrg}{type=symbols,name={V},description={il numero cinque nel sistema di numerazione romano}}
 \newglossaryentry{xrg}{type=symbols,name={X},description={il numero dieci nel sistema di numerazione romano}}
 \newglossaryentry{znug}{type=symbols,name={Z},description={insieme dei numeri interi}}
-\newglossaryentry{parallelismog}{name={Parallelismo},description={relazione che può verificarsi fra due rette, due piani, fra una retta e un piano, tra due curve.}}
-\newglossaryentry{parig}{name={Pari},description={numero divisibile per due}}
-\newglossaryentry{funzioneparig}{name={Funzione pari},description={una funzione $\funzione{f}{\R}{\R}$ è pari se per ogni $x$ $f(x)=f(-x)$}}
-\newglossaryentry{funzionediparig}{name={Funzione dispari},description={una funzione $\funzione{f}{\R}{\R}$ è dispari se per ogni $x$ $f(-x)=-f(x)$}}
-\newacronym{Re(z)}{Re(z)}{Parte reale}
-\newglossaryentry{unitaimmaginariag}{name={Unità immaginaria},description={particolare numero complesso definito come $\uimm^2=-1$}}
-\newglossaryentry{pesospecificog}{name={Peso specifico},description={rapporto tra il peso di un corpo e il suo volume}}
-\newglossaryentry{pgg}{type=symbols,name={\ensuremath{\pi}},description={rapporto tra la circonferenza e il suo diametro}}
-\newglossaryentry{pigrecog}{name={Pi greco},description={numero irrazionale uguale al rapporto tra la circonferenza e il suo diametro}}
+\newglossaryentry{sistemaimpossibileg}{name={Sistema impossibile},description={sistema di equazioni che non ha soluzioni in comune a tutte le equazioni che lo compongono}}
+\newglossaryentry{sistemaindeterminatog}{name={Sistema indeterminato},description={sistema di equazioni che ha infinte soluzioni in comune a tutte le equazioni che lo compongono}}

@@ -93,7 +93,39 @@ Date due funzioni $\funzione{f}{A}{\R}$ $\funzione{g}{A}{\R}$ se $\lim_{h \to x_
 		\cmidrule{2-5}
 	\end{tabular}\captionof{table}{Limite della differenza}\index{Limite!differenza}
 \end{center}
-
+\section{Limite funzione razionale intera}
+Data la funzione $\funzione{f}{\R}{\R}$ definita
+$f(x)=ax^n+bx^{n-1}+cx^{n-2}+\dots+d$ allora il limite
+\begin{align*}
+\lim_{x\to \infty}f(x)=&\\
+=&x^n\left(a+\dfrac{b}{x}+\dfrac{c}{x^2}+\cdots+\dfrac{d}{x^n}\right)
+\intertext{se $n$ è pari}
+=&+\infty\\
+\intertext{se $n$ è dispari}
+=&\begin{cases}
++\infty& \text{se} x\to +\infty\\[2ex]
+-\infty& \text{se} x\to -\infty\\
+\end{cases}
+\end{align*}\index{Limite!funzione razionale!intera}
+\section{Limite funzione razionale fratta}
+Data la funzione $\funzione{f}{\R}{\R}$ definita
+$f(x)=\dfrac{a_n x^n+a_{n-1}x^{n-1}+\cdots a_0}{b_m x^m+a_{m-1}x^{m-1}+\cdots b_0}$
+ allora il limite
+\begin{align*}
+\lim_{x\to \infty}f(x)=&\\
+=&\lim_{x\to \infty}\dfrac{x^n\left(a_n+\frac{a_{n-1}}{x}+\cdots+\dfrac{a_0}{x^n}\right)}{x^m\left(b_m+\frac{b_{m-1}}{x}+\cdots+\dfrac{b_0}{x^m}\right)}\\
+=&\lim_{x\to \infty}x^{n-m}\dfrac{\left(a_n+\frac{a_{n-1}}{x}+\cdots+\dfrac{a_0}{x^n}\right)}{\left(b_m+\frac{b_{m-1}}{x}+\cdots+\dfrac{b_0}{x^m}\right)}\\
+\intertext{Se $n>m$}
+\lim_{x\to +\infty}f(x)=&+\infty\\
+\lim_{x\to -\infty}f(x)=&\begin{cases}
++\infty& \text{se}\; n-m\quad \text{pari}\\[2ex]
+-\infty& \text{se}\; n-m\quad \text{dispari}\\
+\end{cases}
+\intertext{Se $n<m$}
+\lim_{x\to \infty}f(x)=&0\\
+\intertext{Se $n=m$}
+\lim_{x\to \infty}f(x)=&\dfrac{a_n}{b_m}
+\end{align*}\index{Limite!funzione razionale!fratta}
 \chapter{Funzioni continue}
 \section{Definizione}
 Una funzione $\funzione{f}{D}{\R}$ è continua se
