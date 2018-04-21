@@ -1,0 +1,45 @@
+\documentclass[10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+
+\draw[->] (-6.,0.) -- (6.,0.);
+;
+\draw[->] (0.,-6.) -- (0.,6.);
+
+\clip(-6.,-6.) rectangle (6.,6.);
+\draw (0.,0.) circle (4.cm);
+\draw  (0.,0.)-- (2.8350607520701714,2.8217779026832206);
+\draw  (0.,0.)-- (-3.3010734516037354,2.258963051295218);
+\draw  (0.,0.)-- (1.2070520396661841,-3.813531876559799);
+\draw [->,line width=2.pt] (-3.3010734516037354,2.258963051295218) -- (-4.995295740075149,-0.21684203740758345);
+\draw [->,line width=2.pt] (2.8350607520701714,2.8217779026832206) -- (0.7187273250577562,4.948073466735849);
+\draw [->,line width=2.pt] (1.2070520396661841,-3.813531876559799) -- (4.067200947086033,-2.908242846810162);
+\draw [->,line width=2.pt] (2.8350607520701714,2.8217779026832206) -- (1.7719129700438572,1.7636111891770128);
+\draw [->,line width=2.pt] (-3.3010734516037354,2.258963051295218) -- (-2.0631709072523345,1.4118519070595112);
+\draw [->,line width=2.pt] (1.2070520396661841,-3.813531876559799) -- (0.7544075247913651,-2.3834574228498746);
+%\begin{scriptsize}
+\draw [fill=black] (0.,0.) circle (2.0pt);
+\draw[color=black] (-0.411487909416705,-0.41964238191436166) node {$O$};
+\draw [fill=black] (2.8350607520701714,2.8217779026832206) circle (2.5pt);
+\draw[color=black] (3.0139037141956004,3.291290954446323) node {$B$};
+\draw [fill=black] (-3.3010734516037354,2.258963051295218) circle (2.5pt);
+\draw[color=black] (-3.5805674027683967,2.760701324345772) node {$C$};
+\draw [fill=black] (1.2070520396661841,-3.813531876559799) circle (2.5pt);
+\draw[color=black] (1.3716024781700837,-4.3537125082415287) node {$D$};
+\draw[color=black] (-4.262754070040534,1.623723545558877) node {$V$};
+\draw[color=black] (2.104321491166084,4.2514055231997006) node {$V$};
+\draw[color=black] (2.8117743313001524,-3.6547771996892527) node {$V$};
+\draw[color=black] (2.232781738371187,2.632241077140669) node {$a_c$};
+\draw[color=black] (-2.5699204882911557,2.154313175659428) node {$a_c$};
+\draw[color=black] (0.5420775395172565,-2.998921396726771) node {$a_c$};
+\draw[color=black] (-1.0,1.2) node {$r$};
+%\end{scriptsize}
+\end{tikzpicture}
+\end{document}
