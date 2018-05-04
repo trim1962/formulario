@@ -156,8 +156,10 @@ baseurl={http://breviariomatematico.altervista.org}
 %\setcounter{page}{2}
 		\frontmatter
 		\hypersetup{pageanchor=false}
-		\begin{titlepage}
-			\begin{center}
+		\begin{titlepage}\parindent=0pt
+			\centering
+			\parbox{0.8\textwidth}{\centering
+%			\begin{center}
 			\input{../Mod_base/Lgrande}\\[1cm]
 				\textsc{\LARGE Claudio Duchi}\\[1.5cm]
 				\HRule \\[0.4cm]
@@ -170,11 +172,12 @@ baseurl={http://breviariomatematico.altervista.org}
 \grCirculant[RA=6]{21}{1,3,10}%
 %			\grComplete[RA=6]{20}
 			\end{tikzpicture}
-		\end{center}
-	{\centering
+%		\end{center}
+
+\makebox[\linewidth]{\centering
 		Release:\gitReln\ (\gitAbbrevHash)\ Autore:\gitAuthorName\ 
-  \gitCommitterDate \\
-	}
+  \gitCommitterDate}
+}
 		\end{titlepage}
 	\hypersetup{pageanchor=true}
 		\input{../Mod_base/copyright}
