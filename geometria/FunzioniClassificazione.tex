@@ -1,0 +1,77 @@
+\documentclass[%
+% border=1pt
+border={20pt 20pt 20pt 20pt} % left bottom right top
+]{standalone}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{forest}
+\usetikzlibrary{shadows,arrows.meta}
+
+\tikzset{parent/.style={align=center,text width=2cm,rounded corners=2pt},
+	child/.style={align=center,text width=2.8cm,rounded corners=6pt},
+	grandchild/.style={text width=2.5cm}
+}
+\pagestyle{empty}
+\begin{document}
+ \begin{forest}
+	for tree={%
+		for tree={%
+			thick,
+			l sep=1.5cm,
+			s sep=1.5cm,
+			node options={draw,font=\sffamily},
+			edge={semithick,-Latex},
+			where level=0{parent}{},
+			where level=1{parent}{},
+			where level=2{
+				minimum height=1cm,
+				child,
+				parent anchor=south west,
+				tier=p,
+				l sep=0.2cm,
+				for descendants={%
+					grandchild,
+					minimum height=0.6cm,
+					anchor=150,
+					edge path={
+						\noexpand\path[\forestoption{edge}]
+						(!to tier=p.parent anchor) |-(.child anchor)\forestoption{edge label};
+					},
+				}
+			}{},
+		}
+	},
+ % 28/03/2018 :: 12:20:24 :: 	forked edges,
+ 	[Funzione
+ 	[Algebrica
+ 	[Razionale
+ 	[intera ${y=N(x)}$ ${\forall x\in\mathbb{R}}$
+ 	[fratta ${y=\dfrac{N(x)}{D(x)}}$ ${D(x)\neq 0}$]
+  	]
+  	]
+ 	[Irrazionale
+ 	[intera ${y=\sqrt[n]{A(x)}}$ ${A(x)\geq 0}$ se $n$ è pari altrimenti ${\forall x\in\mathbb{R}}$
+ 	[fratta ${y=\sqrt[n]{\dfrac{N(x)}{D(x)}}}$  ${\dfrac{N(x)}{D(x)}\geq0}$ se $n$ è pari altrimenti  ${D(x)\neq 0}$]
+ 	]
+ 	]
+ 	]
+ 	[Trascendenti
+ 	[Trigonometriche
+ 	[${y=\cos x}$ ${\forall x\in\mathbb{R}}$
+ 	[${y=\sin x}$ ${\forall x\in\mathbb{R}}$
+ 	[${y=\tan x}$ ${\forall x\in\mathbb{R}}$ ${x\neq \dfrac{\pi}{2}+k\pi}$ ${k\in\mathbb{Z}}$
+ 	]
+ 	]
+ 	]
+ 	]
+ 	[Esponenziali
+ [${y=[k(x)]^{f(x)}}$ ${k(x)>0}$
+ ]	
+ 	]
+ 	[Logaritmiche
+ 	[${y=\log_{k(x)} f(x)}$ $f(x)>0$\\ $k(x)>0$\\ $k(x)\neq 1$] 
+ 	]
+ 	]
+ ]
+ \end{forest}
+\end{document}
