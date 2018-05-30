@@ -4,7 +4,7 @@
 \chapter{Trigonometria}
 \section{Triangolo rettangolo}
 \begin{center}
-		\includestandalone{geometria/triangolopitagorico1}
+	\includestandalone{geometria/triangolopitagorico1}
 	\captionof{figure}{Triangolo rettangolo}
 \end{center}
 \begin{equation*}
@@ -65,6 +65,14 @@ c=&2R\sin\gamma
 \begin{equation*}
 \dfrac{a}{\sin\alpha}=\dfrac{b}{\sin\beta}=\dfrac{c}{\sin\gamma}=2R
 \end{equation*}\index{Triangolo!teorema seni}\index{Seno!teorema}\index{Teorema!seno}
+\begin{align*}
+a=&b\frac{\sin\alpha}{\sin\beta}&\sin\alpha=&\sin\beta\frac{a}{b}\\
+a=&c\frac{\sin\alpha}{\sin\gamma}&\sin\alpha=&\sin\gamma\frac{a}{c}\\
+b=&a\frac{\sin\beta}{\sin\alpha}&\sin\beta=&\sin\alpha\frac{b}{a}\\
+b=&c\frac{\sin\beta}{\sin\gamma}&\sin\beta=&\sin\gamma\frac{b}{c}\\
+c=&a\frac{\sin\gamma}{\sin\alpha}&\sin\gamma=&\sin\alpha\frac{c}{a}\\
+c=&b\frac{\sin\gamma}{\sin\beta}&\sin\gamma=&\sin\beta\frac{c}{b}\\
+\end{align*}
 \subsection{Raggio cerchio circoscritto}
 \begin{equation*}
 R=\dfrac{a}{2\sin\alpha}=\dfrac{b}{2\sin\beta}=\dfrac{c}{2\sin\gamma}
@@ -73,7 +81,10 @@ R=\dfrac{a}{2\sin\alpha}=\dfrac{b}{2\sin\beta}=\dfrac{c}{2\sin\gamma}
 \begin{align*}
 a^2=&b^2+c^2-2bc\cos\alpha\\
 b^2=&a^2+c^2-2ac\cos\beta\\
-c^2=&a^2+b^2-2ab\cos\gamma
+c^2=&a^2+b^2-2ab\cos\gamma\\
+\cos\alpha=&\frac{b^2+c^2-a^2}{2bc}\\
+\cos\beta=&\frac{a^2+c^2-b^2}{2ac}\\
+\cos\gamma=&\frac{a^2+b^2-c^2}{2ab}\\
 \end{align*}\index{Triangolo!teorema Carnot}\index{Carnot!teorema}\index{Teorema!Carnot}\index{Triangolo!lato}
 \subsection{Area triangolo}
 \begin{align*}
