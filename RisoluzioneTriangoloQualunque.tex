@@ -1,0 +1,38 @@
+\section{Risoluzione triangolo qualunque}
+\begin{center}
+	\includestandalone{geometria/triangoloqualunque}
+	\captionof{figure}{Triangolo qualunque}
+\end{center}
+\subsection{Lato e  due angoli noti}
+\begin{enumerate}
+	\item $a$ noto
+	\item $\alpha$ noto
+	\item $\beta$ noto
+\end{enumerate}
+\begin{align*}
+\intertext{Se}
+\alpha+\beta<&\ang{180}\\
+\intertext{allora}
+\gamma=&\ang{180}-\alpha-\beta\\
+\frac{a}{\sin\alpha}=&\frac{b}{\sin\beta}\\
+a=&b\frac{\sin\alpha}{\sin\beta}\\
+c=&a\frac{\sin\gamma}{\sin\alpha}
+\end{align*}
+\subsection{Due lati e angolo compreso noti}
+\begin{enumerate}
+	\item $a$ noto
+	\item $b$ noto
+	\item $\gamma$ noto
+\end{enumerate}
+\begin{align*}
+c^2=&a^2+b^2-2ab\cos\gamma\\
+\alpha=&\arccos\left(\frac{c^2+b^2-a^2}{2bc} \right)\\
+\beta=&\ang{180}-\alpha-\gamma\\
+\end{align*}
+
+\subsection{Tre lati noti}
+\begin{enumerate}
+	\item $a$ noto
+	\item $b$ noto
+	\item $c$ noto
+\end{enumerate}
