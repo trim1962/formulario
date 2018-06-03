@@ -1,0 +1,59 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+\definecolor{uuuuuu}{rgb}{0.26666666666666666,0.26666666666666666,0.26666666666666666}
+\definecolor{xdxdff}{rgb}{0.6588235294117647,0.6588235294117647,0.6588235294117647}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=0.7333333333333334cm,y=1.0cm]
+\begin{axis}[
+x=0.7333333333333334cm,y=1.0cm,
+axis lines=middle,
+xmin=-1.5,
+xmax=-0.1,
+ymin=-0.3,
+ymax=0.5,
+xtick={-1.4000000000000001,-1.2000000000000002,...,-0.2},
+ytick={-0.2,0.0,...,0.4000000000000001},]
+\clip(-1.5,-0.3) rectangle (-0.1,0.5);
+\draw[line width=4.pt] (-2.2889556921726,0.8143081181004426) -- (-1.8600334424605214,0.8143081181004426);
+\draw[line width=4.pt] (-2.2889556921726,0.7285236681580269) -- (-1.8600334424605214,0.7285236681580269);
+\draw[line width=4.pt] (-2.2889556921726,0.6427392182156112) -- (-1.8600334424605214,0.6427392182156112);
+\draw [samples=50,rotate around={0.:(-0.875,-0.13125)},xshift=-0.6416666666666667cm,yshift=-0.13125cm,line width=2.pt,domain=-1.0:1.0)] plot (\x,{(\x)^2/2/0.25});
+\draw [line width=2.pt] (-0.875,-0.3) -- (-0.875,0.5);
+\draw [line width=2.pt,domain=-1.5:-0.1] plot(\x,{(-0.25625-0.*\x)/1.});
+\draw [line width=2.pt] (-0.875,-0.00625)-- (-0.40122704628660477,0.31767162334062976);
+\draw [line width=2.pt] (-0.40122704628660477,0.31767162334062976)-- (-0.40122704628660477,-0.25625);
+\draw[line width=4.pt] (-2.2889556921726,0.5569547682731956) -- (-1.8600334424605214,0.5569547682731956);
+\draw[line width=4.pt] (-2.2889556921726,0.4711703183307799) -- (-1.8600334424605214,0.4711703183307799);
+\begin{scriptsize}
+\draw [fill=black] (-1.988710117374145,0.8143081181004426) circle (2.5pt);
+\draw[color=black] (-1.9801316723799034,0.8647064824416119) node {$a = 2$};
+\draw [fill=black] (-1.9243717799173332,0.7285236681580269) circle (2.5pt);
+\draw[color=black] (-1.9029256674317292,0.7789220324991961) node {$b = 3.5$};
+\draw [fill=black] (-2.0144454523568696,0.6427392182156112) circle (2.5pt);
+\draw[color=black] (-1.992999339871266,0.6931375825567805) node {$c = 1.4$};
+\draw[color=black] (-1.326025241568983,0.3886027852612048) node {$d$};
+\draw[color=black] (-0.9035368256025855,0.9075987074128197) node {$f$};
+\draw [fill=xdxdff] (-0.875,-0.00625) circle (2.5pt);
+\draw[color=xdxdff] (-0.8220415981572905,-0.006005684473907265) node {$Fuoco$};
+\draw[color=black] (-2.336137139640929,-0.22046680932994644) node {$g$};
+\draw [fill=uuuuuu] (-0.875,-0.13125) circle (2.0pt);
+\draw[color=uuuuuu] (-0.824186209405851,-0.14969463812745348) node {$Vertice$};
+\draw [fill=xdxdff] (-0.40122704628660477,0.31767162334062976) circle (2.5pt);
+\draw[color=xdxdff] (-0.3716732359596077,0.3135413915615911) node {$P$};
+\draw[color=black] (-0.6140143070469323,0.14626171417388056) node {$h$};
+\draw [fill=uuuuuu] (-0.40122704628660477,-0.25625) circle (2.0pt);
+\draw[color=uuuuuu] (-0.3866855146995305,-0.22046680932994644) node {$H$};
+\draw[color=black] (-0.42957773967073837,0.04975420798866292) node {$j$};
+\draw [fill=black] (-2.0230238973511114,0.5569547682731956) circle (2.5pt);
+\draw[color=black] (-2.0015777848655074,0.6073531326143649) node {$m = 1.2$};
+\draw [fill=black] (-1.9329502249115746,0.4711703183307799) circle (2.5pt);
+\draw[color=black] (-1.9115041124259706,0.5215686826719491) node {$q = 3.3$};
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}
+\end{document}
