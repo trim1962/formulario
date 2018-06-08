@@ -1,0 +1,35 @@
+\documentclass[10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\begin{document}
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw[->] (-6,0.) -- (6.,0.);
+;
+\draw[->] (0.,-6.0) -- (0.,6.0);
+\clip(-6.,-6.) rectangle (6.,6.);
+\draw  (1.938304839650147,1.6226931000971858) circle (3.901619310450254cm);
+\draw  (-0.6326680401684478,-0.8258524997300491) circle (4.6106387070841945cm);
+\draw [domain=-6.:6.] plot(\x,{(-12.109783775921724--5.4894366513529596*\x)/-5.228034906050443});
+\draw [domain=-6.:6.] plot(\x,{(--0.5741278336305764-2.448545599827235*\x)/-2.5709728798185947});
+\begin{scriptsize}
+\draw [fill=black] (1.938304839650147,1.6226931000971858) circle (1.5pt);
+\draw[color=black] (2.15255257963503,2.1889192700572337) node {$C$};
+
+\draw [fill=black] (-0.6326680401684478,-0.8258524997300491) circle (1.5pt);
+\draw[color=black] (-0.41842030018356485,-0.25962632977000105) node {$C_1$};
+
+\draw [fill=black] (3.882321596596775,-1.7601211266065264) circle (1.5pt);
+\draw[color=black] (4.111389059496816,-1.2696513896987354) node {$A$};
+\draw [fill=black] (-1.3457133094536675,3.729315524746433) circle (1.5pt);
+\draw[color=black] (-1.1223771601338943,4.239576209912543) node {$B$};
+
+\end{scriptsize}
+
+\end{tikzpicture}
+\end{document}
