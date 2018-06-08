@@ -46,33 +46,12 @@
 	{}%
 }
 \setglossarystyle{altlistgroup}
+
 \loadglsentries{glossario/glossari1}
 
 \usepackage{imakeidx}
 \makeindex[options=-s ../Mod_base/oldclaudio.sti]
-\expandafter\let\csname columntype@l\endcsname\@empty
-\expandafter\let\csname columntype@c\endcsname\@empty
-\expandafter\let\csname columntype@r\endcsname\@empty
-\expandafter\let\csname columntype@p\endcsname\@empty
-\expandafter\let\csname columntype@m\endcsname\@empty
-\expandafter\let\csname columntype@b\endcsname\@empty
 
-\newcommand\CheckIfColumntypeDefined[1]{%
-	\providebool{tpl@coltype@#1}
-	\ifcsdef{NC@find@\string#1}%
-	{\setbool{tpl@coltype@#1}{true}}%
-	{\ifcsdef{columntype@\string#1}
-		{\setbool{tpl@coltype@#1}{true}}%
-		{\setbool{tpl@coltype@#1}{false}}%
-	}%
-}
-
-\newcommand\isColumntypeDefined[1]{tpl@coltype@#1}
-
-\newcommand\IfColumntypeDefined[3]{%
-	\CheckIfColumntypeDefined{#1}
-	\ifboolexpr{ bool{\isColumntypeDefined{#1}} }{#2}{#3}%
-}
 \newcolumntype{W}{>{\sffamily\Large $}c<{$}}
 \newcolumntype{C}{>{\sffamily $}c<{$}}
 \newcolumntype{M}[1]{>{\centering}p{#1}}
@@ -214,7 +193,7 @@ baseurl={http://breviariomatematico.altervista.org}
 	\input{../Mod_base/MezziUsati}
 	\glsaddall
 	\twocolumn
-	\printglossaries
+  \printglossaries
 	\onecolumn
 \end{appendices}
 \nocite{*}
