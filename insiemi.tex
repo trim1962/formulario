@@ -1,0 +1,75 @@
+% !TeX encoding = UTF-8
+% !TeX spellcheck = it_IT
+
+\chapter{Insiemi}
+\section{Inclusione}
+\begin{center}
+	\includestandalone{geometria/sottoinsieme}
+	\captionof{figure}{Inclusione}
+\end{center}\index{Insieme!inclusione}
+$A\subseteq B\; \Leftrightarrow\; \forall x\in A\;\Rightarrow\; x\in B$\index{Insieme!inclusione} 
+\section{Inclusione propria}
+$A\subset B\; \Leftrightarrow\; A\subseteq B\; \wedge \; A\neq B$\index{Insieme!inclusione!propria}
+\section{Insieme vuoto}
+$\emptyset=\lbrace\text{insieme senza elementi}\rbrace$\index{Insieme!vuoto}
+\begin{enumerate}
+	\item $\emptyset\subseteq A\;\forall\; A$
+\end{enumerate}
+\section{Unione}
+\begin{center}
+	\includestandalone{geometria/unione}
+	\captionof{figure}{Unione}
+\end{center}\index{Insieme!unione}
+
+$A\cup B=\lbrace x:\;x\in A\;\vee\; x\in B\rbrace$\index{Insieme!unione}
+\begin{enumerate}
+	\item $A\cup A=A$\index{Insieme!unione!idempotenza} Idempotenza
+	\item $A\cup B=B\cup A$\index{Insieme!unione!commutativa} Commutativa
+	\item $A\cup\emptyset=A$
+	\item $\left(A\cup B\right)\cup C=A\cup\left(B\cup C\right)$\index{Insieme!unione!associativa} Associativa
+	\item $A\cup B=B\;\Leftrightarrow\; A\subset B$
+	\item $A\subseteq A\cup B\;\wedge\;A\subseteq A\cup B$ 
+\end{enumerate}
+\section{Intersezione}
+\begin{center}
+	\includestandalone{geometria/intersezione}
+	\captionof{figure}{Intersezione}
+\end{center}\index{Insieme!intersezione}
+$A\cap B=\lbrace x:\;x\in A\;\wedge\; x\in B\rbrace$\index{Insieme!intersezione}
+\begin{enumerate}
+	\item $A\cap A=A$\index{Insieme!intersezione!idempotenza} Idempotenza
+	\item $A\cap B=B\cap A$\index{Insieme!intersezione!commutativa} Commutativa
+	\item $A\cap\emptyset=\emptyset$
+	\item $\left(A\cap B\right)\cap C=A\cap\left(B\cap C\right)$\index{Insieme!intersezione!associativa } Associativa
+	\item $A\cap B=A\;\Leftrightarrow\; A\subset B$
+	\item $A\cup B\subseteq A;\wedge\;A\cup B\subseteq B$ 
+\end{enumerate}
+\section{Distributiva unione intersezione}
+$A\cap\left(B\cup C\right)=\left(A\cap B\right)\cup\left(A\cap C\right)$
+$A\cup\left(B\cap C\right)=\left(A\cup B\right)\cap\left(A\cup C\right)$\index{Insieme!distributiva}
+\section{Differenza}
+\begin{center}
+	\includestandalone{geometria/differenza}
+	\captionof{figure}{Differenza}
+\end{center}\index{Insieme!differenza}
+$B-A=\lbrace x:\; x\in B\wedge\; x\notin A\rbrace$\index{Insieme!differenza}
+\begin{enumerate}
+	\item $B-A=\emptyset$
+	\item $B-\emptyset=B$
+	\item $\emptyset-A=\emptyset$
+	\item $\left(A-B\right)-C=A-\left(B\cup C\right)=\left(A-C\right)-B$
+\end{enumerate}
+\section{Differenza simmetrica}
+\begin{center}
+	\includestandalone{geometria/differenzasimmetrica}
+	\captionof{figure}{Differenza simmetrica}
+\end{center}\index{Insieme!differenza simmetrica}
+$A\bigtriangleup B=\left(A-B\right)\cup\left(B-A\right)=\left(A\cup B\right)-\left(A\cap B\right)$\index{Insieme!differenza simmetrica}
+\begin{enumerate}
+	\item $A\bigtriangleup A=\emptyset$
+	\item $A\bigtriangleup B=B\bigtriangleup A$\index{Insieme!differenza simmetrica!commutativa} Commutativa
+	\item $A\bigtriangleup\emptyset=A$
+	\item $\left(A\bigtriangleup B\right)\bigtriangleup\left(B\bigtriangleup C\right)=A\bigtriangleup C$
+	\item $A\bigtriangleup\left(B\bigtriangleup C\right)=\left(A\bigtriangleup B\right)\bigtriangleup C$\index{Insieme!differenza simmetrica!associativa} Associativa
+	\item $A\cap\left(B\bigtriangleup C\right)=\left(A\cap B\right)\bigtriangleup\left(A\cap C\right)$\index{Insieme!differenza simmetrica!distributiva}
+\end{enumerate}

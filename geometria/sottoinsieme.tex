@@ -1,0 +1,21 @@
+\documentclass[10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+
+\begin{document}
+\def \setA{ (-0.3,-0.3) circle (0.4cm) }
+\def \setB{ (0,0) circle (1cm) }
+	\begin{tikzpicture}
+	\begin{scope} % start of clip scope
+	\fill[gray] \setA;
+	 \setB;
+	\end{scope} % end of clip scope
+	\draw \setA node[left] {$A$};
+	\draw \setB node[right] {$B$};
+	\end{tikzpicture}
+\end{document}
