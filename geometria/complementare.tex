@@ -9,18 +9,14 @@
 
 \begin{document}
 \def \setA{ (0,0) circle (1cm) }
-\def \setB{ (1.5,0) circle (1cm) }
+
+\def \myrectangle{ (-2, -1.5) rectangle (3.5, 1.5) }
 	\begin{tikzpicture}
-\fill [gray] \setB ;
-\fill [white] \setA ;
-%	\begin{scope} % start of clip scope
-%	\clip\setA  ;
-%	\setB ;	\fill [gray] \setB ;
-%	\end{scope} 
-	% end of clip scope
+%	\draw \myrectangle node[below left]{$U$};
+	 	\fill[gray]\myrectangle;
+\fill[white]	\setA ;
+	
 	\draw \setA node[left] {$A$};
-	\draw \setB node[right] {$B$};
+	\draw \myrectangle node[below left]{$U$};
 	\end{tikzpicture}
-
-
 \end{document}
