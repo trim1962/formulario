@@ -1,0 +1,19 @@
+\documentclass[10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+
+\begin{document}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw[->] (-1.1,0.) -- (1.1,0.);
+;
+\draw[->] (0.,-3.0) -- (0.,3.0);
+\draw[smooth,samples=200,domain=-1.1:1.1] plot(\x,{(\x)^(5.0)+(\x)^(3.0)});
+
+
+\end{tikzpicture}
+\end{document}

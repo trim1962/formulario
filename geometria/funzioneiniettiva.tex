@@ -1,0 +1,21 @@
+\documentclass[10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+
+\begin{document}
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\draw[->] (-0.2,0.) -- (5,0.);
+;
+\draw[->] (0.,-0.5) -- (0.,2.3);
+
+\clip(-0.2,-0.5) rectangle (5.,2.3);
+\draw[smooth,samples=200,domain=2.399999999960678E-6:5.0] plot(\x,{sqrt((\x))});
+
+\end{tikzpicture}
+\end{document}
