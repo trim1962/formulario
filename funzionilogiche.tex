@@ -3,7 +3,7 @@
 % !TeX root = formulario.tex
 \chapter{Funzioni logiche}
 \section{Tavole di verità}
-\begin{center}\index{Funzione!logica}\index{AND}\index{NAND}\index{OR}\index{NOR}\index{XOR}\index{XNOR}\index{NOT}
+{\centering\captionof{table}{Porte logiche}\index{Funzione!logica}\index{AND}\index{NAND}\index{OR}\index{NOR}\index{XOR}\index{XNOR}\index{NOT}
 		\begin{tabular}{@{}cc@{\hspace{2cm}}cc@{}}
 	\begin{truthtable}{AND}
 	\toprule
@@ -87,10 +87,9 @@
 		& \cport{not}
 		\end{tabular}}
 	\end{tabular}
-	\captionof{table}{Porte logiche}
-\end{center}
+\par}\newpage
 \section{Composizione porte}
-\begin{center}
+{\centering\captionof{table}{Composizione porte}%
 		\begin{tabular}{ccc}
 	\toprule
 	\begin{circuitikz} \draw
@@ -121,8 +120,7 @@
 	XOR +  NOT &=&XNOR  \\ 
 	\bottomrule
 	\end{tabular} 
-	\captionof{table}{Composizione porte}%
-\end{center}
+\par}
 \section{Proprietà AND e OR}
 \begin{align*}
 \overline{\overline{A}}=&A\\

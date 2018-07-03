@@ -7,7 +7,7 @@
 \label{sec:ConversioniECostanti}
 %\begin{table}[H]
 %\centering
-\begin{center}
+{\centering	\captionof{table}{Costanti}\index{Costanti}\label{Tab:Costanti}
 	\begin{tabular}{lcl}
 		\toprule
 		nome&simbolo&\multicolumn{1}{c}{valore}\\
@@ -21,14 +21,12 @@
 		costante di gravitazione universale&$G$&\num[separate-uncertainty]{6,67428(67)e-11}\si{\metre\tothe{3}\per\kilogram\per\second\tothe{2}}\\
 		accelerazione di gravità (livello del mare)&g&\SI{9,80665}{\metre\per\second\tothe{2}}\\
 		\bottomrule
-	\end{tabular}
-	\captionof{table}{Costanti}\index{Costanti}
-	\label{Tab:Costanti}
-\end{center}
+	\end{tabular}\par}
 %\end{table}
 \section{Tabella prefissi SI}
 \label{sec:TabellaPrefissiSI}
-\begin{center}
+{\centering\captionof{table}{Prefissi del Sistema Internazionale}\index{Sistema internazionale!prefissi}
+	\label{PrefissidelSistemaInternazionale}
 	%\begin{table}[H]
 %\centering 
 \begin{tabular}{llclr}
@@ -56,13 +54,10 @@ atto&\si{\atto}&Trilionesimo&\num{e-18}&\num{0,000000000000000001}\\
 zepto&\si{\zepto}&Triliardesimo&\num{e-21}&\num{0,000000000000000000001}\\
 yocto&\si{\yocto}&Quadrilionesimo&\num{e-24}&\num{0,000000000000000000000001}\\
 \bottomrule
-\end{tabular}
-\captionof{table}{Prefissi del Sistema Internazionale}\index{Sistema internazionale!prefissi}
-\label{PrefissidelSistemaInternazionale}
-%
-\end{center}
+\end{tabular}\par}
 %\begin{table}
-\begin{center}
+\section{Equivalenze}
+{\centering\captionof{table}{Equivalenze da Kilo a Milli}\index{Conversione!tavole}
 	%	\centering
 	\begin{tabular}{llrrrrrrr}
 		\toprule	
@@ -77,13 +72,12 @@ yocto&\si{\yocto}&Quadrilionesimo&\num{e-24}&\num{0,000000000000000000000001}\\
 		\textbf{Centi}&\si{\centi}	&\num{100000}  & \num{10000} & \num{1000} & \num{100} &\num{10}  & \num{1} &  \\ 
 		\textbf{Milli}&\si{\milli}	&\num{1000000}  &\num{100000}  & \num{10000} &\num{1000}  & \num{100} & \num{10} & \num{1} \\ 
 		\bottomrule
-	\end{tabular} 
-	\captionof{table}{Equivalenze da Kilo a Milli}\index{Conversione!tavole}
-\end{center}
+	\end{tabular}\par}
+
 %\end{table}
 %\begin{table}
 %	\centering
-\begin{center}
+{\centering\captionof{table}{Equivalenze da \si{\milli} a \si{\kilo}}
 		\begin{tabular}{ll*{7}{r}}
 		\toprule	
 		&\multicolumn{1}{c}{\textbf{Milli}}  & \multicolumn{1}{c}{\textbf{Centi}} & \multicolumn{1}{c}{\textbf{Deci}} &  & \multicolumn{1}{c}{\textbf{Deca}} & \multicolumn{1}{c}{\textbf{Hecto}} & \multicolumn{1}{c}{\textbf{Kilo}} \\ 
@@ -97,15 +91,13 @@ yocto&\si{\yocto}&Quadrilionesimo&\num{e-24}&\num{0,000000000000000000000001}\\
 		Hecto&\si{\hecto}	& \num{0,00001}  & \num{0,0001} & \num{0,001} &  \num{0,01}   &\num{0,1}  & \num{1} &  \\ 
 		Kilo&\si{\kilo}	& \num{0,000001}  &\num{0,00001}& \num{0,0001} & \num{0,001}  & \num{0,01} & \num{0,1} & \num{1} \\ 
 		\bottomrule
-	\end{tabular} 
-	\captionof{table}{Equivalenze da \si{\milli} a \si{\kilo}}
-\end{center}
+	\end{tabular}\par}
 %\end{table}
 \section{Unità di misura fondamentali SI}
 \label{sec:UnitàDiMisuraFondamentaliSI}
 %\begin{table}[H]
 %\centering
-\begin{center}
+{\centering\captionof{table}{Unit\'a fondamentali}\index{Sistema internazionale!unità!di misura}
 	\begin{tabular}{lccc}
 \toprule
 Grandezza fisica&Simbolo della Grandezza& Nome dell'unità SI&Simbolo dell'unità SI\\
@@ -118,11 +110,9 @@ temperatura assoluta&T&kelvin&\si{\kelvin}\\
 quantità di sostanza&N&mole&\si{\mole}\\
 intensità luminosa&J&candela&\si{\candela}\\
 \bottomrule
-\end{tabular}
-\captionof{table}{Unit\'a fondamentali}\index{Sistema internazionale!unità !di misura}
-\end{center}
-
-\begin{center}
+\end{tabular}\par}
+\section{Unit\'a non SI}
+{\centering\captionof{table}{Unit\'a non SI}\index{Sistema internazionale!unità!non SI}
 	\begin{tabular}{lcl}
 		\toprule 
 		\multicolumn{1}{c}{nome}&simbolo&\multicolumn{1}{c}{equivalenza SI}\\
@@ -132,11 +122,11 @@ intensità luminosa&J&candela&\si{\candela}\\
 		giorno&\si{\day}&$\SI{1}{\day}=\SI{24}{\hour}=\SI{1440}{\minute} = \SI{86400}{\second}$\\
 		litro&\si{\litre}&$\SI{1}{\litre}=\SI{1}{\deci\metre\tothe{3}}=\SI{e-3}{\metre\tothe{3}}$\\
 		\bottomrule
-	\end{tabular}
-	\captionof{table}{Unit\'a non SI}\index{Sistema internazionale!unità!non SI}
-\end{center}
-\begin{center}
-	\begin{tabular}{clcl}
+	\end{tabular}\par}
+\newpage
+\section{Multipli unit\'a di misura}
+{\centering\captionof{table}{Multipli unit\'a di misura}\index{Sistema internazionale!multipli}
+		\begin{tabular}{clcl}
 \toprule
 genere&nome&simbolo&\multicolumn{1}{c}{valore}\\
 \midrule
@@ -196,12 +186,10 @@ genere&nome&simbolo&\multicolumn{1}{c}{valore}\\
 &kiloelectronvolt&\si{\kilo\electronvolt}&\SI{e3}{\electronvolt}\\
 &millielettronvolt&\si{\milli\electronvolt}&\SI{e-3}{\electronvolt}\\
 \bottomrule
-\end{tabular}
-\captionof{table}{Multipli unit\'a di misura}\index{Sistema internazionale!multipli}
-\end{center}
+\end{tabular}\par}
 %\end{table}
 \section{Unità di misura derivate SI}
-\begin{center}
+{\centering\captionof{table}{SI unità derivate}\index{Sistema internazionale!unità!derivate}
 	\begin{tabular}{llclFl}
 		\toprule
 		Grandezza fisica& \multicolumn{1}{c}{Nome SI} & \multicolumn{1}{c}{Simbolo SI} & \multicolumn{1}{c}{Unità SI}& \multicolumn{1}{c}{Dimensioni}& \multicolumn{1}{l}{Equivalenza SI}\\ 
@@ -232,5 +220,4 @@ genere&nome&simbolo&\multicolumn{1}{c}{valore}\\
 		densità flusso magnetico & tesla& \si{\tesla}&\si{\volt\second\per\meter\squared}&\dif{\si{\Massa\per\Tempo\squared\per\Corrente}} &\si{\kg\per\second\squared\per\ampere}  \\ 
 		induttanza & henry& \si{\henry}&\si{\volt\second\per\ampere}&\dif{\si{\Massa\Lunghezza\squared\per\Tempo\squared\per\Corrente\squared}} &\si{\kg\meter\squared\per\second\squared\per\ampere\squared}  \\ 
 		\bottomrule
-	\end{tabular}\captionof{table}{SI unità derivate}\index{Sistema internazionale!unità!derivate} 
-\end{center}
+	\end{tabular}\par}
