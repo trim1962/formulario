@@ -2,34 +2,43 @@
 % !TeX spellcheck = it_IT
 % !TeX root = formulario.tex
 % 18/11/2017 :: 9:18:03 :: 
-
 \chapter{Sconto percentuale}
-\section{Vocabolario}
+\section{Definizioni}
+\begin{defn}[Vocabolario]
 \begin{description}
 	\item[Pi] Prezzo iniziale
 	\item[r] Tasso di sconto
 	\item[Sc] Sconto effettivo
 	\item[Ps] Prezzo scontato
-\end{description}\section{Prezzo scontato}
-\begin{equation*}
-Ps=Pi-Sc
-\end{equation*}\index{Sconto!prezzo!scontato}
-\section{Sconto effettivo}
+\end{description}
+\end{defn}
+\begin{defn}[Prezzo scontato]
+	\begin{equation*}
+	Ps=Pi-Sc
+	\end{equation*}\index{Sconto!prezzo!scontato}
+\end{defn}
+\begin{defn}[Sconto effettivo]
 \begin{equation*}
 Sc=Pi-Ps
 \end{equation*}\index{Sconto!effettivo}
-
-\section{Sconto effettivo percentuale}
+\end{defn}
+\section{Proprietà}
+\begin{thm}[Sconto effettivo percentuale]
+	Se \[Sc:Pi=r:100\] allora:
 \begin{equation*}
 Sc=\dfrac{Pi\cdot r}{100}
 \end{equation*}\index{Sconto!effettivo}
-\section{Prezzo iniziale}
+\end{thm}
+\begin{thm}[Prezzo iniziale]
+	Se \[Sc:Pi=r:100\] allora:
 \begin{equation*}
 Pi=\dfrac{Sc\cdot 100}{Pi}
 \end{equation*}\index{Sconto!prezzo!iniziale}
-
-\section{Tasso di sconto}
+\end{thm}
+\begin{thm}[Tasso di sconto]
+	Se \[Sc:Pi=r:100\] allora:
 \begin{align*}
 r=&\dfrac{Sc\cdot 100}{Pi}\\
 r=&\dfrac{(Pi-Ps)\cdot 100}{Pi}
 \end{align*}\index{Sconto!tasso}
+\end{thm}

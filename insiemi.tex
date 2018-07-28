@@ -1,89 +1,133 @@
 % !TeX encoding = UTF-8
 % !TeX spellcheck = it_IT
-
 \chapter{Insiemi}
 \section{Inclusione}
+\begin{defn}[Sottoinsieme]
 $A\subseteq B\; \Leftrightarrow\; \forall x\in A\;\Rightarrow\; x\in B$\index{Insieme!inclusione} 
-
+\end{defn}
 {\centering
 	\includestandalone{geometria/sottoinsieme}
 	\captionof{figure}{Inclusione}\par}\index{Insieme!inclusione}
-\section{Inclusione propria}
+\begin{defn}[Sottoinsieme proprio]
 $A\subset B\; \Leftrightarrow\; A\subseteq B\; \wedge \; A\neq B$\index{Insieme!inclusione!propria}
+\end{defn}
 \section{Insieme vuoto}
+\begin{defn}[Insieme vuoto]
 $\emptyset=\lbrace\text{insieme senza elementi}\rbrace$\index{Insieme!vuoto}
-\begin{enumerate}
-	\item $\emptyset\subseteq A\;\forall\; A$
-\end{enumerate}
+\end{defn}
+\begin{thm}[Il vuoto sottoinsieme proprio di ogni insieme]
+$\emptyset\subseteq A\;\forall\; A$
+\end{thm}
+\section{Uguaglianza}
+\begin{defn}[Uguaglianza]
+	$A=B\quad\Longleftrightarrow\quad\; A\subseteq B\;\wedge\; B\subseteq A$
+\end{defn}\index{Insieme!uguaglianza}
 \section{Unione}
+\begin{defn}[Unione]
 $A\cup B=\lbrace x:\;x\in A\;\vee\; x\in B\rbrace$\index{Insieme!unione}
-
+\end{defn}
 {\centering
 	\includestandalone{geometria/unione}
 	\captionof{figure}{Unione}
 \par}\index{Insieme!unione}
-\begin{enumerate}
-	\item $A\cup A=A$\index{Insieme!unione!idempotenza} Idempotenza
-	\item $A\cup B=B\cup A$\index{Insieme!unione!commutativa} Commutativa
-	\item $A\cup\emptyset=A$
-	\item $\left(A\cup B\right)\cup C=A\cup\left(B\cup C\right)$\index{Insieme!unione!associativa} Associativa
-	\item $A\cup B=B\;\Leftrightarrow\; A\subset B$
-	\item $A\subseteq A\cup B\;\wedge\;A\subseteq A\cup B$ 
-\end{enumerate}
+\begin{thm}[Unione proprietà]
+	Se $A$, $B$ e $C$ sono insiemi allora:
+	\begin{enumerate}
+		\item $A\cup A=A$\index{Insieme!unione!idempotenza} Idempotenza
+		\item $A\cup B=B\cup A$\index{Insieme!unione!commutativa} Commutativa
+		\item $A\cup\emptyset=A$
+		\item $\left(A\cup B\right)\cup C=A\cup\left(B\cup C\right)$\index{Insieme!unione!associativa} Associativa
+		\item $A\cup B=B\;\Leftrightarrow\; A\subset B$
+		\item $A\subseteq A\cup B\;\wedge\;A\subseteq A\cup B$ 
+	\end{enumerate}
+\end{thm}
 \section{Intersezione}
+\begin{defn}[Intersezione]
 $A\cap B=\lbrace x:\;x\in A\;\wedge\; x\in B\rbrace$\index{Insieme!intersezione}
-
+\end{defn}
 {\centering
 	\includestandalone{geometria/intersezione}
 	\captionof{figure}{Intersezione}\par
 }\index{Insieme!intersezione}
-\begin{enumerate}
-	\item $A\cap A=A$\index{Insieme!intersezione!idempotenza} Idempotenza
-	\item $A\cap B=B\cap A$\index{Insieme!intersezione!commutativa} Commutativa
-	\item $A\cap\emptyset=\emptyset$
-	\item $\left(A\cap B\right)\cap C=A\cap\left(B\cap C\right)$\index{Insieme!intersezione!associativa } Associativa
-	\item $A\cap B=A\;\Leftrightarrow\; A\subset B$
-	\item $A\cup B\subseteq A;\wedge\;A\cup B\subseteq B$ 
-\end{enumerate}
+\begin{thm}[Intersezione proprietà]
+	Se $A$, $B$ e $C$ sono insiemi allora:
+	\begin{enumerate}
+		\item $A\cap A=A$\index{Insieme!intersezione!idempotenza} Idempotenza
+		\item $A\cap B=B\cap A$\index{Insieme!intersezione!commutativa} Commutativa
+		\item $A\cap\emptyset=\emptyset$
+		\item $\left(A\cap B\right)\cap C=A\cap\left(B\cap C\right)$\index{Insieme!intersezione!associativa } Associativa
+		\item $A\cap B=A\;\Leftrightarrow\; A\subset B$
+		\item $A\cup B\subseteq A;\wedge\;A\cup B\subseteq B$ 
+	\end{enumerate}
+\end{thm}
 \section{Distributiva unione intersezione}
-$A\cap\left(B\cup C\right)=\left(A\cap B\right)\cup\left(A\cap C\right)$
-
-$A\cup\left(B\cap C\right)=\left(A\cup B\right)\cap\left(A\cup C\right)$\index{Insieme!distributiva}
-\section{Differenza}
-$B-A=\lbrace x:\; x\in B\wedge\; x\notin A\rbrace$\index{Insieme!differenza}
-
+\begin{thm}[Distributiva]
+	Se $A$, $B$ e $C$ sono insiemi allora:
+	\begin{align*}
+A\cap\left(B\cup C\right)=&\left(A\cap B\right)\cup\left(A\cap C\right)\\
+A\cup\left(B\cap C\right)=&\left(A\cup B\right)\cap\left(A\cup C\right)
+	\end{align*}\index{Insieme!distributiva}
+\end{thm}
+	\section{Differenza}
+	\begin{defn}[Differenza]
+	$B-A=\lbrace x:\; x\in B\wedge\; x\notin A\rbrace$
+	\end{defn}\index{Insieme!differenza}
 {\centering
 	\includestandalone{geometria/differenza}
 	\captionof{figure}{Differenza}
 \par}\index{Insieme!differenza}
+\begin{thm}[Proprietà differenza]
+Se $A$, $B$ e $C$ sono insiemi allora:
 \begin{enumerate}
 	\item $B-A=\emptyset$
 	\item $B-\emptyset=B$
 	\item $\emptyset-A=\emptyset$
 	\item $\left(A-B\right)-C=A-\left(B\cup C\right)=\left(A-C\right)-B$
 \end{enumerate}
+\end{thm}
 \section{Differenza simmetrica}
-$A\difs B=\left(A-B\right)\cup\left(B-A\right)=\left(A\cup B\right)-\left(A\cap B\right)$\index{Insieme!differenza simmetrica}
-
+\begin{defn}[Differenza simmetrica]
+	$A\difs B=\left(A-B\right)\cup\left(B-A\right)=\left(A\cup B\right)-\left(A\cap B\right)$\index{Insieme!differenza simmetrica}
+\end{defn}
 {\centering
 	\includestandalone{geometria/differenzasimmetrica}
 	\captionof{figure}{Differenza simmetrica}
 \par}\index{Insieme!differenza simmetrica}
-\begin{enumerate}
-	\item $A\difs A=\emptyset$
-	\item $A\difs B=B\difs A$\index{Insieme!differenza simmetrica!commutativa} Commutativa
-	\item $A\difs\emptyset=A$
-	\item $\left(A\difs B\right)\difs\left(B\difs C\right)=A\difs C$
-	\item $A\difs\left(B\difs C\right)=\left(A\difs B\right)\difs C$\index{Insieme!differenza simmetrica!associativa} Associativa
-	\item $A\cap\left(B\difs C\right)=\left(A\cap B\right)\difs\left(A\cap C\right)$\index{Insieme!differenza simmetrica!distributiva}
-\end{enumerate}
-\chapter{Insieme universo}
+\begin{thm}[Proprietà differenza simmetrica]
+	Se $A$, $B$ e $C$ sono insiemi allora:
+	\begin{enumerate}
+		\item $A\difs A=\emptyset$
+		\item $A\difs B=B\difs A$\index{Insieme!differenza simmetrica!commutativa} Commutativa
+		\item $A\difs\emptyset=A$
+		\item $\left(A\difs B\right)\difs\left(B\difs C\right)=A\difs C$
+		\item $A\difs\left(B\difs C\right)=\left(A\difs B\right)\difs C$\index{Insieme!differenza simmetrica!associativa} Associativa
+		\item $A\cap\left(B\difs C\right)=\left(A\cap B\right)\difs\left(A\cap C\right)$\index{Insieme!differenza simmetrica!distributiva}
+	\end{enumerate}
+\end{thm}
+\chapter{Complemetare}
+\section{Insieme universo}
+\begin{defn}[Insieme universo]
+Insieme universo $X$ è formato da tutti gli elementi, da tutti gli insiemi e che contiene anche se stesso e l'insieme vuoto.
+\end{defn}\index{Insieme!Universo}
+\begin{thm}[Insime universo proprietà]
+Dato un insieme $A$ allora:
+\begin{align*}
+A\cup X=& X\\
+A\cap X=& A\\
+A\subseteq X&\\
+X\subseteq X&\\
+\end{align*}
+\end{thm}
+\begin{defn}[Insieme complementare]
+$\overline{A}=X-A=\lbrace x:\; x\in X\wedge\; x\notin A\rbrace$\index{Insieme!complementare}
+\end{defn}
 \section{Insieme complementare}
 {\centering
 	\includestandalone{geometria/complementare}
 	\captionof{figure}{Complementare}
 \par}\index{Insieme!complementare}
-$\overline{A}=X-A=\lbrace x:\; x\in X\wedge\; x\notin A\rbrace$\index{Insieme!complementare}
+\begin{thm}[Proprietà insieme complementare]
+Dato un insieme $A$ abbiamo:
 \begin{enumerate}
 	\item $\overline{\overline{A}}=A$
 	\item $A\cap\overline{A}=\emptyset$
@@ -91,7 +135,12 @@ $\overline{A}=X-A=\lbrace x:\; x\in X\wedge\; x\notin A\rbrace$\index{Insieme!co
 	\item $\overline{\emptyset}=X$
 	\item $\overline{X}=\emptyset$
 \end{enumerate}
+\end{thm}
 \section{Leggi di De Morgan}
-$\overline{\left(A\cup B\right)}=\overline{A}\cap\overline{B}$
-
-$\overline{\left(A\cap B\right)}=\overline{A}\cup\overline{B}$\index{Insieme!de Morgan}
+\begin{thm}[Leggi di De Morgan]
+Dati due insiemi $A$ e $B$ abbiamo:
+\begin{align*}
+\overline{\left(A\cup B\right)}=&\overline{A}\cap\overline{B}\\
+\overline{\left(A\cap B\right)}=&\overline{A}\cup\overline{B}
+\end{align*}
+\end{thm}\index{Insieme!de Morgan}
