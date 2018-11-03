@@ -1,0 +1,26 @@
+\documentclass[10pt]{standalone}
+\usepackage{amsmath}
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+
+\begin{document}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-2.5,-2.5) rectangle (2.5,2.5);
+ 
+
+\begin{scriptsize}
+
+\draw(0,0) circle [radius=2cm];
+\draw(0,0) circle [radius=1cm];
+\draw (0.,0.)-- (1,0) node [pos=0.5, sloped, above] {r};
+\draw (0.,0.)-- (0,-2) node [pos=0.6, sloped, above] {R};
+\draw [fill=black] (0.,0.) circle (1.5pt);
+
+
+\draw[color=black] (0.1,0.1) node {$c$};
+%\draw[color=black] (1.08,0.41) node {$r$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}
