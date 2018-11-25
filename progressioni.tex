@@ -1,0 +1,33 @@
+
+% !BIB TS-program = biber
+% !TeX encoding = UTF-8
+% !TeX spellcheck = it_IT
+\chapter{Progressioni}
+\section{Progressione aritmetica}
+\begin{defn}[Progressione aritmetica]\label{defn:ProgAritm1}
+	Successione di numeri $a_1,a_2,a_3,\dots,a_n$ in cui la differenza tra un termine e il suo precedente è costante. Tale termine $d=a_r-a_{r-1}$ è chiamato ragione della successione.
+\end{defn}\index{Progressione!aritmetica}\index{Progressione!aritmetica!ragione}
+\begin{prop}
+	Data una successione aritmetica $a_1,a_2,a_3,\dots,a_n$ di ragione $d$ allora\[a_r=a_1+(r-1)d\]
+\end{prop}
+\begin{thm}[Somma progressione aritmetica]\label{thm:SommaProgAritm1}
+Data una progressione aritmetica $a_1,a_2,a_3,\dots,a_n$ allora
+\begin{align*}
+	S_n=&a_1+a_2+a_3+\dots+a_n\\
+	=&\dfrac{a_1+a_n}{2}n\\
+\end{align*}
+\end{thm}\index{Progressione!aritmetica!somma}
+\section{Progressione geometrica}
+\begin{defn}[Progressione geometrica]\label{defn:ProgGeom1}
+		Successione di numeri $a_1,a_2,a_3,\dots,a_n$ in cui il rapporto tra un termine e il suo precedente è costante. Tale termine $d=\dfrac{a_r}{a{r-1}}$ è chiamato ragione della successione.
+\end{defn}\index{Progressione!geometrica}\index{Progressione!geometrica!ragione}
+\begin{prop}
+	Data una successione geometrica $a_1,a_2,a_3,\dots,a_n$ di ragione $d$ allora\[a_r=a_1d^{r-1}\]
+\end{prop}
+\begin{thm}[Somma progressione geometrica]\label{thm:SommaProgGeo}
+		Data una successione geometrica $a_1,a_2,a_3,\dots,a_n$ di ragione $d$ allora 
+		\begin{align*}
+			S_n=&a_1+a_2+a_3+\dots+a_n\\
+			=&a_1\dfrac{d^n-1}{d-1}
+		\end{align*}
+\end{thm}\index{Progressione!geometrica!somma}
