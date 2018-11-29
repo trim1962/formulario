@@ -3,6 +3,7 @@
 % !TeX encoding = UTF-8
 % !TeX spellcheck = it_IT
 % !TeX root = formulario.tex
+\listfiles
 \documentclass[openany]{book}%
 % 21/01/2018 :: 22:12:46 :: \documentclass{book}%
 \usepackage{cmap}
@@ -98,21 +99,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % 28/12/2017 :: 18:57:00 :: \input{../Mod_base/glossario}
 
-\usepackage[symbols,acronyms,translate=false,nonumberlist,toc,numberedsection,counter=chapter,automake]{glossaries-extra}
 
-\usepackage{glossary-mcols}
-\usepackage{glossary-longragged}
-\usepackage{glossaries-babel}
-
-\makeglossaries
-\renewcommand*{\glsxtrpostdescgeneral}{%
-	\ifglshasfield{see}{\glscurrententrylabel}
-	{, \glsxtrusesee{\glscurrententrylabel}}%
-	{}%
-}
-\setglossarystyle{altlistgroup}
-
-\loadglsentries{../glossario/glossari1}
  
 \usepackage{imakeidx}
 \makeindex[options=-s ../Mod_base/oldclaudio.sti]
@@ -227,12 +214,32 @@ bookmarksopen,
 verbose,
 baseurl={http://breviariomatematico.altervista.org}
 }
+\usepackage[symbols,acronyms,translate=false,nonumberlist,toc,numberedsection,counter=chapter,automake]{glossaries-extra}
 
+\usepackage{glossary-mcols}
+\usepackage{glossary-longragged}
+\usepackage{glossaries-babel}
+
+\makeglossaries
+\renewcommand*{\glsxtrpostdescgeneral}{%
+	\ifglshasfield{see}{\glscurrententrylabel}
+	{, \glsxtrusesee{\glscurrententrylabel}}%
+	{}%
+}
+\setglossarystyle{altlistgroup}
+
+\loadglsentries{../glossario/glossari1}
 \input{compilaTexStudio}
 \usepackage{enumitem}
+%patch allieamento lista teoremi
+\usepackage{regexpatch}
+\makeatletter
+%\xpatchcmd*{\thm@@thmline}{2.3em}{5em}{}{} % not really needed
+\xpatchcmd*{\thm@@thmline@name}{2.3em}{5em}{}{} 
+\xpatchcmd*{\thm@@thmline@noname}{2.3em}{5em}{}{}
+\makeatother
+%fine patch allieamento lista teoremi
 
-
-\listfiles
 
 \begin{document}
 %\setcounter{page}{2}
@@ -251,7 +258,7 @@ baseurl={http://breviariomatematico.altervista.org}
 			\begin{tikzpicture}
 			\renewcommand*{\VertexBallColor}{green!50!black}
 			\GraphInit[vstyle=Art]
-\grCirculant[RA=6]{21}{1,3,10}%
+\grCirculant[RA=6]{26}{1,3,10}%
 %			\grComplete[RA=6]{20}
 			\end{tikzpicture}
 %		\end{center}
@@ -268,6 +275,9 @@ baseurl={http://breviariomatematico.altervista.org}
 		\listoffigures
 	\addcontentsline{toc}{chapter}{\listtablename}%
 			\listoftables
+		\chapter*{Lista dei teoremi}
+	\theoremlisttype{allname}
+	\listtheorems{thm,defn,cor,comm,lem}
 			\mainmatter
 \input{compilaTexStudioDue}			
 \begin{appendices}
