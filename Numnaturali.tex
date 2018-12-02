@@ -2,93 +2,107 @@
 % !TeX spellcheck = it_IT
 % !TeX root = formulario.tex
 
-\chapter{Numeri naturali}
-\section{Simbolo}
+\chapter{Numeri naturali}\label{ch:numeri-naturali}
+\section{Definizione}\label{sec:simbolo}
 \begin{defn}[Numeri naturali]
 L'insieme dei numeri naturali è l'insieme dei numeri 
-\begin{equation}
-\Ni\lbrace x\; \text{t.c.}x=0,1,2,3,\dots \rbrace
-\end{equation}\index{Numero!naturale}
+\begin{equation*}
+\Ni=\lbrace x\; \text{t.c.}x=0,1,2,3,\dots \rbrace
+\end{equation*}\index{Numero!naturale}
 \end{defn}
-
-\section{Addizione}
+\section{Addizione}\label{sec:addizione}
+\begin{defn}[Addizione]
 L'addizione è una funzione definita:  $\funzione{+}{\Ni\times\Ni}{\Ni}$
-\begin{equation}\index{Numero!naturale!addizione}
+\begin{equation*}\index{Numero!naturale!addizione}
 \overbrace{a}^{addendo}+\overbrace{b}^{addendo}=\overbrace{c}^{somma}
-\end{equation}\index{Numero!naturale!addendo}\index{Numero!naturale!somma}
-\subsection{Associativa}
-\begin{equation}
+\end{equation*}
+\end{defn}\index{Numero!naturale!addendo}\index{Numero!naturale!somma}
+\begin{prop}[Associativa]
+\begin{equation*}
 (a+b)+c=a+(b+c)
-\end{equation}\index{Numero!naturale!somma associativa}
-\subsection{Commutativa}
-\begin{equation}
+\end{equation*}
+\end{prop}\index{Numero!naturale!somma associativa}
+\begin{prop}[Commutativa]
+\begin{equation*}
 a+b=b+a
-\end{equation}\index{Numero!naturale!somma commutativa}
-\subsection{Elemento neutro}\
-\begin{equation}
+\end{equation*}
+\end{prop}\index{Numero!naturale!somma commutativa}
+\begin{prop}[Elemento neutro]
+\begin{equation*}
 a+0=0+a=a
-\end{equation}\index{Numero!naturale!somma elemento neutro}\index{Elemento!neutro}
+\end{equation*}\index{Numero!naturale!somma elemento neutro}\index{Elemento!neutro}
+\end{prop}
 \section{Prodotto}
-Il prodotto è una funzione che\index{Numero!naturale!prodotto} $\funzione{\times}{\Ni\times\Ni}{\Ni}$
-\begin{equation}
+\begin{defn}[Prodotto]
+Il prodotto è una funzione che $\funzione{\times}{\Ni\times\Ni}{\Ni}$
+\begin{equation*}
 \overbrace{a}^{fattore}\times\overbrace{b}^{fattore}=\overbrace{c}^{prodotto}
-\end{equation}\index{Fattore}\index{Numero!naturale!prodotto}
-\subsection{Associativa}
-\begin{equation}
+\end{equation*}\index{Fattore}\index{Numero!naturale!prodotto}
+\end{defn}
+\begin{prop}[Associtiva]
+\begin{equation*}
 (a\times b)\times c=a\times(b\times c) 
-\end{equation}\index{Numero!naturale!prodotto associativa}
-\subsection{Commutativa}
-\begin{equation}
-a\times b=b\times a
-\end{equation}\index{Numero!naturale!prodotto commutativa}
-\subsection{Elemento neutro}
-\begin{equation}
+\end{equation*}\index{Numero!naturale!prodotto associativa}
+\end{prop}
+\begin{prop}[Commutativa]
+	\begin{equation*}
+	a\times b=b\times a
+	\end{equation*}\index{Numero!naturale!prodotto commutativa}
+\end{prop}
+\begin{prop}[Elemento neutro]
+\begin{equation*}
 a\times 1=1\times a=a
-\end{equation}\index{Numero!naturale!prodotto elemento neutro}
-\subsection{Assorbente}
-\begin{equation}
+\end{equation*}\index{Numero!naturale!prodotto elemento neutro}
+\end{prop}
+\begin{prop}[Elemento assorbente]
+\begin{equation*}
 a\times 0=0\times a=0
-\end{equation}\index{Numero!naturale!prodotto assorbente}
+\end{equation*}\index{Numero!naturale!prodotto assorbente}
+\end{prop}
 \section{Sottrazione}
-\begin{equation}
+\begin{defn}[Sottrazione]
+La sottrazione è una funzione che $\funzione{-}{\Ni\times\Ni}{\Ni}$ non è sempre definita
+\begin{equation*}
 \overbrace{a}^{minuendo}-\overbrace{b}^{sottraendo}=\overbrace{c}^{Sottrazione}\quad a\geq b
-\end{equation}\index{Minuendo}\index{Sottraendo}\index{Numero!naturale!sottrazione}
-\subsection{Invariantiva sottrazione}
-\begin{equation}
-a-b=(a+c)-(b+c)\quad a>b
-\end{equation}\index{Numero!naturale!sottrazione invariantiva}
-\begin{equation}
-a-b=(a-c)-(b-c)\quad a>b\quad a-c,b-c\in\Ni
-\end{equation}\index{Numero!naturale!sottrazione invariantiva}
+\end{equation*}\index{Minuendo}\index{Sottraendo}\index{Numero!naturale!sottrazione}
+\end{defn}
+\begin{prop}[Invariantiva sottrazione]
+	\begin{align*}
+	a-b=&(a+c)-(b+c)\quad a>b\\
+	a-b=&(a-c)-(b-c)\quad a>b\quad a-c,b-c\in\Ni
+	\end{align*}
+\end{prop}\index{Numero!naturale!sottrazione invariantiva}
  \section{Divisione}
- Non sempre possibile.
-\begin{equation}
-\overbrace{a}^{dividendo}\div\overbrace{b}^{divisore}=\overbrace{c}^{quoziente}\quad b\neq 0
-\end{equation}\index{Dividendo}\index{Divisore}\index{Numero!naturale!quoziente}
-\subsection{Invariantiva quoziente}
-\begin{equation}
-a\div b=(a\times c)\div (b\times c)\quad b\neq 0\quad c \neq 0
-\end{equation}\index{Numero!naturale!quoziente invariantiva}
-\begin{equation}
-a\div b=(a\div c)\div (b\div c)\quad b\neq 0\quad c \neq 0
-\end{equation}\index{Numero!naturale!quoziente invariantiva}
+ \begin{defn}[Divisione]
+ La divisione è una funzione che $\funzione{\div}{\Ni\times\Ni}{\Ni}$ non è sempre definita
+ \begin{equation*}
+ \overbrace{a}^{dividendo}\div\overbrace{b}^{divisore}=\overbrace{c}^{quoziente}\quad b\neq 0
+ \end{equation*}\index{Dividendo}\index{Divisore}\index{Numero!naturale!quoziente}
+ \end{defn}
+\begin{prop}[Invariantiva quoziente]
+\begin{align*}
+a\div b=&(a\times c)\div (b\times c)\quad b\neq 0\quad c \neq 0\\
+a\div b=&(a\div c)\div (b\div c)\quad b\neq 0\quad c \neq 0
+\end{align*}
+\end{prop}\index{Numero!naturale!quoziente invariantiva}
+
 \section{Proprietà distributive}
 \subsection{Moltiplicazione addizione}
-\begin{equation}
+\begin{equation*}
 (a+b)\times c=a\times c+b\times c
-\end{equation}\index{Numero!naturale!distributiva moltiplicazione addizione}
+\end{equation*}\index{Numero!naturale!distributiva moltiplicazione addizione}
 \subsection{Moltiplicazione sottrazione}
-\begin{equation}
+\begin{equation*}
 (a-b)\times c=a\times c-b\times c\quad a>b\quad c\neq 0
-\end{equation}\index{Numero!naturale!distributiva moltiplicazione sottrazione}
+\end{equation*}\index{Numero!naturale!distributiva moltiplicazione sottrazione}
 \subsection{Divisione addizione}
-\begin{equation}
+\begin{equation*}
 (a+b)\div c=a\div c+b\div c\quad c\neq 0
-\end{equation}\index{Numero!naturale!distributiva divisione addizione}
+\end{equation*}\index{Numero!naturale!distributiva divisione addizione}
 \subsection{Divisione sottrazione}
-\begin{equation}
+\begin{equation*}
 (a-b)\div c=a\div c+b\div c\quad a>b\quad c\neq 0
-\end{equation}\index{Numero!naturale!distributiva divisione sottrazione}
+\end{equation*}\index{Numero!naturale!distributiva divisione sottrazione}
 \section{Riepilogo}
 
 {\centering\captionof{table}{Proprietà numeri naturali}
