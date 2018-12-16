@@ -1,7 +1,7 @@
+% !TeX spellcheck = it_IT
 % !TeX TS-program = pdflatex
 % !BIB TS-program = biber
 % !TeX encoding = UTF-8
-% !TeX spellcheck = it_IT
 % !TeX root = formulario.tex
 \listfiles
 \documentclass[openany]{book}%
@@ -11,6 +11,9 @@
 \usepackage{textgreek}
 %\input{../Mod_base/base}
 \usepackage{amsmath}
+\providecommand*{\uimm}%
+%{\ensuremath{\mathrm{j}}}
+{j\mkern1mu}
 %\usepackage{amsthm}
 \usepackage[thmmarks,hyperref]{ntheorem}
 \usepackage{qrcode}
@@ -246,7 +249,7 @@ baseurl={http://breviariomatematico.altervista.org}
 \begin{document}
 %\setcounter{page}{2}
 		\frontmatter
-		\hypersetup{pageanchor=false}
+		%\hypersetup{pageanchor=false}
 		\begin{titlepage}\parindent=0pt
 			\centering
 			\parbox{0.8\textwidth}{\centering
