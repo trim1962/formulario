@@ -1,15 +1,23 @@
 \chapter{Calcolo combinatorio}\label{ch:calcolo-combinatorio}
-\section{Fattoriale}\label{sec:fattoriale}
+\section{Disposizioni}\label{sec:fattoriale}
 \begin{defn}[Fattoriale di un numero]\label{defn:Fattoriale-num}
 Dato un numero $n\in\Ni$ diremo fattoriale di un numero il prodotto	
 \begin{align*}
 n!=&1\cdot 2\cdot 2\cdots n&&n\in\Ni\\
 0!=&1\\
 \end{align*}
-\end{defn}\index{Fattoriale}
+\end{defn}\index{FFattoriale}
 \begin{defn}[Disposizioni semplici]\label{defn:Diposizioni-semplici}
 	Dati $n$ oggetti distinti, $n\in\Ni$ e un $k\in\Ni$ $k\leqslant n$ diremo disposizione semplice di $n$ oggetti a gruppi di $k$ tutti i gruppi di $k$ oggetti in modo che ogni gruppo differisca o per gli oggetti che lo compongono o per l'ordine degli oggetti nel gruppo.
 \end{defn}\index{Disposizioni!semplici}
+\begin{thm}[Numero disposizioni semplici]
+Le disposizioni semplici di $n$ oggetti a gruppi di $k$ sono\[
+D_{n,k}=\dfrac{n!}{(n-k)!}\]
+\end{thm}
 \begin{defn}[Disposizioni con ripetizione]\label{defn:Diposizioni-ripetizione}
 	Raggruppamento di $n\in\Ni$ oggetti in gruppi di $k\in\Ni$. In ogni gruppo un oggetto può comparire più volte. Ogni gruppo differisce dall'altro o per gli elementi o per l'ordine con cui compaiono. 
 \end{defn}
+\begin{thm}[Numero disposizioni semplici]
+	Le disposizioni con ripetizione di $n$ oggetti a gruppi di $k$ sono\[
+	D^{r}_{n,k}=n^k\]
+\end{thm}
