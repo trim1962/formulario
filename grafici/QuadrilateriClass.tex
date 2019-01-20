@@ -1,0 +1,23 @@
+\documentclass[10pt,a4paper]{standalone}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{forest}
+\usetikzlibrary{shadows,arrows.meta}
+
+\begin{document}
+	\begin{forest} 
+		for tree={
+			baseline,
+			text centered,
+			minimum width=2.4cm,
+			text width=2.8cm
+		}
+		[Quadrilatero[Ha due lati paralleli
+		[Trapezi[Scaleno[Ha i lati non congruenti]][Rettangolo[Ha un lato obliquo perpendicolare alle basi]][Isoscele[Ha i lati obliqui congruenti]]]]
+		[Ha quattro lati paralleli[Parallelogrammi[Rombi[Quadrati]][Rettangoli]]]
+	[Lati congruenti due a due	[Deltoidi]]
+		]
+	\end{forest}
+\end{document}

@@ -200,7 +200,7 @@ pdflicenseurl={http://creativecommons.org/licenses/by-nc-nd/3.0/},
 pdflang={it},
 pdfmetalang={it},
 pdfkeywords={Algebra, geometria, analisi},
-pdfcopyright={Copyright (C) 2018, Claudio Duchi},
+pdfcopyright={Copyright (C) 2019, Claudio Duchi},
 pdfcontacturl={http://breviariomatematico.altervista.org},
 pdfcontactpostcode={06128},
 pdfcontactphone={},
@@ -219,8 +219,8 @@ bookmarksopen,
 verbose,
 baseurl={http://breviariomatematico.altervista.org}
 }
-\usepackage[symbols,acronyms,translate=false,nonumberlist,toc,numberedsection,counter=chapter,automake]{glossaries-extra}
-
+%\usepackage[symbols,acronyms,translate=false,nonumberlist,toc,numberedsection,counter=chapter,automake]{glossaries-extra}
+\usepackage[symbols,acronyms,nonumberlist]{glossaries-extra}
 \usepackage{glossary-mcols}
 \usepackage{glossary-longragged}
 \usepackage{glossaries-babel}
@@ -232,7 +232,6 @@ baseurl={http://breviariomatematico.altervista.org}
 	{}%
 }
 \setglossarystyle{altlistgroup}
-
 \loadglsentries{../glossario/glossari1}
 \input{compilaTexStudio}
 \usepackage{enumitem}
@@ -295,17 +294,19 @@ baseurl={http://breviariomatematico.altervista.org}
 	Elenco Proprietà
 	\listtheorems{prop}
 			\mainmatter
-\input{compilaTexStudioDue}			
+\input{compilaTexStudioDue}		
+\backmatter	
 \begin{appendices}
 	\input{../Mod_base/MezziUsati}
-	\glsaddall
+	
 	\twocolumn
-  \printglossaries
+	\glsaddall
+\printglossaries
 	\onecolumn
-\end{appendices}
 \nocite{*}
  \addcontentsline{toc}{chapter}{\bibname}
 \printbibliography
+\end{appendices}
  \addcontentsline{toc}{chapter}{\indexname}
  \printindex
 
