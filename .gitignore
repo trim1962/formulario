@@ -32,3 +32,5 @@
 *.bak
 *.blg
 *.xml
+
+*.synctex(busy)
